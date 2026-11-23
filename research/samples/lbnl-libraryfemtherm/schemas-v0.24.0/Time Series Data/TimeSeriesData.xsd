@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<!-- Fixed vocabulary of series roles. The list is deliberately closed: a boundary
+	     condition input and a dataset series both name a role from this enumeration,
+	     which is what makes their pairing automatic. New roles ship together with the
+	     engine model that consumes them. -->
+	<xs:simpleType name="SeriesRole" final="restriction">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Air Temperature"/>
+			<xs:enumeration value="Relative Humidity"/>
+			<xs:enumeration value="Wind Speed"/>
+			<xs:enumeration value="Wind Direction"/>
+			<xs:enumeration value="Solar Irradiance"/>
+			<xs:enumeration value="Heat Flux"/>
+			<xs:enumeration value="Convective Coefficient"/>
+			<xs:enumeration value="Radiant Temperature"/>
+			<xs:enumeration value="Radiative Coefficient"/>
+			<xs:enumeration value="Emissivity"/>
+			<xs:enumeration value="Surface Temperature"/>
+			<xs:enumeration value="Surface Humidity"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- Where the first row sits in the year and how far apart the rows are. There is
+	     no year: typical-year weather files stitch every month from a different source
+	     year, so a literal year could never match between two files. Two datasets line
+	     up when their axes and row counts are equal; nothing is interpolated. Absent on
+	     datasets written before the axis existed, which read as 1 January 00:00 with
+	     hourly steps. -->
+	<xs:complexType name="TimeAxis">
+		<xs:sequence>
+			<xs:element name="Month" type="xs:unsignedInt"/>
+			<xs:element name="Day" type="xs:unsignedInt"/>
+			<!-- 1..24, as EnergyPlus numbers hours: hour 1 is 00:00 to 01:00, and the first
+			     step starts Minute minutes into it. Month and Day count from 1 as well. -->
+			<xs:element name="Hour" type="xs:unsignedInt"/>
+			<xs:element name="Minute" type="xs:unsignedInt"/>
+			<xs:element name="StepSeconds" type="xs:double"/>
+			<!-- Present only when the steps are uneven: one length in seconds per step, as a
+			     comma-separated list like Series/Values, StepSeconds then being the first of
+			     them. Absent, every step is StepSeconds. -->
+			<xs:element name="StepLengths" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- One time series: a role plus its values. Rows are indexed; the dataset's TimeAxis
+	     places row zero in the year and sets the spacing. One series per role per
+	     dataset; enforced by the loader. -->
+
+	<!-- Values holds every point of the series as one comma-separated list. A single
+	     text node instead of one element per point keeps document size and parse cost
+	     proportional to the data, not to the markup (an EPW-sized series holds 8760
+	     points). Comma is the separator, so the type is a plain string rather than an
+	     xs:list (whose separator is whitespace). -->
+	<xs:complexType name="Series">
+		<xs:sequence>
+			<xs:element name="Role" type="SeriesRole"/>
+			<xs:element name="Values" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="TimeSeries">
+		<xs:sequence>
+			<xs:element name="UUID" type="xs:string"/>
+			<xs:element name="Name" type="xs:string"/>
+			<!-- Present only on temporary records that entered the library from a project
+			     file during reconciliation; permanent library records omit it. Not part of
+			     the content hash, so it never changes the UUID. -->
+			<xs:element name="ProjectName" type="xs:string" minOccurs="0"/>
+			<xs:element name="Protected" type="xs:boolean"/>
+			<xs:element name="Description" type="xs:string" minOccurs="0"/>
+			<!-- Display metadata, not part of the content hash. -->
+			<xs:element name="Color" type="xs:string" minOccurs="0"/>
+			<xs:element name="Source" type="xs:string" minOccurs="0"/>
+			<xs:element name="TimeAxis" type="TimeAxis" minOccurs="0"/>
+			<xs:element name="Series" type="Series" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:element name="TimeSeriesData">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Version" type="xs:string"/>
+				<xs:element name="TimeSeries" type="TimeSeries" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

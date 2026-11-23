@@ -1,0 +1,1717 @@
+<?xml version="1.0"?>
+<THERM-XML xmlns="http://windows.lbl.gov">
+<ThermVersion>Version 7.8.80.0</ThermVersion>
+<FileVersion>1</FileVersion>
+<SaveDate>2026-11-20T00:51:04</SaveDate>
+
+<Title></Title>
+<CreatedBy></CreatedBy>
+<Company></Company>
+<Client></Client>
+<CrossSectionType>Vertical Divider</CrossSectionType>
+<Notes></Notes>
+<Units>SI</Units>
+<MeshControl MeshLevel="6" ErrorCheckFlag="1" ErrorLimit="10.000000" MaxIterations="3" CMAflag="0" />
+<RadianceModeBC>
+	<RadianceModeInBCName>ShadeInE</RadianceModeInBCName>
+	<RadianceModeInBCTag>ShadeInETag</RadianceModeInBCTag>
+	<RadianceModeOutBCName>ShadeOutE</RadianceModeOutBCName>
+	<RadianceModeOutBCTag>ShadeOutETag</RadianceModeOutBCTag>
+</RadianceModeBC>
+<Materials>
+	<Material Name="Divider:Aluminum  Alloys" Index="1" Type="0" Conductivity="160.000000" Tir="0.000000" EmissivityFront="0.200000" EmissivityBack="0.900000" RGBColor="0x0000FF">
+		<Property Side="Front" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+	</Material>
+	<Material Name="Frame Cavity NFRC 100_Cavity_15" Index="2" Type="1" Conductivity="0.026263" Tir="1.000000" Absorptivity="0.500000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0x00FF00" CavityModel="4" />
+	<Material Name="Frame Cavity NFRC 100_Cavity_16" Index="3" Type="1" Conductivity="0.028297" Tir="1.000000" Absorptivity="0.500000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0x00FF00" CavityModel="4" />
+	<Material Name="Double LowE - Divider_Glass_0" Index="4" Type="0" Conductivity="1.000000" Tir="0.000000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0x00FFFF">
+		<Property Side="Front" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+	</Material>
+	<Material Name="Double LowE - Divider_Gap_0" Index="5" Type="0" Conductivity="0.039351" Tir="0.000000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0xC0C0C0">
+		<Property Side="Front" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+	</Material>
+	<Material Name="Double LowE - Divider_Glass_1" Index="6" Type="0" Conductivity="1.000000" Tir="0.000000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0x00FFFF">
+		<Property Side="Front" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+	</Material>
+	<Material Name="Double LowE - Divider_Glass_2" Index="7" Type="0" Conductivity="1.000000" Tir="0.000000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0x00FFFF">
+		<Property Side="Front" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+	</Material>
+	<Material Name="Double LowE - Divider_Gap_1" Index="8" Type="0" Conductivity="0.039351" Tir="0.000000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0xC0C0C0">
+		<Property Side="Front" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+	</Material>
+	<Material Name="Double LowE - Divider_Glass_3" Index="9" Type="0" Conductivity="1.000000" Tir="0.000000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0x00FFFF">
+		<Property Side="Front" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+	</Material>
+	<Material Name="Frame Cavity NFRC 100_Cavity_1" Index="10" Type="1" Conductivity="0.024908" Tir="1.000000" Absorptivity="0.500000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0x00FF00" CavityModel="4" />
+</Materials>
+<BoundaryConditions>
+	<BoundaryCondition Name="Frame Cavity Surface" Type="7" H="0.000000" HeatFLux="0.000000" Temperature="0.000000" RGBColor="0xFF0000" 
+		Tr="0.000000" Hr="0.000000" Ei="1.000000" Viewfactor="1.000000" RadiationModel="0"
+		ConvectionFlag="0" FluxFlag="0" RadiationFlag="0" ConstantTemperatureFlag="0" EmisModifier="1.000000" />
+	<BoundaryCondition Name="Adiabatic" Type="0" H="0.000000" HeatFLux="0.000000" Temperature="0.000000" RGBColor="0x000000" 
+		Tr="0.000000" Hr="0.000000" Ei="1.000000" Viewfactor="1.000000" RadiationModel="0"
+		ConvectionFlag="0" FluxFlag="1" RadiationFlag="0" ConstantTemperatureFlag="0" EmisModifier="1.000000" />
+	<BoundaryCondition Name="NFRC 100-2010 Exterior" Type="1" H="26.000000" HeatFLux="0.000000" Temperature="-18.000000" RGBColor="0x0080C0" 
+		Tr="-18.000000" Hr="-431602080.000000" Ei="1.000000" Viewfactor="1.000000" RadiationModel="1"
+		ConvectionFlag="1" FluxFlag="0" RadiationFlag="1" ConstantTemperatureFlag="0" EmisModifier="1.000000" />
+</BoundaryConditions>
+<GlazingSystems>
+<GlazingSystem index="1" nlayers="2" width="25.425999" units="mm"/>
+<GlazingSystem index="2" nlayers="2" width="25.425999" units="mm"/>
+</GlazingSystems>
+<Polygons>
+	<Polygon ID="11" Material="Divider:Aluminum  Alloys" NSides="6" Type="1" units="mm">
+		<Point index="0" x="256.602203" y="-250.000000" />
+		<Point index="1" x="258.177002" y="-250.000000" />
+		<Point index="2" x="258.177002" y="-248.425201" />
+		<Point index="3" x="258.177002" y="-226.174744" />
+		<Point index="4" x="258.177002" y="-224.600006" />
+		<Point index="5" x="256.602203" y="-224.600006" />
+	</Polygon>
+	<Polygon ID="12" Material="Divider:Aluminum  Alloys" NSides="6" Type="1" units="mm">
+		<Point index="0" x="268.794250" y="-250.000000" />
+		<Point index="1" x="268.794250" y="-224.600006" />
+		<Point index="2" x="267.219452" y="-224.600006" />
+		<Point index="3" x="267.219421" y="-226.174744" />
+		<Point index="4" x="267.219421" y="-248.425201" />
+		<Point index="5" x="267.219452" y="-250.000000" />
+	</Polygon>
+	<Polygon ID="13" Material="Divider:Aluminum  Alloys" NSides="4" Type="1" units="mm">
+		<Point index="0" x="258.177002" y="-224.600006" />
+		<Point index="1" x="258.177002" y="-226.174744" />
+		<Point index="2" x="267.219421" y="-226.174744" />
+		<Point index="3" x="267.219452" y="-224.600006" />
+	</Polygon>
+	<Polygon ID="14" Material="Divider:Aluminum  Alloys" NSides="4" Type="1" units="mm">
+		<Point index="0" x="258.177002" y="-250.000000" />
+		<Point index="1" x="267.219452" y="-250.000000" />
+		<Point index="2" x="267.219421" y="-248.425201" />
+		<Point index="3" x="258.177002" y="-248.425201" />
+	</Polygon>
+	<Polygon ID="15" Material="Frame Cavity NFRC 100_Cavity_15" NSides="4" Type="1" units="mm">
+		<Point index="0" x="253.000000" y="-250.000000" />
+		<Point index="1" x="256.602203" y="-250.000000" />
+		<Point index="2" x="256.602203" y="-224.600006" />
+		<Point index="3" x="253.000000" y="-224.600006" />
+	</Polygon>
+	<Polygon ID="16" Material="Frame Cavity NFRC 100_Cavity_16" NSides="4" Type="1" units="mm">
+		<Point index="0" x="258.177002" y="-248.425201" />
+		<Point index="1" x="267.219421" y="-248.425201" />
+		<Point index="2" x="267.219421" y="-226.174744" />
+		<Point index="3" x="258.177002" y="-226.174744" />
+	</Polygon>
+	<Polygon ID="20" Material="Double LowE - Divider_Glass_0" NSides="6" Type="11" units="mm">
+		<Point index="0" x="250.000000" y="-250.000000" />
+		<Point index="1" x="252.970001" y="-250.000000" />
+		<Point index="2" x="253.000000" y="-224.600006" />
+		<Point index="3" x="253.000000" y="-74.600006" />
+		<Point index="4" x="250.000000" y="-74.600006" />
+		<Point index="5" x="250.000000" y="-224.600006" />
+	</Polygon>
+	<Polygon ID="21" Material="Double LowE - Divider_Gap_0" NSides="8" Type="5" units="mm">
+		<Point index="0" x="253.000000" y="-224.600006" />
+		<Point index="1" x="256.602203" y="-224.600006" />
+		<Point index="2" x="258.177002" y="-224.600006" />
+		<Point index="3" x="267.219452" y="-224.600006" />
+		<Point index="4" x="268.794250" y="-224.600006" />
+		<Point index="5" x="272.455994" y="-224.600006" />
+		<Point index="6" x="272.455994" y="-74.600006" />
+		<Point index="7" x="253.000000" y="-74.600006" />
+	</Polygon>
+	<Polygon ID="22" Material="Double LowE - Divider_Glass_1" NSides="7" Type="9" units="mm">
+		<Point index="0" x="272.455994" y="-250.000000" />
+		<Point index="1" x="275.396393" y="-250.000000" />
+		<Point index="2" x="275.425995" y="-224.600006" />
+		<Point index="3" x="275.425995" y="-161.100006" />
+		<Point index="4" x="275.425995" y="-74.600006" />
+		<Point index="5" x="272.455994" y="-74.600006" />
+		<Point index="6" x="272.455994" y="-224.600006" />
+	</Polygon>
+	<Polygon ID="29" Material="Double LowE - Divider_Glass_2" NSides="4" Type="11" units="mm">
+		<Point index="0" x="250.000000" y="-250.000000" />
+		<Point index="1" x="250.000000" y="-400.000000" />
+		<Point index="2" x="253.000000" y="-400.000000" />
+		<Point index="3" x="253.000000" y="-250.000000" />
+	</Polygon>
+	<Polygon ID="30" Material="Double LowE - Divider_Gap_1" NSides="8" Type="5" units="mm">
+		<Point index="0" x="253.000000" y="-250.000000" />
+		<Point index="1" x="253.000000" y="-400.000000" />
+		<Point index="2" x="272.455994" y="-400.000000" />
+		<Point index="3" x="272.455994" y="-250.000000" />
+		<Point index="4" x="268.794250" y="-250.000000" />
+		<Point index="5" x="267.219452" y="-250.000000" />
+		<Point index="6" x="258.177002" y="-250.000000" />
+		<Point index="7" x="256.602203" y="-250.000000" />
+	</Polygon>
+	<Polygon ID="31" Material="Double LowE - Divider_Glass_3" NSides="5" Type="9" units="mm">
+		<Point index="0" x="272.455994" y="-250.000000" />
+		<Point index="1" x="272.455994" y="-400.000000" />
+		<Point index="2" x="275.425995" y="-400.000000" />
+		<Point index="3" x="275.425995" y="-313.500000" />
+		<Point index="4" x="275.425995" y="-250.000000" />
+	</Polygon>
+	<Polygon ID="1" Material="Frame Cavity NFRC 100_Cavity_1" NSides="4" Type="1" units="mm">
+		<Point index="0" x="268.794250" y="-250.000000" />
+		<Point index="1" x="272.426392" y="-250.000000" />
+		<Point index="2" x="272.455994" y="-224.600006" />
+		<Point index="3" x="268.794250" y="-224.600006" />
+	</Polygon>
+</Polygons>
+<Boundaries>
+	<BCPolygon ID="60" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="15" EnclosureID="1" UFactorTag="" Emissivity="0.200000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="256.602203" y="-224.600006" />
+		<Point index="1" x="256.602203" y="-250.000000" />
+	</BCPolygon>
+	<BCPolygon ID="63" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="16" EnclosureID="2" UFactorTag="" Emissivity="0.200000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="267.219421" y="-248.425201" />
+		<Point index="1" x="258.177002" y="-248.425201" />
+	</BCPolygon>
+	<BCPolygon ID="64" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="16" EnclosureID="2" UFactorTag="" Emissivity="0.200000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="267.219421" y="-226.174744" />
+		<Point index="1" x="267.219421" y="-248.425201" />
+	</BCPolygon>
+	<BCPolygon ID="65" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="16" EnclosureID="2" UFactorTag="" Emissivity="0.200000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="258.177002" y="-226.174744" />
+		<Point index="1" x="267.219421" y="-226.174744" />
+	</BCPolygon>
+	<BCPolygon ID="66" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="16" EnclosureID="2" UFactorTag="" Emissivity="0.200000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="258.177002" y="-248.425201" />
+		<Point index="1" x="258.177002" y="-226.174744" />
+	</BCPolygon>
+	<BCPolygon ID="67" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="1" EnclosureID="3" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="272.426392" y="-250.000000" />
+		<Point index="1" x="268.794250" y="-250.000000" />
+	</BCPolygon>
+	<BCPolygon ID="69" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="1" EnclosureID="3" UFactorTag="" Emissivity="0.200000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="268.794250" y="-250.000000" />
+		<Point index="1" x="268.794250" y="-224.600006" />
+	</BCPolygon>
+	<BCPolygon ID="2" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="15" EnclosureID="1" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="256.602203" y="-250.000000" />
+		<Point index="1" x="253.000000" y="-250.000000" />
+	</BCPolygon>
+	<BCPolygon ID="3" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="15" EnclosureID="1" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="253.000000" y="-224.599945" />
+		<Point index="1" x="256.602203" y="-224.600006" />
+	</BCPolygon>
+	<BCPolygon ID="87" BC="Frame Cavity Surface" units="mm" MaterialName="Double LowE - Divider" PolygonID="15" EnclosureID="1" UFactorTag="" Emissivity="0.840000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="253.000000" y="-250.000000" />
+		<Point index="1" x="253.000000" y="-224.600006" />
+	</BCPolygon>
+	<BCPolygon ID="33" BC="Frame Cavity Surface" units="mm" MaterialName="Double LowE - Divider" PolygonID="1" EnclosureID="3" UFactorTag="" Emissivity="0.035000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="272.455994" y="-224.600006" />
+		<Point index="1" x="272.455994" y="-250.000000" />
+	</BCPolygon>
+	<BCPolygon ID="34" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="1" EnclosureID="3" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="268.794250" y="-224.600006" />
+		<Point index="1" x="272.455994" y="-224.600006" />
+	</BCPolygon>
+	<BCPolygon ID="42" BC="Adiabatic" units="mm" MaterialName="Double LowE - Divider" PolygonID="29" EnclosureID="0" UFactorTag="" Emissivity="-1.000000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="250.000000" y="-400.000000" />
+		<Point index="1" x="253.000000" y="-400.000000" />
+	</BCPolygon>
+	<BCPolygon ID="43" BC="Adiabatic" units="mm" MaterialName="Double LowE - Divider" PolygonID="30" EnclosureID="0" UFactorTag="" Emissivity="-1.000000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="253.000000" y="-400.000000" />
+		<Point index="1" x="272.455994" y="-400.000000" />
+	</BCPolygon>
+	<BCPolygon ID="23" BC="Adiabatic" units="mm" MaterialName="Double LowE - Divider" PolygonID="31" EnclosureID="0" UFactorTag="" Emissivity="-1.000000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="272.455994" y="-400.000000" />
+		<Point index="1" x="275.425995" y="-400.000000" />
+	</BCPolygon>
+	<BCPolygon ID="27" BC="Divider:Double LowE - Divider (ID:62) U-factor Inside Film" units="mm" MaterialName="Double LowE - Divider" PolygonID="31" EnclosureID="0" UFactorTag="" Emissivity="0.840000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="275.425995" y="-400.000000" />
+		<Point index="1" x="275.425995" y="-313.500000" />
+	</BCPolygon>
+	<BCPolygon ID="28" BC="Divider:Double LowE - Divider (ID:62) U-factor Inside Film" units="mm" MaterialName="Double LowE - Divider" PolygonID="31" EnclosureID="0" UFactorTag="Edge" Emissivity="0.840000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="275.425995" y="-313.500000" />
+		<Point index="1" x="275.425995" y="-250.000000" />
+	</BCPolygon>
+	<BCPolygon ID="35" BC="Divider:Double LowE - Divider (ID:62) U-factor Inside Film" units="mm" MaterialName="Double LowE - Divider" PolygonID="22" EnclosureID="0" UFactorTag="Frame" Emissivity="0.840000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="275.425995" y="-250.000000" />
+		<Point index="1" x="275.425995" y="-224.600006" />
+	</BCPolygon>
+	<BCPolygon ID="36" BC="Divider:Double LowE - Divider (ID:62) U-factor Inside Film" units="mm" MaterialName="Double LowE - Divider" PolygonID="22" EnclosureID="0" UFactorTag="Edge" Emissivity="0.840000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="275.425995" y="-224.600006" />
+		<Point index="1" x="275.425995" y="-161.100006" />
+	</BCPolygon>
+	<BCPolygon ID="37" BC="Divider:Double LowE - Divider (ID:62) U-factor Inside Film" units="mm" MaterialName="Double LowE - Divider" PolygonID="22" EnclosureID="0" UFactorTag="" Emissivity="0.840000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="275.425995" y="-161.100006" />
+		<Point index="1" x="275.425995" y="-74.600006" />
+	</BCPolygon>
+	<BCPolygon ID="38" BC="Adiabatic" units="mm" MaterialName="Double LowE - Divider" PolygonID="22" EnclosureID="0" UFactorTag="" Emissivity="-1.000000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="275.425995" y="-74.600006" />
+		<Point index="1" x="272.455994" y="-74.600006" />
+	</BCPolygon>
+	<BCPolygon ID="39" BC="Adiabatic" units="mm" MaterialName="Double LowE - Divider" PolygonID="21" EnclosureID="0" UFactorTag="" Emissivity="-1.000000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="272.455994" y="-74.600006" />
+		<Point index="1" x="253.000000" y="-74.600006" />
+	</BCPolygon>
+	<BCPolygon ID="40" BC="Adiabatic" units="mm" MaterialName="Double LowE - Divider" PolygonID="20" EnclosureID="0" UFactorTag="" Emissivity="-1.000000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="253.000000" y="-74.600006" />
+		<Point index="1" x="250.000000" y="-74.600006" />
+	</BCPolygon>
+	<BCPolygon ID="41" BC="NFRC 100-2010 Exterior" units="mm" MaterialName="Double LowE - Divider" PolygonID="20" EnclosureID="0" UFactorTag="" Emissivity="0.840000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="250.000000" y="-74.600006" />
+		<Point index="1" x="250.000000" y="-224.600006" />
+	</BCPolygon>
+	<BCPolygon ID="44" BC="NFRC 100-2010 Exterior" units="mm" MaterialName="Double LowE - Divider" PolygonID="20" EnclosureID="0" UFactorTag="SHGC Exterior" Emissivity="0.840000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="250.000000" y="-224.600006" />
+		<Point index="1" x="250.000000" y="-250.000000" />
+	</BCPolygon>
+	<BCPolygon ID="45" BC="NFRC 100-2010 Exterior" units="mm" MaterialName="" PolygonID="29" EnclosureID="0" UFactorTag="" Emissivity="0.840000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="250.000000" y="-250.000000" />
+		<Point index="1" x="250.000000" y="-400.000000" />
+	</BCPolygon>
+</Boundaries>
+<Mesh>
+	<MeshInput>
+		<ModelType>U-factor</ModelType>
+		<Nodes>
+			<Node index="1" x="-1.271300e-02" y="1.627000e-01"/>
+			<Node index="2" x="-9.713000e-03" y="1.627000e-01"/>
+			<Node index="3" x="-1.271300e-02" y="1.586330e-01"/>
+			<Node index="4" x="1.271300e-02" y="1.627000e-01"/>
+			<Node index="5" x="3.557000e-03" y="1.627000e-01"/>
+			<Node index="6" x="-9.713000e-03" y="1.586330e-01"/>
+			<Node index="7" x="-1.271300e-02" y="1.464300e-01"/>
+			<Node index="8" x="9.743000e-03" y="1.627000e-01"/>
+			<Node index="9" x="1.271300e-02" y="1.586330e-01"/>
+			<Node index="10" x="3.557000e-03" y="1.586330e-01"/>
+			<Node index="11" x="-9.713000e-03" y="1.464300e-01"/>
+			<Node index="12" x="-1.271300e-02" y="1.342270e-01"/>
+			<Node index="13" x="9.743000e-03" y="1.586330e-01"/>
+			<Node index="14" x="1.271300e-02" y="1.464300e-01"/>
+			<Node index="15" x="3.557000e-03" y="1.464300e-01"/>
+			<Node index="16" x="-9.713000e-03" y="1.342270e-01"/>
+			<Node index="17" x="-1.271300e-02" y="1.220250e-01"/>
+			<Node index="18" x="9.743000e-03" y="1.464300e-01"/>
+			<Node index="19" x="1.271300e-02" y="1.342270e-01"/>
+			<Node index="20" x="3.557000e-03" y="1.342270e-01"/>
+			<Node index="21" x="-9.713000e-03" y="1.220250e-01"/>
+			<Node index="22" x="-1.271300e-02" y="1.098230e-01"/>
+			<Node index="23" x="9.743000e-03" y="1.342270e-01"/>
+			<Node index="24" x="1.271300e-02" y="1.220250e-01"/>
+			<Node index="25" x="3.557000e-03" y="1.220250e-01"/>
+			<Node index="26" x="-9.713000e-03" y="1.098230e-01"/>
+			<Node index="27" x="-1.271300e-02" y="9.762000e-02"/>
+			<Node index="28" x="9.743000e-03" y="1.220250e-01"/>
+			<Node index="29" x="1.271300e-02" y="1.098230e-01"/>
+			<Node index="30" x="3.557000e-03" y="1.098230e-01"/>
+			<Node index="31" x="-9.713000e-03" y="9.762000e-02"/>
+			<Node index="32" x="-1.271300e-02" y="8.541750e-02"/>
+			<Node index="33" x="9.743000e-03" y="1.098230e-01"/>
+			<Node index="34" x="1.271300e-02" y="9.762000e-02"/>
+			<Node index="35" x="3.557000e-03" y="9.762000e-02"/>
+			<Node index="36" x="-9.713000e-03" y="8.541750e-02"/>
+			<Node index="37" x="-1.271300e-02" y="7.321500e-02"/>
+			<Node index="38" x="9.743000e-03" y="9.762000e-02"/>
+			<Node index="39" x="1.271300e-02" y="8.541750e-02"/>
+			<Node index="40" x="3.557000e-03" y="8.541750e-02"/>
+			<Node index="41" x="-9.713000e-03" y="7.321500e-02"/>
+			<Node index="42" x="-1.271300e-02" y="6.101250e-02"/>
+			<Node index="43" x="9.743000e-03" y="8.541750e-02"/>
+			<Node index="44" x="1.271300e-02" y="7.620000e-02"/>
+			<Node index="45" x="3.557000e-03" y="7.321500e-02"/>
+			<Node index="46" x="-9.713000e-03" y="6.101250e-02"/>
+			<Node index="47" x="-1.271300e-02" y="4.881000e-02"/>
+			<Node index="48" x="1.271300e-02" y="7.321500e-02"/>
+			<Node index="49" x="9.743000e-03" y="7.468970e-02"/>
+			<Node index="50" x="3.557000e-03" y="6.101250e-02"/>
+			<Node index="51" x="-9.713000e-03" y="4.881000e-02"/>
+			<Node index="52" x="-1.271300e-02" y="3.660750e-02"/>
+			<Node index="53" x="1.271300e-02" y="6.101250e-02"/>
+			<Node index="54" x="9.743000e-03" y="6.101250e-02"/>
+			<Node index="55" x="3.557000e-03" y="4.881000e-02"/>
+			<Node index="56" x="-9.713000e-03" y="3.660750e-02"/>
+			<Node index="57" x="-1.271300e-02" y="2.440500e-02"/>
+			<Node index="58" x="1.271300e-02" y="4.881000e-02"/>
+			<Node index="59" x="9.743000e-03" y="4.881000e-02"/>
+			<Node index="60" x="3.557000e-03" y="3.660750e-02"/>
+			<Node index="61" x="-9.713000e-03" y="2.360930e-02"/>
+			<Node index="62" x="-1.271300e-02" y="1.270000e-02"/>
+			<Node index="63" x="1.271300e-02" y="3.660750e-02"/>
+			<Node index="64" x="9.743000e-03" y="3.660750e-02"/>
+			<Node index="65" x="-5.838000e-04" y="2.117600e-02"/>
+			<Node index="66" x="-4.536000e-03" y="1.270000e-02"/>
+			<Node index="67" x="-9.713000e-03" y="1.270000e-02"/>
+			<Node index="68" x="-1.271300e-02" y="0.000000e+00"/>
+			<Node index="69" x="1.271300e-02" y="2.440500e-02"/>
+			<Node index="70" x="-4.536000e-03" y="1.112530e-02"/>
+			<Node index="71" x="3.557000e-03" y="1.270000e-02"/>
+			<Node index="72" x="4.506400e-03" y="1.270000e-02"/>
+			<Node index="73" x="9.743000e-03" y="2.055290e-02"/>
+			<Node index="74" x="-6.110800e-03" y="1.270000e-02"/>
+			<Node index="75" x="-4.536000e-03" y="0.000000e+00"/>
+			<Node index="76" x="-9.713000e-03" y="0.000000e+00"/>
+			<Node index="77" x="-1.271300e-02" y="-1.270000e-02"/>
+			<Node index="78" x="1.271300e-02" y="1.270000e-02"/>
+			<Node index="79" x="4.506400e-03" y="1.112530e-02"/>
+			<Node index="80" x="6.081200e-03" y="1.270000e-02"/>
+			<Node index="81" x="4.506400e-03" y="-4.950120e-04"/>
+			<Node index="82" x="9.743000e-03" y="1.270000e-02"/>
+			<Node index="83" x="-6.110800e-03" y="0.000000e+00"/>
+			<Node index="84" x="-4.536000e-03" y="-1.112520e-02"/>
+			<Node index="85" x="-9.713000e-03" y="-1.270000e-02"/>
+			<Node index="86" x="-1.271300e-02" y="-2.440500e-02"/>
+			<Node index="87" x="1.269820e-02" y="0.000000e+00"/>
+			<Node index="88" x="6.081200e-03" y="0.000000e+00"/>
+			<Node index="89" x="4.506400e-03" y="-1.112520e-02"/>
+			<Node index="90" x="9.743000e-03" y="0.000000e+00"/>
+			<Node index="91" x="-6.110800e-03" y="-1.270000e-02"/>
+			<Node index="92" x="4.506400e-03" y="-1.270000e-02"/>
+			<Node index="93" x="-4.536000e-03" y="-1.270000e-02"/>
+			<Node index="94" x="-9.713000e-03" y="-2.365270e-02"/>
+			<Node index="95" x="-1.271300e-02" y="-3.660750e-02"/>
+			<Node index="96" x="1.268340e-02" y="-1.270000e-02"/>
+			<Node index="97" x="6.081200e-03" y="-1.270000e-02"/>
+			<Node index="98" x="9.743000e-03" y="-1.270000e-02"/>
+			<Node index="99" x="-4.255670e-04" y="-2.123390e-02"/>
+			<Node index="100" x="-9.713000e-03" y="-3.660750e-02"/>
+			<Node index="101" x="-1.271300e-02" y="-4.881000e-02"/>
+			<Node index="102" x="1.268890e-02" y="-2.440500e-02"/>
+			<Node index="103" x="9.743000e-03" y="-2.202740e-02"/>
+			<Node index="104" x="3.557000e-03" y="-3.660750e-02"/>
+			<Node index="105" x="-9.713000e-03" y="-4.881000e-02"/>
+			<Node index="106" x="-1.271300e-02" y="-6.101250e-02"/>
+			<Node index="107" x="1.269450e-02" y="-3.660750e-02"/>
+			<Node index="108" x="9.743000e-03" y="-3.660750e-02"/>
+			<Node index="109" x="3.557000e-03" y="-4.881000e-02"/>
+			<Node index="110" x="-9.713000e-03" y="-6.101250e-02"/>
+			<Node index="111" x="-1.271300e-02" y="-7.321500e-02"/>
+			<Node index="112" x="1.270020e-02" y="-4.881000e-02"/>
+			<Node index="113" x="9.743000e-03" y="-4.881000e-02"/>
+			<Node index="114" x="3.557000e-03" y="-6.101250e-02"/>
+			<Node index="115" x="-9.713000e-03" y="-7.321500e-02"/>
+			<Node index="116" x="-1.271300e-02" y="-8.541750e-02"/>
+			<Node index="117" x="1.270590e-02" y="-6.101250e-02"/>
+			<Node index="118" x="9.743000e-03" y="-6.101250e-02"/>
+			<Node index="119" x="3.557000e-03" y="-7.321500e-02"/>
+			<Node index="120" x="-9.713000e-03" y="-8.541750e-02"/>
+			<Node index="121" x="-1.271300e-02" y="-9.762000e-02"/>
+			<Node index="122" x="1.271160e-02" y="-7.321500e-02"/>
+			<Node index="123" x="9.743000e-03" y="-7.321500e-02"/>
+			<Node index="124" x="3.557000e-03" y="-8.541750e-02"/>
+			<Node index="125" x="-9.713000e-03" y="-9.762000e-02"/>
+			<Node index="126" x="-1.271300e-02" y="-1.098230e-01"/>
+			<Node index="127" x="1.271300e-02" y="-7.620000e-02"/>
+			<Node index="128" x="9.743000e-03" y="-8.541750e-02"/>
+			<Node index="129" x="3.557000e-03" y="-9.762000e-02"/>
+			<Node index="130" x="-9.713000e-03" y="-1.098230e-01"/>
+			<Node index="131" x="-1.271300e-02" y="-1.220250e-01"/>
+			<Node index="132" x="1.271300e-02" y="-8.588410e-02"/>
+			<Node index="133" x="9.743000e-03" y="-9.762000e-02"/>
+			<Node index="134" x="3.557000e-03" y="-1.098230e-01"/>
+			<Node index="135" x="-9.713000e-03" y="-1.220250e-01"/>
+			<Node index="136" x="-1.271300e-02" y="-1.342270e-01"/>
+			<Node index="137" x="1.271300e-02" y="-9.762000e-02"/>
+			<Node index="138" x="9.743000e-03" y="-1.098230e-01"/>
+			<Node index="139" x="3.557000e-03" y="-1.220250e-01"/>
+			<Node index="140" x="-9.713000e-03" y="-1.342270e-01"/>
+			<Node index="141" x="-1.271300e-02" y="-1.464300e-01"/>
+			<Node index="142" x="1.271300e-02" y="-1.098230e-01"/>
+			<Node index="143" x="9.743000e-03" y="-1.220250e-01"/>
+			<Node index="144" x="3.557000e-03" y="-1.342270e-01"/>
+			<Node index="145" x="-9.713000e-03" y="-1.464300e-01"/>
+			<Node index="146" x="-1.271300e-02" y="-1.586330e-01"/>
+			<Node index="147" x="1.271300e-02" y="-1.220250e-01"/>
+			<Node index="148" x="9.743000e-03" y="-1.342270e-01"/>
+			<Node index="149" x="3.557000e-03" y="-1.464300e-01"/>
+			<Node index="150" x="-9.713000e-03" y="-1.586330e-01"/>
+			<Node index="151" x="-1.271300e-02" y="-1.627000e-01"/>
+			<Node index="152" x="1.271300e-02" y="-1.342270e-01"/>
+			<Node index="153" x="9.743000e-03" y="-1.464300e-01"/>
+			<Node index="154" x="3.557000e-03" y="-1.586330e-01"/>
+			<Node index="155" x="-9.713000e-03" y="-1.627000e-01"/>
+			<Node index="156" x="1.271300e-02" y="-1.464300e-01"/>
+			<Node index="157" x="9.743000e-03" y="-1.586330e-01"/>
+			<Node index="158" x="3.557000e-03" y="-1.627000e-01"/>
+			<Node index="159" x="1.271300e-02" y="-1.586330e-01"/>
+			<Node index="160" x="9.743000e-03" y="-1.627000e-01"/>
+			<Node index="161" x="1.271300e-02" y="-1.627000e-01"/>
+			<Node index="162" x="-1.121300e-02" y="4.881000e-02"/>
+			<Node index="163" x="-9.713000e-03" y="4.270870e-02"/>
+			<Node index="164" x="-1.271300e-02" y="4.270870e-02"/>
+			<Node index="165" x="-1.121300e-02" y="3.660750e-02"/>
+			<Node index="166" x="-1.121300e-02" y="4.270870e-02"/>
+			<Node index="167" x="6.650000e-03" y="3.660750e-02"/>
+			<Node index="168" x="9.743000e-03" y="4.270870e-02"/>
+			<Node index="169" x="6.650000e-03" y="4.270870e-02"/>
+			<Node index="170" x="1.122800e-02" y="4.881000e-02"/>
+			<Node index="171" x="-9.713000e-03" y="3.010840e-02"/>
+			<Node index="172" x="-1.271300e-02" y="3.050620e-02"/>
+			<Node index="173" x="-1.121300e-02" y="2.400720e-02"/>
+			<Node index="174" x="-1.121300e-02" y="3.030730e-02"/>
+			<Node index="175" x="-3.078000e-03" y="3.660750e-02"/>
+			<Node index="176" x="-3.078000e-03" y="4.270870e-02"/>
+			<Node index="177" x="-4.895000e-04" y="1.270000e-02"/>
+			<Node index="178" x="1.486600e-03" y="1.693800e-02"/>
+			<Node index="179" x="-2.559900e-03" y="1.693800e-02"/>
+			<Node index="180" x="4.579600e-03" y="2.086440e-02"/>
+			<Node index="181" x="4.031700e-03" y="1.270000e-02"/>
+			<Node index="182" x="7.124700e-03" y="1.662640e-02"/>
+			<Node index="183" x="4.305650e-03" y="1.678220e-02"/>
+			<Node index="184" x="1.486600e-03" y="2.889180e-02"/>
+			<Node index="185" x="9.743000e-03" y="2.858020e-02"/>
+			<Node index="186" x="5.614800e-03" y="2.873600e-02"/>
+			<Node index="187" x="1.271300e-02" y="4.270870e-02"/>
+			<Node index="188" x="1.122800e-02" y="3.660750e-02"/>
+			<Node index="189" x="1.122800e-02" y="4.270870e-02"/>
+			<Node index="190" x="-3.347300e-03" y="1.693800e-02"/>
+			<Node index="191" x="-5.323400e-03" y="1.270000e-02"/>
+			<Node index="192" x="-1.271300e-02" y="1.855250e-02"/>
+			<Node index="193" x="-1.121300e-02" y="1.270000e-02"/>
+			<Node index="194" x="-9.713000e-03" y="1.815470e-02"/>
+			<Node index="195" x="-1.121300e-02" y="1.835360e-02"/>
+			<Node index="196" x="-5.148400e-03" y="2.239270e-02"/>
+			<Node index="197" x="-4.113200e-03" y="2.950010e-02"/>
+			<Node index="198" x="-5.323400e-03" y="1.191270e-02"/>
+			<Node index="199" x="-4.536000e-03" y="1.191270e-02"/>
+			<Node index="200" x="-1.480000e-05" y="1.112530e-02"/>
+			<Node index="201" x="4.031700e-03" y="1.191270e-02"/>
+			<Node index="202" x="-2.521500e-04" y="1.191270e-02"/>
+			<Node index="203" x="4.506400e-03" y="1.191270e-02"/>
+			<Node index="204" x="7.912100e-03" y="1.662640e-02"/>
+			<Node index="205" x="5.293800e-03" y="1.270000e-02"/>
+			<Node index="206" x="1.271300e-02" y="3.050620e-02"/>
+			<Node index="207" x="1.122800e-02" y="2.247890e-02"/>
+			<Node index="208" x="1.122800e-02" y="2.954320e-02"/>
+			<Node index="209" x="-9.713000e-03" y="6.350000e-03"/>
+			<Node index="210" x="-1.271300e-02" y="6.350000e-03"/>
+			<Node index="211" x="-1.121300e-02" y="0.000000e+00"/>
+			<Node index="212" x="-1.121300e-02" y="6.350000e-03"/>
+			<Node index="213" x="-7.911900e-03" y="1.270000e-02"/>
+			<Node index="214" x="-6.530150e-03" y="1.754630e-02"/>
+			<Node index="215" x="-4.536000e-03" y="5.562650e-03"/>
+			<Node index="216" x="-6.110800e-03" y="6.350000e-03"/>
+			<Node index="217" x="-5.323400e-03" y="0.000000e+00"/>
+			<Node index="218" x="-5.323400e-03" y="5.956330e-03"/>
+			<Node index="219" x="7.912100e-03" y="1.270000e-02"/>
+			<Node index="220" x="9.743000e-03" y="1.662640e-02"/>
+			<Node index="221" x="4.506400e-03" y="5.315140e-03"/>
+			<Node index="222" x="-1.480000e-05" y="-2.475060e-04"/>
+			<Node index="223" x="-1.480000e-05" y="5.438900e-03"/>
+			<Node index="224" x="6.081200e-03" y="6.350000e-03"/>
+			<Node index="225" x="5.293800e-03" y="5.562650e-03"/>
+			<Node index="226" x="5.293800e-03" y="9.131320e-03"/>
+			<Node index="227" x="1.271300e-02" y="1.855250e-02"/>
+			<Node index="228" x="1.122800e-02" y="1.270000e-02"/>
+			<Node index="229" x="1.122800e-02" y="1.758950e-02"/>
+			<Node index="230" x="-4.536000e-03" y="-5.562600e-03"/>
+			<Node index="231" x="-6.110800e-03" y="-6.350000e-03"/>
+			<Node index="232" x="-5.323400e-03" y="-1.191260e-02"/>
+			<Node index="233" x="-5.323400e-03" y="-5.956300e-03"/>
+			<Node index="234" x="9.743000e-03" y="6.350000e-03"/>
+			<Node index="235" x="-5.323400e-03" y="-1.270000e-02"/>
+			<Node index="236" x="-1.480000e-05" y="-1.112520e-02"/>
+			<Node index="237" x="4.506400e-03" y="-5.810110e-03"/>
+			<Node index="238" x="-1.480000e-05" y="-5.686350e-03"/>
+			<Node index="239" x="5.293800e-03" y="-2.475060e-04"/>
+			<Node index="240" x="1.270560e-02" y="6.350000e-03"/>
+			<Node index="241" x="1.122060e-02" y="0.000000e+00"/>
+			<Node index="242" x="1.122430e-02" y="6.350000e-03"/>
+			<Node index="243" x="-1.121300e-02" y="-2.402890e-02"/>
+			<Node index="244" x="-9.713000e-03" y="-1.817640e-02"/>
+			<Node index="245" x="-1.121300e-02" y="-1.836440e-02"/>
+			<Node index="246" x="-7.911900e-03" y="-1.270000e-02"/>
+			<Node index="247" x="-7.911900e-03" y="-6.350000e-03"/>
+			<Node index="248" x="7.912100e-03" y="-1.270000e-02"/>
+			<Node index="249" x="9.743000e-03" y="-6.350000e-03"/>
+			<Node index="250" x="6.081200e-03" y="-6.350000e-03"/>
+			<Node index="251" x="-3.268180e-03" y="-1.696700e-02"/>
+			<Node index="252" x="-2.480780e-03" y="-1.696700e-02"/>
+			<Node index="253" x="-1.480000e-05" y="-1.270000e-02"/>
+			<Node index="254" x="5.293800e-03" y="-1.191260e-02"/>
+			<Node index="255" x="5.293800e-03" y="-6.080050e-03"/>
+			<Node index="256" x="1.269080e-02" y="-6.350000e-03"/>
+			<Node index="257" x="1.121320e-02" y="-1.270000e-02"/>
+			<Node index="258" x="1.121690e-02" y="-6.350000e-03"/>
+			<Node index="259" x="-9.713000e-03" y="-3.013010e-02"/>
+			<Node index="260" x="-1.271300e-02" y="-3.050620e-02"/>
+			<Node index="261" x="-1.121300e-02" y="-3.660750e-02"/>
+			<Node index="262" x="-1.121300e-02" y="-3.031820e-02"/>
+			<Node index="263" x="-5.069280e-03" y="-2.244330e-02"/>
+			<Node index="264" x="-6.490590e-03" y="-1.757170e-02"/>
+			<Node index="265" x="7.912100e-03" y="-1.736370e-02"/>
+			<Node index="266" x="9.743000e-03" y="-1.736370e-02"/>
+			<Node index="267" x="2.040420e-03" y="-1.696700e-02"/>
+			<Node index="268" x="5.293800e-03" y="-1.270000e-02"/>
+			<Node index="269" x="1.268610e-02" y="-1.855250e-02"/>
+			<Node index="270" x="1.121590e-02" y="-2.321620e-02"/>
+			<Node index="271" x="1.121460e-02" y="-1.795810e-02"/>
+			<Node index="272" x="-9.713000e-03" y="-4.270870e-02"/>
+			<Node index="273" x="-1.271300e-02" y="-4.270870e-02"/>
+			<Node index="274" x="-1.121300e-02" y="-4.881000e-02"/>
+			<Node index="275" x="-1.121300e-02" y="-4.270870e-02"/>
+			<Node index="276" x="-3.078000e-03" y="-3.660750e-02"/>
+			<Node index="277" x="1.565720e-03" y="-2.892070e-02"/>
+			<Node index="278" x="-4.073640e-03" y="-2.952540e-02"/>
+			<Node index="279" x="4.658720e-03" y="-2.163070e-02"/>
+			<Node index="280" x="4.976260e-03" y="-1.716530e-02"/>
+			<Node index="281" x="1.269170e-02" y="-3.050620e-02"/>
+			<Node index="282" x="9.743000e-03" y="-2.931750e-02"/>
+			<Node index="283" x="1.121880e-02" y="-3.660750e-02"/>
+			<Node index="284" x="1.121740e-02" y="-2.991190e-02"/>
+			<Node index="285" x="-3.078000e-03" y="-4.270870e-02"/>
+			<Node index="286" x="6.650000e-03" y="-3.660750e-02"/>
+			<Node index="287" x="5.654360e-03" y="-2.911910e-02"/>
+			<Node index="288" x="1.269740e-02" y="-4.270870e-02"/>
+			<Node index="289" x="9.743000e-03" y="-4.270870e-02"/>
+			<Node index="290" x="1.122160e-02" y="-4.881000e-02"/>
+			<Node index="291" x="1.122020e-02" y="-4.270870e-02"/>
+			<Node index="292" x="6.650000e-03" y="-4.270870e-02"/>
+			<Node index="293" x="2.754260e-01" y="-4.000000e-01"/>
+			<Node index="294" x="2.754260e-01" y="-7.460000e-02"/>
+		</Nodes>
+		<Elements>
+			<Element index="1" node1="6" node2="2" node3="1" node4="3" materialID="4"/>
+			<Element index="2" node1="10" node2="13" node3="8" node4="5" materialID="5"/>
+			<Element index="3" node1="9" node2="4" node3="8" node4="13" materialID="6"/>
+			<Element index="4" node1="11" node2="6" node3="3" node4="7" materialID="4"/>
+			<Element index="5" node1="6" node2="10" node3="5" node4="2" materialID="5"/>
+			<Element index="6" node1="18" node2="13" node3="10" node4="15" materialID="5"/>
+			<Element index="7" node1="14" node2="9" node3="13" node4="18" materialID="6"/>
+			<Element index="8" node1="16" node2="11" node3="7" node4="12" materialID="4"/>
+			<Element index="9" node1="11" node2="15" node3="10" node4="6" materialID="5"/>
+			<Element index="10" node1="23" node2="18" node3="15" node4="20" materialID="5"/>
+			<Element index="11" node1="19" node2="14" node3="18" node4="23" materialID="6"/>
+			<Element index="12" node1="21" node2="16" node3="12" node4="17" materialID="4"/>
+			<Element index="13" node1="16" node2="20" node3="15" node4="11" materialID="5"/>
+			<Element index="14" node1="28" node2="23" node3="20" node4="25" materialID="5"/>
+			<Element index="15" node1="24" node2="19" node3="23" node4="28" materialID="6"/>
+			<Element index="16" node1="26" node2="21" node3="17" node4="22" materialID="4"/>
+			<Element index="17" node1="21" node2="25" node3="20" node4="16" materialID="5"/>
+			<Element index="18" node1="33" node2="28" node3="25" node4="30" materialID="5"/>
+			<Element index="19" node1="29" node2="24" node3="28" node4="33" materialID="6"/>
+			<Element index="20" node1="31" node2="26" node3="22" node4="27" materialID="4"/>
+			<Element index="21" node1="26" node2="30" node3="25" node4="21" materialID="5"/>
+			<Element index="22" node1="38" node2="33" node3="30" node4="35" materialID="5"/>
+			<Element index="23" node1="34" node2="29" node3="33" node4="38" materialID="6"/>
+			<Element index="24" node1="36" node2="31" node3="27" node4="32" materialID="4"/>
+			<Element index="25" node1="31" node2="35" node3="30" node4="26" materialID="5"/>
+			<Element index="26" node1="43" node2="38" node3="35" node4="40" materialID="5"/>
+			<Element index="27" node1="39" node2="34" node3="38" node4="43" materialID="6"/>
+			<Element index="28" node1="41" node2="36" node3="32" node4="37" materialID="4"/>
+			<Element index="29" node1="36" node2="40" node3="35" node4="31" materialID="5"/>
+			<Element index="30" node1="49" node2="43" node3="40" node4="45" materialID="5"/>
+			<Element index="31" node1="44" node2="39" node3="43" node4="49" materialID="6"/>
+			<Element index="32" node1="46" node2="41" node3="37" node4="42" materialID="4"/>
+			<Element index="33" node1="41" node2="45" node3="40" node4="36" materialID="5"/>
+			<Element index="34" node1="54" node2="49" node3="45" node4="50" materialID="5"/>
+			<Element index="35" node1="44" node2="49" node3="48" node4="48" materialID="6"/>
+			<Element index="36" node1="46" node2="50" node3="45" node4="41" materialID="5"/>
+			<Element index="37" node1="59" node2="54" node3="50" node4="55" materialID="5"/>
+			<Element index="38" node1="53" node2="48" node3="49" node4="54" materialID="6"/>
+			<Element index="39" node1="51" node2="55" node3="50" node4="46" materialID="5"/>
+			<Element index="40" node1="115" node2="110" node3="106" node4="111" materialID="7"/>
+			<Element index="41" node1="110" node2="114" node3="109" node4="105" materialID="8"/>
+			<Element index="42" node1="120" node2="115" node3="111" node4="116" materialID="7"/>
+			<Element index="43" node1="115" node2="119" node3="114" node4="110" materialID="8"/>
+			<Element index="44" node1="118" node2="113" node3="109" node4="114" materialID="8"/>
+			<Element index="45" node1="122" node2="117" node3="118" node4="123" materialID="9"/>
+			<Element index="46" node1="125" node2="120" node3="116" node4="121" materialID="7"/>
+			<Element index="47" node1="120" node2="124" node3="119" node4="115" materialID="8"/>
+			<Element index="48" node1="123" node2="118" node3="114" node4="119" materialID="8"/>
+			<Element index="49" node1="127" node2="122" node3="123" node4="128" materialID="9"/>
+			<Element index="50" node1="130" node2="125" node3="121" node4="126" materialID="7"/>
+			<Element index="51" node1="125" node2="129" node3="124" node4="120" materialID="8"/>
+			<Element index="52" node1="128" node2="123" node3="119" node4="124" materialID="8"/>
+			<Element index="53" node1="127" node2="128" node3="132" node4="132" materialID="9"/>
+			<Element index="54" node1="135" node2="130" node3="126" node4="131" materialID="7"/>
+			<Element index="55" node1="130" node2="134" node3="129" node4="125" materialID="8"/>
+			<Element index="56" node1="133" node2="128" node3="124" node4="129" materialID="8"/>
+			<Element index="57" node1="137" node2="132" node3="128" node4="133" materialID="9"/>
+			<Element index="58" node1="140" node2="135" node3="131" node4="136" materialID="7"/>
+			<Element index="59" node1="135" node2="139" node3="134" node4="130" materialID="8"/>
+			<Element index="60" node1="138" node2="133" node3="129" node4="134" materialID="8"/>
+			<Element index="61" node1="142" node2="137" node3="133" node4="138" materialID="9"/>
+			<Element index="62" node1="145" node2="140" node3="136" node4="141" materialID="7"/>
+			<Element index="63" node1="140" node2="144" node3="139" node4="135" materialID="8"/>
+			<Element index="64" node1="143" node2="138" node3="134" node4="139" materialID="8"/>
+			<Element index="65" node1="147" node2="142" node3="138" node4="143" materialID="9"/>
+			<Element index="66" node1="150" node2="145" node3="141" node4="146" materialID="7"/>
+			<Element index="67" node1="145" node2="149" node3="144" node4="140" materialID="8"/>
+			<Element index="68" node1="148" node2="143" node3="139" node4="144" materialID="8"/>
+			<Element index="69" node1="152" node2="147" node3="143" node4="148" materialID="9"/>
+			<Element index="70" node1="146" node2="151" node3="155" node4="150" materialID="7"/>
+			<Element index="71" node1="150" node2="154" node3="149" node4="145" materialID="8"/>
+			<Element index="72" node1="153" node2="148" node3="144" node4="149" materialID="8"/>
+			<Element index="73" node1="156" node2="152" node3="148" node4="153" materialID="9"/>
+			<Element index="74" node1="155" node2="158" node3="154" node4="150" materialID="8"/>
+			<Element index="75" node1="157" node2="153" node3="149" node4="154" materialID="8"/>
+			<Element index="76" node1="159" node2="156" node3="153" node4="157" materialID="9"/>
+			<Element index="77" node1="158" node2="160" node3="157" node4="154" materialID="8"/>
+			<Element index="78" node1="157" node2="160" node3="161" node4="159" materialID="9"/>
+			<Element index="79" node1="162" node2="51" node3="46" node4="46" materialID="4"/>
+			<Element index="80" node1="56" node2="163" node3="166" node4="165" materialID="4"/>
+			<Element index="81" node1="51" node2="162" node3="166" node4="163" materialID="4"/>
+			<Element index="82" node1="47" node2="164" node3="166" node4="162" materialID="4"/>
+			<Element index="83" node1="52" node2="165" node3="166" node4="164" materialID="4"/>
+			<Element index="84" node1="167" node2="64" node3="168" node4="169" materialID="5"/>
+			<Element index="85" node1="168" node2="59" node3="55" node4="169" materialID="5"/>
+			<Element index="86" node1="60" node2="167" node3="169" node4="55" materialID="5"/>
+			<Element index="87" node1="170" node2="58" node3="53" node4="53" materialID="6"/>
+			<Element index="88" node1="61" node2="171" node3="174" node4="173" materialID="4"/>
+			<Element index="89" node1="56" node2="165" node3="174" node4="171" materialID="4"/>
+			<Element index="90" node1="52" node2="172" node3="174" node4="165" materialID="4"/>
+			<Element index="91" node1="57" node2="173" node3="174" node4="172" materialID="4"/>
+			<Element index="92" node1="163" node2="56" node3="175" node4="176" materialID="5"/>
+			<Element index="93" node1="175" node2="60" node3="55" node4="176" materialID="5"/>
+			<Element index="94" node1="51" node2="163" node3="176" node4="55" materialID="5"/>
+			<Element index="95" node1="71" node2="178" node3="177" node4="177" materialID="5"/>
+			<Element index="96" node1="65" node2="179" node3="178" node4="178" materialID="5"/>
+			<Element index="97" node1="73" node2="180" node3="183" node4="182" materialID="5"/>
+			<Element index="98" node1="65" node2="178" node3="183" node4="180" materialID="5"/>
+			<Element index="99" node1="71" node2="181" node3="183" node4="178" materialID="5"/>
+			<Element index="100" node1="72" node2="182" node3="183" node4="181" materialID="5"/>
+			<Element index="101" node1="60" node2="184" node3="186" node4="167" materialID="5"/>
+			<Element index="102" node1="65" node2="180" node3="186" node4="184" materialID="5"/>
+			<Element index="103" node1="73" node2="185" node3="186" node4="180" materialID="5"/>
+			<Element index="104" node1="64" node2="167" node3="186" node4="185" materialID="5"/>
+			<Element index="105" node1="63" node2="187" node3="189" node4="188" materialID="6"/>
+			<Element index="106" node1="58" node2="170" node3="189" node4="187" materialID="6"/>
+			<Element index="107" node1="59" node2="168" node3="189" node4="170" materialID="6"/>
+			<Element index="108" node1="64" node2="188" node3="189" node4="168" materialID="6"/>
+			<Element index="109" node1="65" node2="190" node3="179" node4="179" materialID="5"/>
+			<Element index="110" node1="74" node2="191" node3="190" node4="190" materialID="5"/>
+			<Element index="111" node1="61" node2="173" node3="195" node4="194" materialID="4"/>
+			<Element index="112" node1="57" node2="192" node3="195" node4="173" materialID="4"/>
+			<Element index="113" node1="62" node2="193" node3="195" node4="192" materialID="4"/>
+			<Element index="114" node1="67" node2="194" node3="195" node4="193" materialID="4"/>
+			<Element index="115" node1="61" node2="196" node3="197" node4="171" materialID="5"/>
+			<Element index="116" node1="65" node2="184" node3="197" node4="196" materialID="5"/>
+			<Element index="117" node1="60" node2="175" node3="197" node4="184" materialID="5"/>
+			<Element index="118" node1="56" node2="171" node3="197" node4="175" materialID="5"/>
+			<Element index="119" node1="74" node2="198" node3="191" node4="191" materialID="1"/>
+			<Element index="120" node1="70" node2="199" node3="198" node4="198" materialID="1"/>
+			<Element index="121" node1="70" node2="200" node3="202" node4="199" materialID="1"/>
+			<Element index="122" node1="79" node2="201" node3="202" node4="200" materialID="1"/>
+			<Element index="123" node1="71" node2="177" node3="202" node4="201" materialID="1"/>
+			<Element index="124" node1="66" node2="199" node3="202" node4="177" materialID="1"/>
+			<Element index="125" node1="79" node2="203" node3="201" node4="201" materialID="1"/>
+			<Element index="126" node1="72" node2="181" node3="203" node4="203" materialID="1"/>
+			<Element index="127" node1="73" node2="182" node3="204" node4="204" materialID="5"/>
+			<Element index="128" node1="72" node2="205" node3="182" node4="182" materialID="5"/>
+			<Element index="129" node1="69" node2="206" node3="208" node4="207" materialID="6"/>
+			<Element index="130" node1="63" node2="188" node3="208" node4="206" materialID="6"/>
+			<Element index="131" node1="64" node2="185" node3="208" node4="188" materialID="6"/>
+			<Element index="132" node1="73" node2="207" node3="208" node4="185" materialID="6"/>
+			<Element index="133" node1="76" node2="209" node3="212" node4="211" materialID="4"/>
+			<Element index="134" node1="67" node2="193" node3="212" node4="209" materialID="4"/>
+			<Element index="135" node1="62" node2="210" node3="212" node4="193" materialID="4"/>
+			<Element index="136" node1="68" node2="211" node3="212" node4="210" materialID="4"/>
+			<Element index="137" node1="65" node2="196" node3="214" node4="190" materialID="5"/>
+			<Element index="138" node1="61" node2="194" node3="214" node4="196" materialID="5"/>
+			<Element index="139" node1="67" node2="213" node3="214" node4="194" materialID="5"/>
+			<Element index="140" node1="74" node2="190" node3="214" node4="213" materialID="5"/>
+			<Element index="141" node1="75" node2="215" node3="218" node4="217" materialID="1"/>
+			<Element index="142" node1="70" node2="198" node3="218" node4="215" materialID="1"/>
+			<Element index="143" node1="74" node2="216" node3="218" node4="198" materialID="1"/>
+			<Element index="144" node1="83" node2="217" node3="218" node4="216" materialID="1"/>
+			<Element index="145" node1="82" node2="220" node3="219" node4="219" materialID="5"/>
+			<Element index="146" node1="73" node2="204" node3="220" node4="220" materialID="5"/>
+			<Element index="147" node1="81" node2="221" node3="223" node4="222" materialID="3"/>
+			<Element index="148" node1="79" node2="200" node3="223" node4="221" materialID="3"/>
+			<Element index="149" node1="70" node2="215" node3="223" node4="200" materialID="3"/>
+			<Element index="150" node1="75" node2="222" node3="223" node4="215" materialID="3"/>
+			<Element index="151" node1="88" node2="224" node3="226" node4="225" materialID="1"/>
+			<Element index="152" node1="80" node2="205" node3="226" node4="224" materialID="1"/>
+			<Element index="153" node1="72" node2="203" node3="226" node4="205" materialID="1"/>
+			<Element index="154" node1="79" node2="225" node3="226" node4="203" materialID="1"/>
+			<Element index="155" node1="78" node2="227" node3="229" node4="228" materialID="6"/>
+			<Element index="156" node1="69" node2="207" node3="229" node4="227" materialID="6"/>
+			<Element index="157" node1="73" node2="220" node3="229" node4="207" materialID="6"/>
+			<Element index="158" node1="82" node2="228" node3="229" node4="220" materialID="6"/>
+			<Element index="159" node1="211" node2="68" node3="77" node4="77" materialID="4"/>
+			<Element index="160" node1="213" node2="67" node3="209" node4="209" materialID="2"/>
+			<Element index="161" node1="216" node2="209" node3="76" node4="83" materialID="2"/>
+			<Element index="162" node1="84" node2="230" node3="233" node4="232" materialID="1"/>
+			<Element index="163" node1="75" node2="217" node3="233" node4="230" materialID="1"/>
+			<Element index="164" node1="83" node2="231" node3="233" node4="217" materialID="1"/>
+			<Element index="165" node1="91" node2="232" node3="233" node4="231" materialID="1"/>
+			<Element index="166" node1="219" node2="80" node3="224" node4="224" materialID="10"/>
+			<Element index="167" node1="234" node2="224" node3="88" node4="90" materialID="10"/>
+			<Element index="168" node1="232" node2="91" node3="235" node4="235" materialID="1"/>
+			<Element index="169" node1="84" node2="232" node3="235" node4="93" materialID="1"/>
+			<Element index="170" node1="75" node2="230" node3="238" node4="222" materialID="3"/>
+			<Element index="171" node1="84" node2="236" node3="238" node4="230" materialID="3"/>
+			<Element index="172" node1="89" node2="237" node3="238" node4="236" materialID="3"/>
+			<Element index="173" node1="81" node2="222" node3="238" node4="237" materialID="3"/>
+			<Element index="174" node1="88" node2="225" node3="239" node4="239" materialID="1"/>
+			<Element index="175" node1="79" node2="221" node3="225" node4="225" materialID="1"/>
+			<Element index="176" node1="87" node2="240" node3="242" node4="241" materialID="6"/>
+			<Element index="177" node1="78" node2="228" node3="242" node4="240" materialID="6"/>
+			<Element index="178" node1="82" node2="234" node3="242" node4="228" materialID="6"/>
+			<Element index="179" node1="90" node2="241" node3="242" node4="234" materialID="6"/>
+			<Element index="180" node1="243" node2="94" node3="244" node4="245" materialID="7"/>
+			<Element index="181" node1="244" node2="85" node3="77" node4="245" materialID="7"/>
+			<Element index="182" node1="86" node2="243" node3="245" node4="77" materialID="7"/>
+			<Element index="183" node1="246" node2="91" node3="231" node4="247" materialID="2"/>
+			<Element index="184" node1="231" node2="83" node3="76" node4="247" materialID="2"/>
+			<Element index="185" node1="85" node2="246" node3="247" node4="76" materialID="2"/>
+			<Element index="186" node1="248" node2="98" node3="249" node4="249" materialID="10"/>
+			<Element index="187" node1="250" node2="249" node3="90" node4="88" materialID="10"/>
+			<Element index="188" node1="91" node2="251" node3="235" node4="235" materialID="8"/>
+			<Element index="189" node1="99" node2="252" node3="251" node4="251" materialID="8"/>
+			<Element index="190" node1="236" node2="84" node3="93" node4="253" materialID="1"/>
+			<Element index="191" node1="89" node2="236" node3="253" node4="92" materialID="1"/>
+			<Element index="192" node1="97" node2="250" node3="255" node4="254" materialID="1"/>
+			<Element index="193" node1="88" node2="239" node3="255" node4="250" materialID="1"/>
+			<Element index="194" node1="81" node2="237" node3="255" node4="239" materialID="1"/>
+			<Element index="195" node1="89" node2="254" node3="255" node4="237" materialID="1"/>
+			<Element index="196" node1="96" node2="256" node3="258" node4="257" materialID="6"/>
+			<Element index="197" node1="87" node2="241" node3="258" node4="256" materialID="6"/>
+			<Element index="198" node1="90" node2="249" node3="258" node4="241" materialID="6"/>
+			<Element index="199" node1="98" node2="257" node3="258" node4="249" materialID="6"/>
+			<Element index="200" node1="100" node2="259" node3="262" node4="261" materialID="7"/>
+			<Element index="201" node1="94" node2="243" node3="262" node4="259" materialID="7"/>
+			<Element index="202" node1="86" node2="260" node3="262" node4="243" materialID="7"/>
+			<Element index="203" node1="95" node2="261" node3="262" node4="260" materialID="7"/>
+			<Element index="204" node1="91" node2="246" node3="264" node4="251" materialID="8"/>
+			<Element index="205" node1="85" node2="244" node3="264" node4="246" materialID="8"/>
+			<Element index="206" node1="94" node2="263" node3="264" node4="244" materialID="8"/>
+			<Element index="207" node1="99" node2="251" node3="264" node4="263" materialID="8"/>
+			<Element index="208" node1="103" node2="266" node3="265" node4="265" materialID="8"/>
+			<Element index="209" node1="98" node2="248" node3="266" node4="266" materialID="8"/>
+			<Element index="210" node1="99" node2="267" node3="252" node4="252" materialID="8"/>
+			<Element index="211" node1="92" node2="253" node3="267" node4="267" materialID="8"/>
+			<Element index="212" node1="268" node2="97" node3="254" node4="254" materialID="1"/>
+			<Element index="213" node1="92" node2="268" node3="254" node4="89" materialID="1"/>
+			<Element index="214" node1="102" node2="269" node3="271" node4="270" materialID="9"/>
+			<Element index="215" node1="96" node2="257" node3="271" node4="269" materialID="9"/>
+			<Element index="216" node1="98" node2="266" node3="271" node4="257" materialID="9"/>
+			<Element index="217" node1="103" node2="270" node3="271" node4="266" materialID="9"/>
+			<Element index="218" node1="105" node2="272" node3="275" node4="274" materialID="7"/>
+			<Element index="219" node1="100" node2="261" node3="275" node4="272" materialID="7"/>
+			<Element index="220" node1="95" node2="273" node3="275" node4="261" materialID="7"/>
+			<Element index="221" node1="101" node2="274" node3="275" node4="273" materialID="7"/>
+			<Element index="222" node1="100" node2="276" node3="278" node4="259" materialID="8"/>
+			<Element index="223" node1="104" node2="277" node3="278" node4="276" materialID="8"/>
+			<Element index="224" node1="99" node2="263" node3="278" node4="277" materialID="8"/>
+			<Element index="225" node1="94" node2="259" node3="278" node4="263" materialID="8"/>
+			<Element index="226" node1="97" node2="268" node3="280" node4="265" materialID="8"/>
+			<Element index="227" node1="92" node2="267" node3="280" node4="268" materialID="8"/>
+			<Element index="228" node1="99" node2="279" node3="280" node4="267" materialID="8"/>
+			<Element index="229" node1="103" node2="265" node3="280" node4="279" materialID="8"/>
+			<Element index="230" node1="107" node2="281" node3="284" node4="283" materialID="9"/>
+			<Element index="231" node1="102" node2="270" node3="284" node4="281" materialID="9"/>
+			<Element index="232" node1="103" node2="282" node3="284" node4="270" materialID="9"/>
+			<Element index="233" node1="108" node2="283" node3="284" node4="282" materialID="9"/>
+			<Element index="234" node1="274" node2="101" node3="106" node4="106" materialID="7"/>
+			<Element index="235" node1="276" node2="100" node3="272" node4="285" materialID="8"/>
+			<Element index="236" node1="272" node2="105" node3="109" node4="285" materialID="8"/>
+			<Element index="237" node1="104" node2="276" node3="285" node4="109" materialID="8"/>
+			<Element index="238" node1="108" node2="282" node3="287" node4="286" materialID="8"/>
+			<Element index="239" node1="103" node2="279" node3="287" node4="282" materialID="8"/>
+			<Element index="240" node1="99" node2="277" node3="287" node4="279" materialID="8"/>
+			<Element index="241" node1="104" node2="286" node3="287" node4="277" materialID="8"/>
+			<Element index="242" node1="112" node2="288" node3="291" node4="290" materialID="9"/>
+			<Element index="243" node1="107" node2="283" node3="291" node4="288" materialID="9"/>
+			<Element index="244" node1="108" node2="289" node3="291" node4="283" materialID="9"/>
+			<Element index="245" node1="113" node2="290" node3="291" node4="289" materialID="9"/>
+			<Element index="246" node1="289" node2="108" node3="286" node4="292" materialID="8"/>
+			<Element index="247" node1="286" node2="104" node3="109" node4="292" materialID="8"/>
+			<Element index="248" node1="113" node2="289" node3="292" node4="109" materialID="8"/>
+			<Element index="249" node1="290" node2="113" node3="118" node4="118" materialID="9"/>
+			<Element index="250" node1="42" node2="47" node3="162" node4="46" materialID="4"/>
+			<Element index="251" node1="54" node2="59" node3="170" node4="53" materialID="6"/>
+			<Element index="252" node1="179" node2="66" node3="177" node4="178" materialID="5"/>
+			<Element index="253" node1="191" node2="66" node3="179" node4="190" materialID="5"/>
+			<Element index="254" node1="199" node2="66" node3="191" node4="198" materialID="1"/>
+			<Element index="255" node1="181" node2="71" node3="201" node4="203" materialID="1"/>
+			<Element index="256" node1="205" node2="80" node3="204" node4="182" materialID="5"/>
+			<Element index="257" node1="204" node2="80" node3="219" node4="220" materialID="5"/>
+			<Element index="258" node1="85" node2="76" node3="211" node4="77" materialID="4"/>
+			<Element index="259" node1="216" node2="74" node3="213" node4="209" materialID="2"/>
+			<Element index="260" node1="234" node2="82" node3="219" node4="224" materialID="10"/>
+			<Element index="261" node1="221" node2="81" node3="239" node4="225" materialID="1"/>
+			<Element index="262" node1="250" node2="97" node3="248" node4="249" materialID="10"/>
+			<Element index="263" node1="252" node2="93" node3="235" node4="251" materialID="8"/>
+			<Element index="264" node1="248" node2="97" node3="265" node4="266" materialID="8"/>
+			<Element index="265" node1="253" node2="93" node3="252" node4="267" materialID="8"/>
+			<Element index="266" node1="110" node2="105" node3="274" node4="106" materialID="7"/>
+			<Element index="267" node1="117" node2="112" node3="290" node4="118" materialID="9"/>
+		</Elements>
+		<BCInputs>
+			<TemperatureBCInput node="293" temperature="21.000000" label="43" />
+			<TemperatureBCInput node="294" temperature="21.000000" label="43" />
+			<ConvectionBCInput surface="1" node1="2" node2="1" filmCoefficient="0.000000" temperature1="0.000000" temperature2="0.000000" label="22" />
+			<ConvectionBCInput surface="2" node1="1" node2="3" filmCoefficient="26.000000" temperature1="-18.000000" temperature2="-18.000000" label="23" />
+			<ConvectionBCInput surface="3" node1="3" node2="7" filmCoefficient="26.000000" temperature1="-18.000000" temperature2="-18.000000" label="23" />
+			<ConvectionBCInput surface="4" node1="7" node2="12" filmCoefficient="26.000000" temperature1="-18.000000" temperature2="-18.000000" label="23" />
+			<ConvectionBCInput surface="5" node1="12" node2="17" filmCoefficient="26.000000" temperature1="-18.000000" temperature2="-18.000000" label="23" />
+			<ConvectionBCInput surface="6" node1="17" node2="22" filmCoefficient="26.000000" temperature1="-18.000000" temperature2="-18.000000" label="23" />
+			<ConvectionBCInput surface="7" node1="22" node2="27" filmCoefficient="26.000000" temperature1="-18.000000" temperature2="-18.000000" label="23" />
+			<ConvectionBCInput surface="8" node1="27" node2="32" filmCoefficient="26.000000" temperature1="-18.000000" temperature2="-18.000000" label="23" />
+			<ConvectionBCInput surface="9" node1="32" node2="37" filmCoefficient="26.000000" temperature1="-18.000000" temperature2="-18.000000" label="23" />
+			<ConvectionBCInput surface="10" node1="37" node2="42" filmCoefficient="26.000000" temperature1="-18.000000" temperature2="-18.000000" label="23" />
+			<ConvectionBCInput surface="11" node1="42" node2="47" filmCoefficient="26.000000" temperature1="-18.000000" temperature2="-18.000000" label="23" />
+			<ConvectionBCInput surface="12" node1="68" node2="77" filmCoefficient="26.000000" temperature1="-18.000000" temperature2="-18.000000" label="24" />
+			<ConvectionBCInput surface="13" node1="8" node2="5" filmCoefficient="0.000000" temperature1="0.000000" temperature2="0.000000" label="27" />
+			<ConvectionBCInput surface="14" node1="5" node2="2" filmCoefficient="0.000000" temperature1="0.000000" temperature2="0.000000" label="27" />
+			<ConvectionBCInput surface="15" node1="58" node2="53" filmCoefficient="2.453000" temperature1="21.000000" temperature2="21.000000" label="30" />
+			<ConvectionBCInput surface="16" node1="53" node2="48" filmCoefficient="2.453000" temperature1="21.000000" temperature2="21.000000" label="30" />
+			<ConvectionBCInput surface="17" node1="48" node2="44" filmCoefficient="2.453000" temperature1="21.000000" temperature2="21.000000" label="30" />
+			<ConvectionBCInput surface="18" node1="44" node2="39" filmCoefficient="2.453000" temperature1="21.000000" temperature2="21.000000" label="31" />
+			<ConvectionBCInput surface="19" node1="39" node2="34" filmCoefficient="2.453000" temperature1="21.000000" temperature2="21.000000" label="31" />
+			<ConvectionBCInput surface="20" node1="34" node2="29" filmCoefficient="2.453000" temperature1="21.000000" temperature2="21.000000" label="31" />
+			<ConvectionBCInput surface="21" node1="29" node2="24" filmCoefficient="2.453000" temperature1="21.000000" temperature2="21.000000" label="31" />
+			<ConvectionBCInput surface="22" node1="24" node2="19" filmCoefficient="2.453000" temperature1="21.000000" temperature2="21.000000" label="31" />
+			<ConvectionBCInput surface="23" node1="19" node2="14" filmCoefficient="2.453000" temperature1="21.000000" temperature2="21.000000" label="31" />
+			<ConvectionBCInput surface="24" node1="14" node2="9" filmCoefficient="2.453000" temperature1="21.000000" temperature2="21.000000" label="31" />
+			<ConvectionBCInput surface="25" node1="9" node2="4" filmCoefficient="2.453000" temperature1="21.000000" temperature2="21.000000" label="31" />
+			<ConvectionBCInput surface="26" node1="4" node2="8" filmCoefficient="0.000000" temperature1="0.000000" temperature2="0.000000" label="32" />
+			<ConvectionBCInput surface="27" node1="77" node2="86" filmCoefficient="26.000000" temperature1="-18.000000" temperature2="-18.000000" label="34" />
+			<ConvectionBCInput surface="28" node1="101" node2="106" filmCoefficient="26.000000" temperature1="-18.000000" temperature2="-18.000000" label="34" />
+			<ConvectionBCInput surface="29" node1="106" node2="111" filmCoefficient="26.000000" temperature1="-18.000000" temperature2="-18.000000" label="34" />
+			<ConvectionBCInput surface="30" node1="111" node2="116" filmCoefficient="26.000000" temperature1="-18.000000" temperature2="-18.000000" label="34" />
+			<ConvectionBCInput surface="31" node1="116" node2="121" filmCoefficient="26.000000" temperature1="-18.000000" temperature2="-18.000000" label="34" />
+			<ConvectionBCInput surface="32" node1="121" node2="126" filmCoefficient="26.000000" temperature1="-18.000000" temperature2="-18.000000" label="34" />
+			<ConvectionBCInput surface="33" node1="126" node2="131" filmCoefficient="26.000000" temperature1="-18.000000" temperature2="-18.000000" label="34" />
+			<ConvectionBCInput surface="34" node1="131" node2="136" filmCoefficient="26.000000" temperature1="-18.000000" temperature2="-18.000000" label="34" />
+			<ConvectionBCInput surface="35" node1="136" node2="141" filmCoefficient="26.000000" temperature1="-18.000000" temperature2="-18.000000" label="34" />
+			<ConvectionBCInput surface="36" node1="141" node2="146" filmCoefficient="26.000000" temperature1="-18.000000" temperature2="-18.000000" label="34" />
+			<ConvectionBCInput surface="37" node1="146" node2="151" filmCoefficient="26.000000" temperature1="-18.000000" temperature2="-18.000000" label="34" />
+			<ConvectionBCInput surface="38" node1="151" node2="155" filmCoefficient="0.000000" temperature1="0.000000" temperature2="0.000000" label="35" />
+			<ConvectionBCInput surface="39" node1="155" node2="158" filmCoefficient="0.000000" temperature1="0.000000" temperature2="0.000000" label="37" />
+			<ConvectionBCInput surface="40" node1="158" node2="160" filmCoefficient="0.000000" temperature1="0.000000" temperature2="0.000000" label="37" />
+			<ConvectionBCInput surface="41" node1="160" node2="161" filmCoefficient="0.000000" temperature1="0.000000" temperature2="0.000000" label="40" />
+			<ConvectionBCInput surface="42" node1="161" node2="159" filmCoefficient="2.453000" temperature1="21.000000" temperature2="21.000000" label="41" />
+			<ConvectionBCInput surface="43" node1="159" node2="156" filmCoefficient="2.453000" temperature1="21.000000" temperature2="21.000000" label="41" />
+			<ConvectionBCInput surface="44" node1="156" node2="152" filmCoefficient="2.453000" temperature1="21.000000" temperature2="21.000000" label="41" />
+			<ConvectionBCInput surface="45" node1="152" node2="147" filmCoefficient="2.453000" temperature1="21.000000" temperature2="21.000000" label="41" />
+			<ConvectionBCInput surface="46" node1="147" node2="142" filmCoefficient="2.453000" temperature1="21.000000" temperature2="21.000000" label="41" />
+			<ConvectionBCInput surface="47" node1="142" node2="137" filmCoefficient="2.453000" temperature1="21.000000" temperature2="21.000000" label="41" />
+			<ConvectionBCInput surface="48" node1="137" node2="132" filmCoefficient="2.453000" temperature1="21.000000" temperature2="21.000000" label="41" />
+			<ConvectionBCInput surface="49" node1="132" node2="127" filmCoefficient="2.453000" temperature1="21.000000" temperature2="21.000000" label="41" />
+			<ConvectionBCInput surface="50" node1="127" node2="122" filmCoefficient="2.453000" temperature1="21.000000" temperature2="21.000000" label="42" />
+			<ConvectionBCInput surface="51" node1="122" node2="117" filmCoefficient="2.453000" temperature1="21.000000" temperature2="21.000000" label="42" />
+			<ConvectionBCInput surface="52" node1="117" node2="112" filmCoefficient="2.453000" temperature1="21.000000" temperature2="21.000000" label="42" />
+			<ConvectionBCInput surface="53" node1="47" node2="164" filmCoefficient="26.000000" temperature1="-18.000000" temperature2="-18.000000" label="23" />
+			<ConvectionBCInput surface="54" node1="164" node2="52" filmCoefficient="26.000000" temperature1="-18.000000" temperature2="-18.000000" label="23" />
+			<ConvectionBCInput surface="55" node1="52" node2="172" filmCoefficient="26.000000" temperature1="-18.000000" temperature2="-18.000000" label="23" />
+			<ConvectionBCInput surface="56" node1="172" node2="57" filmCoefficient="26.000000" temperature1="-18.000000" temperature2="-18.000000" label="23" />
+			<ConvectionBCInput surface="57" node1="63" node2="187" filmCoefficient="2.453000" temperature1="21.000000" temperature2="21.000000" label="30" />
+			<ConvectionBCInput surface="58" node1="187" node2="58" filmCoefficient="2.453000" temperature1="21.000000" temperature2="21.000000" label="30" />
+			<ConvectionBCInput surface="59" node1="57" node2="192" filmCoefficient="26.000000" temperature1="-18.000000" temperature2="-18.000000" label="23" />
+			<ConvectionBCInput surface="60" node1="192" node2="62" filmCoefficient="26.000000" temperature1="-18.000000" temperature2="-18.000000" label="23" />
+			<ConvectionBCInput surface="61" node1="69" node2="206" filmCoefficient="2.453000" temperature1="21.000000" temperature2="21.000000" label="30" />
+			<ConvectionBCInput surface="62" node1="206" node2="63" filmCoefficient="2.453000" temperature1="21.000000" temperature2="21.000000" label="30" />
+			<ConvectionBCInput surface="63" node1="62" node2="210" filmCoefficient="26.000000" temperature1="-18.000000" temperature2="-18.000000" label="24" />
+			<ConvectionBCInput surface="64" node1="210" node2="68" filmCoefficient="26.000000" temperature1="-18.000000" temperature2="-18.000000" label="24" />
+			<ConvectionBCInput surface="65" node1="78" node2="227" filmCoefficient="2.453000" temperature1="21.000000" temperature2="21.000000" label="30" />
+			<ConvectionBCInput surface="66" node1="227" node2="69" filmCoefficient="2.453000" temperature1="21.000000" temperature2="21.000000" label="30" />
+			<ConvectionBCInput surface="67" node1="87" node2="240" filmCoefficient="2.453000" temperature1="21.000000" temperature2="21.000000" label="29" />
+			<ConvectionBCInput surface="68" node1="240" node2="78" filmCoefficient="2.453000" temperature1="21.000000" temperature2="21.000000" label="29" />
+			<ConvectionBCInput surface="69" node1="96" node2="256" filmCoefficient="2.453000" temperature1="21.000000" temperature2="21.000000" label="29" />
+			<ConvectionBCInput surface="70" node1="256" node2="87" filmCoefficient="2.453000" temperature1="21.000000" temperature2="21.000000" label="29" />
+			<ConvectionBCInput surface="71" node1="86" node2="260" filmCoefficient="26.000000" temperature1="-18.000000" temperature2="-18.000000" label="34" />
+			<ConvectionBCInput surface="72" node1="260" node2="95" filmCoefficient="26.000000" temperature1="-18.000000" temperature2="-18.000000" label="34" />
+			<ConvectionBCInput surface="73" node1="102" node2="269" filmCoefficient="2.453000" temperature1="21.000000" temperature2="21.000000" label="42" />
+			<ConvectionBCInput surface="74" node1="269" node2="96" filmCoefficient="2.453000" temperature1="21.000000" temperature2="21.000000" label="42" />
+			<ConvectionBCInput surface="75" node1="95" node2="273" filmCoefficient="26.000000" temperature1="-18.000000" temperature2="-18.000000" label="34" />
+			<ConvectionBCInput surface="76" node1="273" node2="101" filmCoefficient="26.000000" temperature1="-18.000000" temperature2="-18.000000" label="34" />
+			<ConvectionBCInput surface="77" node1="107" node2="281" filmCoefficient="2.453000" temperature1="21.000000" temperature2="21.000000" label="42" />
+			<ConvectionBCInput surface="78" node1="281" node2="102" filmCoefficient="2.453000" temperature1="21.000000" temperature2="21.000000" label="42" />
+			<ConvectionBCInput surface="79" node1="112" node2="288" filmCoefficient="2.453000" temperature1="21.000000" temperature2="21.000000" label="42" />
+			<ConvectionBCInput surface="80" node1="288" node2="107" filmCoefficient="2.453000" temperature1="21.000000" temperature2="21.000000" label="42" />
+			<RadiationBCInput surface="1" node1="1" node2="3" f="0.000000" temperature1="-18.000000" temperature2="-18.000000" />
+			<RadiationBCInput surface="2" node1="3" node2="7" f="0.000000" temperature1="-18.000000" temperature2="-18.000000" />
+			<RadiationBCInput surface="3" node1="7" node2="12" f="0.000000" temperature1="-18.000000" temperature2="-18.000000" />
+			<RadiationBCInput surface="4" node1="12" node2="17" f="0.000000" temperature1="-18.000000" temperature2="-18.000000" />
+			<RadiationBCInput surface="5" node1="17" node2="22" f="0.000000" temperature1="-18.000000" temperature2="-18.000000" />
+			<RadiationBCInput surface="6" node1="22" node2="27" f="0.000000" temperature1="-18.000000" temperature2="-18.000000" />
+			<RadiationBCInput surface="7" node1="27" node2="32" f="0.000000" temperature1="-18.000000" temperature2="-18.000000" />
+			<RadiationBCInput surface="8" node1="32" node2="37" f="0.000000" temperature1="-18.000000" temperature2="-18.000000" />
+			<RadiationBCInput surface="9" node1="37" node2="42" f="0.000000" temperature1="-18.000000" temperature2="-18.000000" />
+			<RadiationBCInput surface="10" node1="42" node2="47" f="0.000000" temperature1="-18.000000" temperature2="-18.000000" />
+			<RadiationBCInput surface="11" node1="68" node2="77" f="0.000000" temperature1="-18.000000" temperature2="-18.000000" />
+			<RadiationBCInput surface="12" node1="77" node2="86" f="0.000000" temperature1="-18.000000" temperature2="-18.000000" />
+			<RadiationBCInput surface="13" node1="101" node2="106" f="0.000000" temperature1="-18.000000" temperature2="-18.000000" />
+			<RadiationBCInput surface="14" node1="106" node2="111" f="0.000000" temperature1="-18.000000" temperature2="-18.000000" />
+			<RadiationBCInput surface="15" node1="111" node2="116" f="0.000000" temperature1="-18.000000" temperature2="-18.000000" />
+			<RadiationBCInput surface="16" node1="116" node2="121" f="0.000000" temperature1="-18.000000" temperature2="-18.000000" />
+			<RadiationBCInput surface="17" node1="121" node2="126" f="0.000000" temperature1="-18.000000" temperature2="-18.000000" />
+			<RadiationBCInput surface="18" node1="126" node2="131" f="0.000000" temperature1="-18.000000" temperature2="-18.000000" />
+			<RadiationBCInput surface="19" node1="131" node2="136" f="0.000000" temperature1="-18.000000" temperature2="-18.000000" />
+			<RadiationBCInput surface="20" node1="136" node2="141" f="0.000000" temperature1="-18.000000" temperature2="-18.000000" />
+			<RadiationBCInput surface="21" node1="141" node2="146" f="0.000000" temperature1="-18.000000" temperature2="-18.000000" />
+			<RadiationBCInput surface="22" node1="146" node2="151" f="0.000000" temperature1="-18.000000" temperature2="-18.000000" />
+			<RadiationBCInput surface="23" node1="47" node2="164" f="0.000000" temperature1="-18.000000" temperature2="-18.000000" />
+			<RadiationBCInput surface="24" node1="164" node2="52" f="0.000000" temperature1="-18.000000" temperature2="-18.000000" />
+			<RadiationBCInput surface="25" node1="52" node2="172" f="0.000000" temperature1="-18.000000" temperature2="-18.000000" />
+			<RadiationBCInput surface="26" node1="172" node2="57" f="0.000000" temperature1="-18.000000" temperature2="-18.000000" />
+			<RadiationBCInput surface="27" node1="57" node2="192" f="0.000000" temperature1="-18.000000" temperature2="-18.000000" />
+			<RadiationBCInput surface="28" node1="192" node2="62" f="0.000000" temperature1="-18.000000" temperature2="-18.000000" />
+			<RadiationBCInput surface="29" node1="62" node2="210" f="0.000000" temperature1="-18.000000" temperature2="-18.000000" />
+			<RadiationBCInput surface="30" node1="210" node2="68" f="0.000000" temperature1="-18.000000" temperature2="-18.000000" />
+			<RadiationBCInput surface="31" node1="86" node2="260" f="0.000000" temperature1="-18.000000" temperature2="-18.000000" />
+			<RadiationBCInput surface="32" node1="260" node2="95" f="0.000000" temperature1="-18.000000" temperature2="-18.000000" />
+			<RadiationBCInput surface="33" node1="95" node2="273" f="0.000000" temperature1="-18.000000" temperature2="-18.000000" />
+			<RadiationBCInput surface="34" node1="273" node2="101" f="0.000000" temperature1="-18.000000" temperature2="-18.000000" />
+			<RadiationEnclosureBCInput surface="1" node1="58" node2="53" convCode="0" emissivity="0.840000" temperature="0.000000" />
+			<RadiationEnclosureBCInput surface="2" node1="53" node2="48" convCode="0" emissivity="0.840000" temperature="0.000000" />
+			<RadiationEnclosureBCInput surface="3" node1="48" node2="44" convCode="0" emissivity="0.840000" temperature="0.000000" />
+			<RadiationEnclosureBCInput surface="4" node1="44" node2="39" convCode="0" emissivity="0.840000" temperature="0.000000" />
+			<RadiationEnclosureBCInput surface="5" node1="39" node2="34" convCode="0" emissivity="0.840000" temperature="0.000000" />
+			<RadiationEnclosureBCInput surface="6" node1="34" node2="29" convCode="0" emissivity="0.840000" temperature="0.000000" />
+			<RadiationEnclosureBCInput surface="7" node1="29" node2="24" convCode="0" emissivity="0.840000" temperature="0.000000" />
+			<RadiationEnclosureBCInput surface="8" node1="24" node2="19" convCode="0" emissivity="0.840000" temperature="0.000000" />
+			<RadiationEnclosureBCInput surface="9" node1="19" node2="14" convCode="0" emissivity="0.840000" temperature="0.000000" />
+			<RadiationEnclosureBCInput surface="10" node1="14" node2="9" convCode="0" emissivity="0.840000" temperature="0.000000" />
+			<RadiationEnclosureBCInput surface="11" node1="9" node2="4" convCode="0" emissivity="0.840000" temperature="0.000000" />
+			<RadiationEnclosureBCInput surface="12" node1="161" node2="159" convCode="0" emissivity="0.840000" temperature="0.000000" />
+			<RadiationEnclosureBCInput surface="13" node1="159" node2="156" convCode="0" emissivity="0.840000" temperature="0.000000" />
+			<RadiationEnclosureBCInput surface="14" node1="156" node2="152" convCode="0" emissivity="0.840000" temperature="0.000000" />
+			<RadiationEnclosureBCInput surface="15" node1="152" node2="147" convCode="0" emissivity="0.840000" temperature="0.000000" />
+			<RadiationEnclosureBCInput surface="16" node1="147" node2="142" convCode="0" emissivity="0.840000" temperature="0.000000" />
+			<RadiationEnclosureBCInput surface="17" node1="142" node2="137" convCode="0" emissivity="0.840000" temperature="0.000000" />
+			<RadiationEnclosureBCInput surface="18" node1="137" node2="132" convCode="0" emissivity="0.840000" temperature="0.000000" />
+			<RadiationEnclosureBCInput surface="19" node1="132" node2="127" convCode="0" emissivity="0.840000" temperature="0.000000" />
+			<RadiationEnclosureBCInput surface="20" node1="127" node2="122" convCode="0" emissivity="0.840000" temperature="0.000000" />
+			<RadiationEnclosureBCInput surface="21" node1="122" node2="117" convCode="0" emissivity="0.840000" temperature="0.000000" />
+			<RadiationEnclosureBCInput surface="22" node1="117" node2="112" convCode="0" emissivity="0.840000" temperature="0.000000" />
+			<RadiationEnclosureBCInput surface="23" node1="63" node2="187" convCode="0" emissivity="0.840000" temperature="0.000000" />
+			<RadiationEnclosureBCInput surface="24" node1="187" node2="58" convCode="0" emissivity="0.840000" temperature="0.000000" />
+			<RadiationEnclosureBCInput surface="25" node1="69" node2="206" convCode="0" emissivity="0.840000" temperature="0.000000" />
+			<RadiationEnclosureBCInput surface="26" node1="206" node2="63" convCode="0" emissivity="0.840000" temperature="0.000000" />
+			<RadiationEnclosureBCInput surface="27" node1="78" node2="227" convCode="0" emissivity="0.840000" temperature="0.000000" />
+			<RadiationEnclosureBCInput surface="28" node1="227" node2="69" convCode="0" emissivity="0.840000" temperature="0.000000" />
+			<RadiationEnclosureBCInput surface="29" node1="87" node2="240" convCode="0" emissivity="0.840000" temperature="0.000000" />
+			<RadiationEnclosureBCInput surface="30" node1="240" node2="78" convCode="0" emissivity="0.840000" temperature="0.000000" />
+			<RadiationEnclosureBCInput surface="31" node1="96" node2="256" convCode="0" emissivity="0.840000" temperature="0.000000" />
+			<RadiationEnclosureBCInput surface="32" node1="256" node2="87" convCode="0" emissivity="0.840000" temperature="0.000000" />
+			<RadiationEnclosureBCInput surface="33" node1="102" node2="269" convCode="0" emissivity="0.840000" temperature="0.000000" />
+			<RadiationEnclosureBCInput surface="34" node1="269" node2="96" convCode="0" emissivity="0.840000" temperature="0.000000" />
+			<RadiationEnclosureBCInput surface="35" node1="107" node2="281" convCode="0" emissivity="0.840000" temperature="0.000000" />
+			<RadiationEnclosureBCInput surface="36" node1="281" node2="102" convCode="0" emissivity="0.840000" temperature="0.000000" />
+			<RadiationEnclosureBCInput surface="37" node1="112" node2="288" convCode="0" emissivity="0.840000" temperature="0.000000" />
+			<RadiationEnclosureBCInput surface="38" node1="288" node2="107" convCode="0" emissivity="0.840000" temperature="0.000000" />
+			<RadiationEnclosureBCInput surface="39" node1="293" node2="294" convCode="1" emissivity="1.000000" temperature="21.000000" />
+		</BCInputs>
+	</MeshInput>
+</Mesh>
+<Results>
+	<Case>
+		<ModelType>U-factor</ModelType>
+		<U-factors>
+			<Tag>SHGC Exterior</Tag>
+			<DeltaT units="C" value="39.000000" />
+			<Projection>
+				<Length-type>Total length</Length-type>
+				<Length units="mm" value="25.399994" />
+				<U-factor units="W/m2-K" value="2.119433" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected X</Length-type>
+				<Length units="mm" value="0.000000" />
+				<U-factor value="NA" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected Y</Length-type>
+				<Length units="mm" value="25.399994" />
+				<U-factor units="W/m2-K" value="2.119433" />
+			</Projection>
+			<Projection>
+				<Length-type>Custom length</Length-type>
+				<Length units="mm" value="0.000000" />
+				<U-factor value="NA" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected in glass plane</Length-type>
+				<Length units="mm" value="25.399994" />
+				<U-factor units="W/m2-K" value="2.119433" />
+			</Projection>
+			<Projection>
+				<Length-type>Custom rotation</Length-type>
+				<Length units="mm" value="0.000000" />
+				<ProjectionAngle>1.570796</ProjectionAngle>
+				<U-factor value="NA" />
+			</Projection>
+		</U-factors>
+		<U-factors>
+			<Tag>Frame</Tag>
+			<DeltaT units="C" value="39.000000" />
+			<Projection>
+				<Length-type>Total length</Length-type>
+				<Length units="mm" value="25.400011" />
+				<U-factor units="W/m2-K" value="1.913143" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected X</Length-type>
+				<Length units="mm" value="0.029602" />
+				<U-factor units="W/m2-K" value="1641.570068" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected Y</Length-type>
+				<Length units="mm" value="25.399994" />
+				<U-factor units="W/m2-K" value="1.913144" />
+			</Projection>
+			<Projection>
+				<Length-type>Custom length</Length-type>
+				<Length units="mm" value="0.000000" />
+				<U-factor value="NA" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected in glass plane</Length-type>
+				<Length units="mm" value="25.399994" />
+				<U-factor units="W/m2-K" value="1.913144" />
+			</Projection>
+			<Projection>
+				<Length-type>Custom rotation</Length-type>
+				<Length units="mm" value="0.029572" />
+				<ProjectionAngle>1.570796</ProjectionAngle>
+				<U-factor units="W/m2-K" value="1643.264282" />
+			</Projection>
+		</U-factors>
+		<U-factors>
+			<Tag>Edge</Tag>
+			<DeltaT units="C" value="39.000000" />
+			<Projection>
+				<Length-type>Total length</Length-type>
+				<Length units="mm" value="127.000008" />
+				<U-factor units="W/m2-K" value="1.607046" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected X</Length-type>
+				<Length units="mm" value="0.029602" />
+				<U-factor units="W/m2-K" value="6894.618652" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected Y</Length-type>
+				<Length units="mm" value="127.000000" />
+				<U-factor units="W/m2-K" value="1.607046" />
+			</Projection>
+			<Projection>
+				<Length-type>Custom length</Length-type>
+				<Length units="mm" value="0.000000" />
+				<U-factor value="NA" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected in glass plane</Length-type>
+				<Length units="mm" value="126.999985" />
+				<U-factor units="W/m2-K" value="1.607046" />
+			</Projection>
+			<Projection>
+				<Length-type>Custom rotation</Length-type>
+				<Length units="mm" value="0.029602" />
+				<ProjectionAngle>1.570796</ProjectionAngle>
+				<U-factor units="W/m2-K" value="6894.618652" />
+			</Projection>
+		</U-factors>
+		<FrameCavities>
+			<FrameCavity Name="Frame Cavity NFRC 100_Cavity_15" Conductivity="0.026263" EquivalentLength="3.602203" EquivalentHeight="25.399994" HeatFlowDirection="Left" />
+			<FrameCavity Name="Frame Cavity NFRC 100_Cavity_16" Conductivity="0.028297" EquivalentLength="9.042419" EquivalentHeight="22.250458" HeatFlowDirection="Left" />
+			<FrameCavity Name="Frame Cavity NFRC 100_Cavity_1" Conductivity="0.024908" EquivalentLength="3.654335" EquivalentHeight="25.348608" HeatFlowDirection="Left" />
+		</FrameCavities>
+		<MeshResults>
+			<NodesOutput>
+				<NodeResults index="1" temperature="-1.602301e+01" x-flux="-5.773178e+01" y-flux="-1.055491e-03"/>
+				<NodeResults index="2" temperature="-1.584982e+01" x-flux="-5.773240e+01" y-flux="-5.906467e-04"/>
+				<NodeResults index="3" temperature="-1.602302e+01" x-flux="-5.773167e+01" y-flux="-3.381107e-03"/>
+				<NodeResults index="4" temperature="1.286656e+01" x-flux="-5.774176e+01" y-flux="-9.558313e-03"/>
+				<NodeResults index="5" temperature="3.619142e+00" x-flux="-5.773363e+01" y-flux="-3.082030e-04"/>
+				<NodeResults index="6" temperature="-1.584982e+01" x-flux="-5.773230e+01" y-flux="-1.889922e-03"/>
+				<NodeResults index="7" temperature="-1.602309e+01" x-flux="-5.772992e+01" y-flux="-1.032272e-02"/>
+				<NodeResults index="8" temperature="1.269507e+01" x-flux="-5.773800e+01" y-flux="-5.099586e-03"/>
+				<NodeResults index="9" temperature="1.286652e+01" x-flux="-5.774210e+01" y-flux="-3.132240e-02"/>
+				<NodeResults index="10" temperature="3.619110e+00" x-flux="-5.773356e+01" y-flux="-9.881801e-04"/>
+				<NodeResults index="11" temperature="-1.584990e+01" x-flux="-5.773077e+01" y-flux="-5.772081e-03"/>
+				<NodeResults index="12" temperature="-1.602327e+01" x-flux="-5.772529e+01" y-flux="-2.257296e-02"/>
+				<NodeResults index="13" temperature="1.269503e+01" x-flux="-5.773815e+01" y-flux="-1.646490e-02"/>
+				<NodeResults index="14" temperature="1.286587e+01" x-flux="-5.774402e+01" y-flux="-9.656723e-02"/>
+				<NodeResults index="15" temperature="3.618593e+00" x-flux="-5.773247e+01" y-flux="-3.033710e-03"/>
+				<NodeResults index="16" temperature="-1.585009e+01" x-flux="-5.772673e+01" y-flux="-1.262048e-02"/>
+				<NodeResults index="17" temperature="-1.602364e+01" x-flux="-5.771599e+01" y-flux="-4.354011e-02"/>
+				<NodeResults index="18" temperature="1.269437e+01" x-flux="-5.773867e+01" y-flux="-5.062360e-02"/>
+				<NodeResults index="19" temperature="1.286416e+01" x-flux="-5.774906e+01" y-flux="-2.138035e-01"/>
+				<NodeResults index="20" temperature="3.617229e+00" x-flux="-5.772960e+01" y-flux="-6.712282e-03"/>
+				<NodeResults index="21" temperature="-1.585049e+01" x-flux="-5.771852e+01" y-flux="-2.438594e-02"/>
+				<NodeResults index="22" temperature="-1.602433e+01" x-flux="-5.769775e+01" y-flux="-7.980044e-02"/>
+				<NodeResults index="23" temperature="1.269265e+01" x-flux="-5.774005e+01" y-flux="-1.121320e-01"/>
+				<NodeResults index="24" temperature="1.286066e+01" x-flux="-5.776021e+01" y-flux="-4.238750e-01"/>
+				<NodeResults index="25" temperature="3.614430e+00" x-flux="-5.772367e+01" y-flux="-1.327854e-02"/>
+				<NodeResults index="26" temperature="-1.585124e+01" x-flux="-5.770244e+01" y-flux="-4.467320e-02"/>
+				<NodeResults index="27" temperature="-1.602559e+01" x-flux="-5.766585e+01" y-flux="-1.385634e-01"/>
+				<NodeResults index="28" temperature="1.268911e+01" x-flux="-5.774326e+01" y-flux="-2.221456e-01"/>
+				<NodeResults index="29" temperature="1.285382e+01" x-flux="-5.777860e+01" y-flux="-8.172384e-01"/>
+				<NodeResults index="30" temperature="3.608993e+00" x-flux="-5.771210e+01" y-flux="-2.552709e-02"/>
+				<NodeResults index="31" temperature="-1.585259e+01" x-flux="-5.767308e+01" y-flux="-7.808185e-02"/>
+				<NodeResults index="32" temperature="-1.602771e+01" x-flux="-5.760267e+01" y-flux="-2.151882e-01"/>
+				<NodeResults index="33" temperature="1.268222e+01" x-flux="-5.774783e+01" y-flux="-4.288969e-01"/>
+				<NodeResults index="34" temperature="1.284071e+01" x-flux="-5.782659e+01" y-flux="-1.570656e+00"/>
+				<NodeResults index="35" temperature="3.598598e+00" x-flux="-5.768960e+01" y-flux="-4.784669e-02"/>
+				<NodeResults index="36" temperature="-1.585491e+01" x-flux="-5.761634e+01" y-flux="-1.213246e-01"/>
+				<NodeResults index="37" temperature="-1.603084e+01" x-flux="-5.751719e+01" y-flux="-2.257688e-01"/>
+				<NodeResults index="38" temperature="1.266897e+01" x-flux="-5.776274e+01" y-flux="-8.217496e-01"/>
+				<NodeResults index="39" temperature="1.281549e+01" x-flux="-5.786586e+01" y-flux="-2.860613e+00"/>
+				<NodeResults index="40" temperature="3.579319e+00" x-flux="-5.764518e+01" y-flux="-9.175098e-02"/>
+				<NodeResults index="41" temperature="-1.585829e+01" x-flux="-5.752272e+01" y-flux="-1.350432e-01"/>
+				<NodeResults index="42" temperature="-1.603322e+01" x-flux="-5.731806e+01" y-flux="1.973274e-01"/>
+				<NodeResults index="43" temperature="1.264363e+01" x-flux="-5.776310e+01" y-flux="-1.501761e+00"/>
+				<NodeResults index="44" temperature="1.278182e+01" x-flux="-5.764212e+01" y-flux="-4.445093e+00"/>
+				<NodeResults index="45" temperature="3.541620e+00" x-flux="-5.756720e+01" y-flux="-1.731358e-01"/>
+				<NodeResults index="46" temperature="-1.586125e+01" x-flux="-5.727264e+01" y-flux="2.618720e-01"/>
+				<NodeResults index="47" temperature="-1.602602e+01" x-flux="-5.749977e+01" y-flux="1.603078e+00"/>
+				<NodeResults index="48" temperature="1.276619e+01" x-flux="-5.759410e+01" y-flux="-5.949298e+00"/>
+				<NodeResults index="49" temperature="1.260391e+01" x-flux="-5.775279e+01" y-flux="-3.355326e+00"/>
+				<NodeResults index="50" temperature="3.472075e+00" x-flux="-5.738846e+01" y-flux="-3.151904e-01"/>
+				<NodeResults index="51" temperature="-1.585400e+01" x-flux="-5.706069e+01" y-flux="8.352359e-01"/>
+				<NodeResults index="52" temperature="-1.597381e+01" x-flux="-5.831616e+01" y-flux="9.221797e+00"/>
+				<NodeResults index="53" temperature="1.267619e+01" x-flux="-5.884273e+01" y-flux="-1.282530e+01"/>
+				<NodeResults index="54" temperature="1.250271e+01" x-flux="-5.794245e+01" y-flux="-5.722980e+00"/>
+				<NodeResults index="55" temperature="3.346349e+00" x-flux="-5.692193e+01" y-flux="-5.741433e-01"/>
+				<NodeResults index="56" temperature="-1.580123e+01" x-flux="-5.637967e+01" y-flux="4.980508e+00"/>
+				<NodeResults index="57" temperature="-1.574858e+01" x-flux="-6.378000e+01" y-flux="3.221368e+01"/>
+				<NodeResults index="58" temperature="1.249791e+01" x-flux="-5.924668e+01" y-flux="-1.877604e+01"/>
+				<NodeResults index="59" temperature="1.232425e+01" x-flux="-5.743308e+01" y-flux="-9.893476e+00"/>
+				<NodeResults index="60" temperature="3.118684e+00" x-flux="-5.621785e+01" y-flux="-9.786898e-01"/>
+				<NodeResults index="61" temperature="-1.553854e+01" x-flux="-5.635018e+01" y-flux="1.947357e+01"/>
+				<NodeResults index="62" temperature="-1.527349e+01" x-flux="-8.289688e+01" y-flux="3.129321e+01"/>
+				<NodeResults index="63" temperature="1.216042e+01" x-flux="-5.993587e+01" y-flux="-3.889489e+01"/>
+				<NodeResults index="64" temperature="1.198748e+01" x-flux="-5.655055e+01" y-flux="-2.081157e+01"/>
+				<NodeResults index="65" temperature="-3.105154e+00" x-flux="-4.792098e+01" y-flux="2.377124e-01"/>
+				<NodeResults index="66" temperature="-2.527370e+00" x-flux="-3.237247e+02" y-flux="-3.765440e+01"/>
+				<NodeResults index="67" temperature="-1.501301e+01" x-flux="-9.653234e+01" y-flux="1.795219e+01"/>
+				<NodeResults index="68" temperature="-1.509676e+01" x-flux="-8.510676e+01" y-flux="-3.411404e+00"/>
+				<NodeResults index="69" temperature="1.149696e+01" x-flux="-6.879760e+01" y-flux="-7.050638e+01"/>
+				<NodeResults index="70" temperature="-2.529614e+00" x-flux="-4.723245e+02" y-flux="-2.883099e+02"/>
+				<NodeResults index="71" temperature="-2.477361e+00" x-flux="-4.654997e+02" y-flux="1.372524e+01"/>
+				<NodeResults index="72" temperature="-2.473335e+00" x-flux="-2.423647e+02" y-flux="8.385702e+01"/>
+				<NodeResults index="73" temperature="1.101884e+01" x-flux="-6.471118e+01" y-flux="-2.997610e+01"/>
+				<NodeResults index="74" temperature="-2.529761e+00" x-flux="-1.393393e+02" y-flux="-6.329032e+01"/>
+				<NodeResults index="75" temperature="-2.550220e+00" x-flux="-5.335815e+01" y-flux="4.725198e-01"/>
+				<NodeResults index="76" temperature="-1.483472e+01" x-flux="-8.963106e+01" y-flux="-1.374923e+00"/>
+				<NodeResults index="77" temperature="-1.526454e+01" x-flux="-8.303864e+01" y-flux="-2.505521e+01"/>
+				<NodeResults index="78" temperature="1.059449e+01" x-flux="-7.985451e+01" y-flux="-5.559437e+01"/>
+				<NodeResults index="79" temperature="-2.470634e+00" x-flux="-3.904288e+02" y-flux="2.169851e+02"/>
+				<NodeResults index="80" temperature="-2.470267e+00" x-flux="-1.193135e+02" y-flux="2.984278e+01"/>
+				<NodeResults index="81" temperature="-2.451229e+00" x-flux="-3.879789e+01" y-flux="1.100066e+01"/>
+				<NodeResults index="82" temperature="1.033250e+01" x-flux="-9.967306e+01" y-flux="-2.934785e+01"/>
+				<NodeResults index="83" temperature="-2.551341e+00" x-flux="-1.055431e+02" y-flux="6.248298e-01"/>
+				<NodeResults index="84" temperature="-2.529533e+00" x-flux="-4.585336e+02" y-flux="2.258615e+02"/>
+				<NodeResults index="85" temperature="-1.500717e+01" x-flux="-9.412628e+01" y-flux="-1.578252e+01"/>
+				<NodeResults index="86" temperature="-1.574697e+01" x-flux="-6.527195e+01" y-flux="-3.266811e+01"/>
+				<NodeResults index="87" temperature="1.030078e+01" x-flux="-7.792276e+01" y-flux="-1.076881e+00"/>
+				<NodeResults index="88" temperature="-2.450475e+00" x-flux="-7.313094e+01" y-flux="5.883552e+01"/>
+				<NodeResults index="89" temperature="-2.470743e+00" x-flux="-4.626287e+02" y-flux="-2.111097e+02"/>
+				<NodeResults index="90" temperature="1.006121e+01" x-flux="-8.465938e+01" y-flux="-7.019184e-01"/>
+				<NodeResults index="91" temperature="-2.529904e+00" x-flux="-1.389040e+02" y-flux="5.889330e+01"/>
+				<NodeResults index="92" temperature="-2.472745e+00" x-flux="-3.579553e+02" y-flux="-9.400676e+01"/>
+				<NodeResults index="93" temperature="-2.527288e+00" x-flux="-3.394339e+02" y-flux="1.049507e+02"/>
+				<NodeResults index="94" temperature="-1.553553e+01" x-flux="-5.641788e+01" y-flux="-1.973765e+01"/>
+				<NodeResults index="95" temperature="-1.597273e+01" x-flux="-5.843039e+01" y-flux="-9.336070e+00"/>
+				<NodeResults index="96" temperature="1.058710e+01" x-flux="-7.998961e+01" y-flux="5.680681e+01"/>
+				<NodeResults index="97" temperature="-2.470315e+00" x-flux="-1.282250e+02" y-flux="-5.169231e+01"/>
+				<NodeResults index="98" temperature="1.032738e+01" x-flux="-9.891366e+01" y-flux="3.056487e+01"/>
+				<NodeResults index="99" temperature="-2.911276e+00" x-flux="-4.804325e+01" y-flux="6.673979e-01"/>
+				<NodeResults index="100" temperature="-1.579996e+01" x-flux="-5.639677e+01" y-flux="-5.016946e+00"/>
+				<NodeResults index="101" temperature="-1.602542e+01" x-flux="-5.746454e+01" y-flux="-1.635849e+00"/>
+				<NodeResults index="102" temperature="1.150364e+01" x-flux="-6.684172e+01" y-flux="7.081979e+01"/>
+				<NodeResults index="103" temperature="1.114133e+01" x-flux="-5.852498e+01" y-flux="3.389902e+01"/>
+				<NodeResults index="104" temperature="3.121189e+00" x-flux="-5.622589e+01" y-flux="9.356383e-01"/>
+				<NodeResults index="105" temperature="-1.585365e+01" x-flux="-5.701908e+01" y-flux="-8.558000e-01"/>
+				<NodeResults index="106" temperature="-1.603312e+01" x-flux="-5.744245e+01" y-flux="-4.243043e-01"/>
+				<NodeResults index="107" temperature="1.216169e+01" x-flux="-6.053771e+01" y-flux="3.865726e+01"/>
+				<NodeResults index="108" temperature="1.198775e+01" x-flux="-5.692205e+01" y-flux="2.048889e+01"/>
+				<NodeResults index="109" temperature="3.347975e+00" x-flux="-5.692197e+01" y-flux="5.721842e-01"/>
+				<NodeResults index="110" temperature="-1.586090e+01" x-flux="-5.737706e+01" y-flux="-9.705206e-02"/>
+				<NodeResults index="111" temperature="-1.603070e+01" x-flux="-5.750022e+01" y-flux="2.230806e-01"/>
+				<NodeResults index="112" temperature="1.249966e+01" x-flux="-5.969939e+01" y-flux="1.879412e+01"/>
+				<NodeResults index="113" temperature="1.232551e+01" x-flux="-5.753430e+01" y-flux="9.860259e+00"/>
+				<NodeResults index="114" temperature="3.473418e+00" x-flux="-5.739033e+01" y-flux="3.137182e-01"/>
+				<NodeResults index="115" temperature="-1.585820e+01" x-flux="-5.751548e+01" y-flux="1.288324e-01"/>
+				<NodeResults index="116" temperature="-1.602767e+01" x-flux="-5.760882e+01" y-flux="2.105726e-01"/>
+				<NodeResults index="117" temperature="1.267661e+01" x-flux="-5.813415e+01" y-flux="1.099106e+01"/>
+				<NodeResults index="118" temperature="1.250418e+01" x-flux="-5.784522e+01" y-flux="8.731360e+00"/>
+				<NodeResults index="119" temperature="3.542540e+00" x-flux="-5.756296e+01" y-flux="1.706725e-01"/>
+				<NodeResults index="120" temperature="-1.585485e+01" x-flux="-5.761925e+01" y-flux="1.199447e-01"/>
+				<NodeResults index="121" temperature="-1.602556e+01" x-flux="-5.766483e+01" y-flux="1.373589e-01"/>
+				<NodeResults index="122" temperature="1.276856e+01" x-flux="-5.792404e+01" y-flux="5.774765e+00"/>
+				<NodeResults index="123" temperature="1.259661e+01" x-flux="-5.775957e+01" y-flux="2.972082e+00"/>
+				<NodeResults index="124" temperature="3.579267e+00" x-flux="-5.764641e+01" y-flux="9.069682e-02"/>
+				<NodeResults index="125" temperature="-1.585257e+01" x-flux="-5.767283e+01" y-flux="7.710815e-02"/>
+				<NodeResults index="126" temperature="-1.602432e+01" x-flux="-5.769846e+01" y-flux="7.923391e-02"/>
+				<NodeResults index="127" temperature="1.278098e+01" x-flux="-5.820516e+01" y-flux="3.895488e+00"/>
+				<NodeResults index="128" temperature="1.264401e+01" x-flux="-5.784023e+01" y-flux="1.983274e+00"/>
+				<NodeResults index="129" temperature="3.598790e+00" x-flux="-5.769019e+01" y-flux="4.809063e-02"/>
+				<NodeResults index="130" temperature="-1.585123e+01" x-flux="-5.770293e+01" y-flux="4.444877e-02"/>
+				<NodeResults index="131" temperature="-1.602363e+01" x-flux="-5.771606e+01" y-flux="4.324522e-02"/>
+				<NodeResults index="132" temperature="1.281729e+01" x-flux="-5.784482e+01" y-flux="3.169983e+00"/>
+				<NodeResults index="133" temperature="1.266926e+01" x-flux="-5.774122e+01" y-flux="8.158669e-01"/>
+				<NodeResults index="134" temperature="3.609093e+00" x-flux="-5.771225e+01" y-flux="2.529953e-02"/>
+				<NodeResults index="135" temperature="-1.585048e+01" x-flux="-5.771862e+01" y-flux="2.419516e-02"/>
+				<NodeResults index="136" temperature="-1.602327e+01" x-flux="-5.772541e+01" y-flux="2.238865e-02"/>
+				<NodeResults index="137" temperature="1.284088e+01" x-flux="-5.778290e+01" y-flux="1.541008e+00"/>
+				<NodeResults index="138" temperature="1.268232e+01" x-flux="-5.775313e+01" y-flux="4.240889e-01"/>
+				<NodeResults index="139" temperature="3.614481e+00" x-flux="-5.772380e+01" y-flux="1.316352e-02"/>
+				<NodeResults index="140" temperature="-1.585009e+01" x-flux="-5.772682e+01" y-flux="1.252337e-02"/>
+				<NodeResults index="141" temperature="-1.602308e+01" x-flux="-5.772997e+01" y-flux="1.024085e-02"/>
+				<NodeResults index="142" temperature="1.285396e+01" x-flux="-5.778916e+01" y-flux="8.129410e-01"/>
+				<NodeResults index="143" temperature="1.268918e+01" x-flux="-5.774183e+01" y-flux="2.205806e-01"/>
+				<NodeResults index="144" temperature="3.617257e+00" x-flux="-5.772965e+01" y-flux="6.657006e-03"/>
+				<NodeResults index="145" temperature="-1.584989e+01" x-flux="-5.773082e+01" y-flux="5.724758e-03"/>
+				<NodeResults index="146" temperature="-1.602302e+01" x-flux="-5.773171e+01" y-flux="3.353383e-03"/>
+				<NodeResults index="147" temperature="1.286072e+01" x-flux="-5.775723e+01" y-flux="4.196524e-01"/>
+				<NodeResults index="148" temperature="1.269268e+01" x-flux="-5.774037e+01" y-flux="1.111088e-01"/>
+				<NodeResults index="149" temperature="3.618609e+00" x-flux="-5.773251e+01" y-flux="3.007981e-03"/>
+				<NodeResults index="150" temperature="-1.584982e+01" x-flux="-5.773234e+01" y-flux="1.874448e-03"/>
+				<NodeResults index="151" temperature="-1.602301e+01" x-flux="-5.773182e+01" y-flux="1.047965e-03"/>
+				<NodeResults index="152" temperature="1.286420e+01" x-flux="-5.774966e+01" y-flux="2.121665e-01"/>
+				<NodeResults index="153" temperature="1.269439e+01" x-flux="-5.773856e+01" y-flux="5.021667e-02"/>
+				<NodeResults index="154" temperature="3.619122e+00" x-flux="-5.773359e+01" y-flux="9.798705e-04"/>
+				<NodeResults index="155" temperature="-1.584982e+01" x-flux="-5.773243e+01" y-flux="5.853997e-04"/>
+				<NodeResults index="156" temperature="1.286589e+01" x-flux="-5.774377e+01" y-flux="9.571319e-02"/>
+				<NodeResults index="157" temperature="1.269504e+01" x-flux="-5.773817e+01" y-flux="1.632669e-02"/>
+				<NodeResults index="158" temperature="3.619154e+00" x-flux="-5.773365e+01" y-flux="3.054029e-04"/>
+				<NodeResults index="159" temperature="1.286654e+01" x-flux="-5.774212e+01" y-flux="3.105829e-02"/>
+				<NodeResults index="160" temperature="1.269508e+01" x-flux="-5.773797e+01" y-flux="5.072706e-03"/>
+				<NodeResults index="161" temperature="1.286657e+01" x-flux="-5.774169e+01" y-flux="9.445226e-03"/>
+				<NodeResults index="162" temperature="-1.593975e+01" x-flux="-5.733442e+01" y-flux="1.642146e+00"/>
+				<NodeResults index="163" temperature="-1.583801e+01" x-flux="-5.676004e+01" y-flux="2.247265e+00"/>
+				<NodeResults index="164" temperature="-1.601006e+01" x-flux="-5.773673e+01" y-flux="4.278465e+00"/>
+				<NodeResults index="165" temperature="-1.588634e+01" x-flux="-5.752838e+01" y-flux="9.532176e+00"/>
+				<NodeResults index="166" temperature="-1.592346e+01" x-flux="-5.735038e+01" y-flux="4.377033e+00"/>
+				<NodeResults index="167" temperature="7.538261e+00" x-flux="-5.639673e+01" y-flux="-1.203869e+00"/>
+				<NodeResults index="168" temperature="1.218117e+01" x-flux="-5.773566e+01" y-flux="-1.434247e+01"/>
+				<NodeResults index="169" temperature="7.704523e+00" x-flux="-5.713065e+01" y-flux="-9.563188e-01"/>
+				<NodeResults index="170" temperature="1.240993e+01" x-flux="-5.849806e+01" y-flux="-1.897579e+01"/>
+				<NodeResults index="171" temperature="-1.571577e+01" x-flux="-5.580985e+01" y-flux="1.050140e+01"/>
+				<NodeResults index="172" temperature="-1.589755e+01" x-flux="-5.953793e+01" y-flux="1.846420e+01"/>
+				<NodeResults index="173" temperature="-1.564009e+01" x-flux="-6.083842e+01" y-flux="3.458722e+01"/>
+				<NodeResults index="174" temperature="-1.580457e+01" x-flux="-5.799908e+01" y-flux="1.954766e+01"/>
+				<NodeResults index="175" temperature="-6.357713e+00" x-flux="-5.611811e+01" y-flux="-2.641897e-01"/>
+				<NodeResults index="176" temperature="-6.307326e+00" x-flux="-5.666972e+01" y-flux="-4.790676e-01"/>
+				<NodeResults index="177" temperature="-2.503548e+00" x-flux="-3.956561e+02" y-flux="5.184504e+00"/>
+				<NodeResults index="178" temperature="-1.015046e+00" x-flux="-3.262902e+01" y-flux="-6.886238e+00"/>
+				<NodeResults index="179" temperature="-5.007380e+00" x-flux="-4.300150e+01" y-flux="1.866416e+01"/>
+				<NodeResults index="180" temperature="3.432014e+00" x-flux="-5.463417e+01" y-flux="-9.402010e+00"/>
+				<NodeResults index="181" temperature="-2.474964e+00" x-flux="-3.510867e+02" y-flux="5.981327e+01"/>
+				<NodeResults index="182" temperature="5.597200e+00" x-flux="-4.952779e+01" y-flux="-4.195598e+01"/>
+				<NodeResults index="183" temperature="1.578721e+00" x-flux="-5.002028e+01" y-flux="-2.511229e+01"/>
+				<NodeResults index="184" temperature="-7.719441e-02" x-flux="-5.532737e+01" y-flux="-1.039366e+00"/>
+				<NodeResults index="185" temperature="1.159960e+01" x-flux="-5.543740e+01" y-flux="-3.138146e+01"/>
+				<NodeResults index="186" temperature="5.783056e+00" x-flux="-5.571228e+01" y-flux="-2.938713e+00"/>
+				<NodeResults index="187" temperature="1.235793e+01" x-flux="-6.052752e+01" y-flux="-2.765722e+01"/>
+				<NodeResults index="188" temperature="1.207142e+01" x-flux="-5.823088e+01" y-flux="-3.959532e+01"/>
+				<NodeResults index="189" temperature="1.226805e+01" x-flux="-5.951632e+01" y-flux="-2.774109e+01"/>
+				<NodeResults index="190" temperature="-5.923559e+00" x-flux="-2.738807e+01" y-flux="2.867192e+01"/>
+				<NodeResults index="191" temperature="-2.529104e+00" x-flux="-1.239163e+02" y-flux="-6.470926e+01"/>
+				<NodeResults index="192" temperature="-1.551437e+01" x-flux="-7.318389e+01" y-flux="4.057259e+01"/>
+				<NodeResults index="193" temperature="-1.514914e+01" x-flux="-8.682555e+01" y-flux="3.289252e+01"/>
+				<NodeResults index="194" temperature="-1.527809e+01" x-flux="-6.977024e+01" y-flux="2.494623e+01"/>
+				<NodeResults index="195" temperature="-1.539652e+01" x-flux="-7.300165e+01" y-flux="4.339710e+01"/>
+				<NodeResults index="196" temperature="-9.078700e+00" x-flux="-5.202955e+01" y-flux="5.470860e+00"/>
+				<NodeResults index="197" temperature="-7.863173e+00" x-flux="-5.493469e+01" y-flux="4.531184e-01"/>
+				<NodeResults index="198" temperature="-2.529738e+00" x-flux="-3.436592e+02" y-flux="-2.871512e+02"/>
+				<NodeResults index="199" temperature="-2.527854e+00" x-flux="-6.760464e+02" y-flux="-2.280079e+02"/>
+				<NodeResults index="200" temperature="-2.500158e+00" x-flux="-5.220952e+02" y-flux="2.127626e+01"/>
+				<NodeResults index="201" temperature="-2.474403e+00" x-flux="-8.609511e+02" y-flux="1.808871e+02"/>
+				<NodeResults index="202" temperature="-2.501916e+00" x-flux="-9.984487e+02" y-flux="4.344648e+01"/>
+				<NodeResults index="203" temperature="-2.472178e+00" x-flux="-5.445382e+02" y-flux="2.410519e+02"/>
+				<NodeResults index="204" temperature="7.364165e+00" x-flux="-8.133625e+01" y-flux="-2.347337e+01"/>
+				<NodeResults index="205" temperature="-2.471410e+00" x-flux="-1.559207e+02" y-flux="8.634780e+01"/>
+				<NodeResults index="206" temperature="1.188357e+01" x-flux="-6.143358e+01" y-flux="-5.445347e+01"/>
+				<NodeResults index="207" temperature="1.125899e+01" x-flux="-6.378013e+01" y-flux="-7.494207e+01"/>
+				<NodeResults index="208" temperature="1.173990e+01" x-flux="-5.827715e+01" y-flux="-5.756993e+01"/>
+				<NodeResults index="209" temperature="-1.487732e+01" x-flux="-8.739479e+01" y-flux="5.210565e+00"/>
+				<NodeResults index="210" temperature="-1.513732e+01" x-flux="-8.547103e+01" y-flux="1.391536e+01"/>
+				<NodeResults index="211" temperature="-1.496910e+01" x-flux="-8.720008e+01" y-flux="-3.339430e+00"/>
+				<NodeResults index="212" temperature="-1.500912e+01" x-flux="-8.666652e+01" y-flux="1.417637e+01"/>
+				<NodeResults index="213" temperature="-9.205833e+00" x-flux="-1.078873e+02" y-flux="2.018084e+01"/>
+				<NodeResults index="214" temperature="-9.634389e+00" x-flux="-5.182067e+01" y-flux="1.410345e+01"/>
+				<NodeResults index="215" temperature="-2.544866e+00" x-flux="4.235909e+01" y-flux="-1.481147e+02"/>
+				<NodeResults index="216" temperature="-2.543000e+00" x-flux="-3.974842e+01" y-flux="-1.359074e+02"/>
+				<NodeResults index="217" temperature="-2.550743e+00" x-flux="-1.139685e+02" y-flux="1.369703e+00"/>
+				<NodeResults index="218" temperature="-2.543719e+00" x-flux="4.856348e+01" y-flux="-2.819859e+02"/>
+				<NodeResults index="219" temperature="4.504402e+00" x-flux="-1.151180e+02" y-flux="-5.112483e-01"/>
+				<NodeResults index="220" temperature="1.066220e+01" x-flux="-8.153782e+01" y-flux="-3.555333e+01"/>
+				<NodeResults index="221" temperature="-2.458667e+00" x-flux="1.222321e+01" y-flux="1.336227e+02"/>
+				<NodeResults index="222" temperature="-2.500991e+00" x-flux="-3.096632e-01" y-flux="2.112841e-03"/>
+				<NodeResults index="223" temperature="-2.501167e+00" x-flux="-2.697985e-01" y-flux="-1.891254e-03"/>
+				<NodeResults index="224" temperature="-2.460466e+00" x-flux="-1.276333e+02" y-flux="8.216428e+01"/>
+				<NodeResults index="225" temperature="-2.459202e+00" x-flux="-1.597555e+01" y-flux="2.831457e+02"/>
+				<NodeResults index="226" temperature="-2.465765e+00" x-flux="-2.286671e+02" y-flux="2.721484e+02"/>
+				<NodeResults index="227" temperature="1.104257e+01" x-flux="-7.404473e+01" y-flux="-7.701949e+01"/>
+				<NodeResults index="228" temperature="1.047591e+01" x-flux="-8.821518e+01" y-flux="-5.600240e+01"/>
+				<NodeResults index="229" temperature="1.085844e+01" x-flux="-7.624629e+01" y-flux="-7.991068e+01"/>
+				<NodeResults index="230" temperature="-2.544801e+00" x-flux="4.578023e+01" y-flux="1.486845e+02"/>
+				<NodeResults index="231" temperature="-2.542901e+00" x-flux="-3.951477e+01" y-flux="1.350046e+02"/>
+				<NodeResults index="232" temperature="-2.529835e+00" x-flux="-2.835617e+02" y-flux="2.458404e+02"/>
+				<NodeResults index="233" temperature="-2.543617e+00" x-flux="5.266295e+01" y-flux="2.806735e+02"/>
+				<NodeResults index="234" temperature="1.014446e+01" x-flux="-8.212245e+01" y-flux="-1.094672e+01"/>
+				<NodeResults index="235" temperature="-2.529278e+00" x-flux="-1.098516e+02" y-flux="4.412200e+01"/>
+				<NodeResults index="236" temperature="-2.500260e+00" x-flux="-5.202166e+02" y-flux="-4.891806e+00"/>
+				<NodeResults index="237" temperature="-2.456562e+00" x-flux="3.602031e+01" y-flux="-1.466699e+02"/>
+				<NodeResults index="238" temperature="-2.500389e+00" x-flux="-2.760732e-01" y-flux="2.099882e-03"/>
+				<NodeResults index="239" temperature="-2.450882e+00" x-flux="-9.846059e+01" y-flux="6.574202e+01"/>
+				<NodeResults index="240" temperature="1.037373e+01" x-flux="-7.651853e+01" y-flux="-2.303760e+01"/>
+				<NodeResults index="241" temperature="1.018564e+01" x-flux="-8.106763e+01" y-flux="-1.144827e+00"/>
+				<NodeResults index="242" temperature="1.026038e+01" x-flux="-7.738735e+01" y-flux="-2.281049e+01"/>
+				<NodeResults index="243" temperature="-1.563678e+01" x-flux="-6.168252e+01" y-flux="-3.509142e+01"/>
+				<NodeResults index="244" temperature="-1.527033e+01" x-flux="-6.996243e+01" y-flux="-2.497512e+01"/>
+				<NodeResults index="245" temperature="-1.538766e+01" x-flux="-7.664071e+01" y-flux="-4.299864e+01"/>
+				<NodeResults index="246" temperature="-9.206964e+00" x-flux="-1.079614e+02" y-flux="-2.021089e+01"/>
+				<NodeResults index="247" temperature="-8.684176e+00" x-flux="-9.181102e+01" y-flux="-1.336197e+00"/>
+				<NodeResults index="248" temperature="4.562295e+00" x-flux="-1.119023e+02" y-flux="5.556385e-01"/>
+				<NodeResults index="249" temperature="1.012707e+01" x-flux="-8.127369e+01" y-flux="7.729591e+00"/>
+				<NodeResults index="250" temperature="-2.457765e+00" x-flux="-4.962145e+01" y-flux="-1.248790e+02"/>
+				<NodeResults index="251" temperature="-5.875698e+00" x-flux="-3.456990e+01" y-flux="-2.334690e+01"/>
+				<NodeResults index="252" temperature="-4.970585e+00" x-flux="-4.091561e+01" y-flux="-1.732551e+01"/>
+				<NodeResults index="253" temperature="-2.500356e+00" x-flux="-4.826734e+02" y-flux="3.811780e+00"/>
+				<NodeResults index="254" temperature="-2.470338e+00" x-flux="-2.109550e+02" y-flux="-1.751906e+02"/>
+				<NodeResults index="255" temperature="-2.457413e+00" x-flux="3.084966e+01" y-flux="-2.665313e+02"/>
+				<NodeResults index="256" temperature="1.035890e+01" x-flux="-7.711189e+01" y-flux="2.263466e+01"/>
+				<NodeResults index="257" temperature="1.046950e+01" x-flux="-8.832455e+01" y-flux="5.747577e+01"/>
+				<NodeResults index="258" temperature="1.024524e+01" x-flux="-7.864329e+01" y-flux="2.239665e+01"/>
+				<NodeResults index="259" temperature="-1.571434e+01" x-flux="-5.584306e+01" y-flux="-1.060607e+01"/>
+				<NodeResults index="260" temperature="-1.589540e+01" x-flux="-5.926567e+01" y-flux="-1.850741e+01"/>
+				<NodeResults index="261" temperature="-1.588509e+01" x-flux="-5.759215e+01" y-flux="-9.606359e+00"/>
+				<NodeResults index="262" temperature="-1.580302e+01" x-flux="-5.787589e+01" y-flux="-1.974529e+01"/>
+				<NodeResults index="263" temperature="-8.973899e+00" x-flux="-5.197957e+01" y-flux="-5.429894e+00"/>
+				<NodeResults index="264" temperature="-9.576369e+00" x-flux="-5.140418e+01" y-flux="-1.390815e+01"/>
+				<NodeResults index="265" temperature="7.812328e+00" x-flux="-6.650459e+01" y-flux="2.544303e+01"/>
+				<NodeResults index="266" temperature="1.073157e+01" x-flux="-8.603764e+01" y-flux="3.532674e+01"/>
+				<NodeResults index="267" temperature="-6.003175e-01" x-flux="-2.667785e+01" y-flux="1.315414e+01"/>
+				<NodeResults index="268" temperature="-2.470575e+00" x-flux="-1.325759e+02" y-flux="-7.689177e+00"/>
+				<NodeResults index="269" temperature="1.104158e+01" x-flux="-7.240641e+01" y-flux="7.822415e+01"/>
+				<NodeResults index="270" temperature="1.132099e+01" x-flux="-6.312180e+01" y-flux="7.417581e+01"/>
+				<NodeResults index="271" temperature="1.088853e+01" x-flux="-7.266708e+01" y-flux="8.086641e+01"/>
+				<NodeResults index="272" temperature="-1.583718e+01" x-flux="-5.678436e+01" y-flux="-2.286478e+00"/>
+				<NodeResults index="273" temperature="-1.600931e+01" x-flux="-5.774895e+01" y-flux="-4.318114e+00"/>
+				<NodeResults index="274" temperature="-1.593923e+01" x-flux="-5.727334e+01" y-flux="-1.681730e+00"/>
+				<NodeResults index="275" temperature="-1.592269e+01" x-flux="-5.737786e+01" y-flux="-4.436842e+00"/>
+				<NodeResults index="276" temperature="-6.352844e+00" x-flux="-5.612052e+01" y-flux="2.579637e-01"/>
+				<NodeResults index="277" temperature="5.526041e-02" x-flux="-5.532266e+01" y-flux="1.119281e+00"/>
+				<NodeResults index="278" temperature="-7.802933e+00" x-flux="-5.500855e+01" y-flux="-4.355119e-01"/>
+				<NodeResults index="279" temperature="3.753322e+00" x-flux="-5.353851e+01" y-flux="9.565107e+00"/>
+				<NodeResults index="280" temperature="2.445189e+00" x-flux="-5.657132e+01" y-flux="3.144363e+01"/>
+				<NodeResults index="281" temperature="1.188650e+01" x-flux="-6.131413e+01" y-flux="5.393476e+01"/>
+				<NodeResults index="282" temperature="1.164664e+01" x-flux="-5.594861e+01" y-flux="3.018275e+01"/>
+				<NodeResults index="283" temperature="1.207235e+01" x-flux="-5.893203e+01" y-flux="3.916567e+01"/>
+				<NodeResults index="284" temperature="1.176404e+01" x-flux="-5.871412e+01" y-flux="5.612624e+01"/>
+				<NodeResults index="285" temperature="-6.305467e+00" x-flux="-5.667837e+01" y-flux="4.643976e-01"/>
+				<NodeResults index="286" temperature="7.543654e+00" x-flux="-5.638450e+01" y-flux="1.213805e+00"/>
+				<NodeResults index="287" temperature="5.850044e+00" x-flux="-5.561228e+01" y-flux="2.562706e+00"/>
+				<NodeResults index="288" temperature="1.235846e+01" x-flux="-6.028485e+01" y-flux="2.766869e+01"/>
+				<NodeResults index="289" temperature="1.218331e+01" x-flux="-5.762670e+01" y-flux="1.438442e+01"/>
+				<NodeResults index="290" temperature="1.241120e+01" x-flux="-5.882697e+01" y-flux="1.898323e+01"/>
+				<NodeResults index="291" temperature="1.226941e+01" x-flux="-5.928329e+01" y-flux="2.775527e+01"/>
+				<NodeResults index="292" temperature="7.706184e+00" x-flux="-5.712077e+01" y-flux="9.421007e-01"/>
+				<NodeResults index="293" temperature="2.100000e+01" x-flux="0.000000e+00" y-flux="0.000000e+00"/>
+				<NodeResults index="294" temperature="2.100000e+01" x-flux="0.000000e+00" y-flux="0.000000e+00"/>
+			</NodesOutput>
+			<ElementEdges>
+				<EdgeConvection segment="1" area="0.003000" flux="0.000000" heatRate="0.000000"/>
+				<EdgeConvection segment="2" area="0.004067" flux="51.402000" heatRate="0.209078"/>
+				<EdgeConvection segment="3" area="0.012203" flux="51.401000" heatRate="0.627246"/>
+				<EdgeConvection segment="4" area="0.012203" flux="51.397000" heatRate="0.627198"/>
+				<EdgeConvection segment="5" area="0.012203" flux="51.390000" heatRate="0.627112"/>
+				<EdgeConvection segment="6" area="0.012202" flux="51.376000" heatRate="0.626890"/>
+				<EdgeConvection segment="7" area="0.012203" flux="51.351000" heatRate="0.626636"/>
+				<EdgeConvection segment="8" area="0.012203" flux="51.307000" heatRate="0.626099"/>
+				<EdgeConvection segment="9" area="0.012202" flux="51.239000" heatRate="0.625218"/>
+				<EdgeConvection segment="10" area="0.012203" flux="51.167000" heatRate="0.624391"/>
+				<EdgeConvection segment="11" area="0.012202" flux="51.230000" heatRate="0.625108"/>
+				<EdgeConvection segment="12" area="0.012700" flux="73.303000" heatRate="0.930948"/>
+				<EdgeConvection segment="13" area="0.006186" flux="0.000000" heatRate="0.000000"/>
+				<EdgeConvection segment="14" area="0.013270" flux="0.000000" heatRate="0.000000"/>
+				<EdgeConvection segment="15" area="0.012202" flux="-20.637000" heatRate="-0.251813"/>
+				<EdgeConvection segment="16" area="0.012203" flux="-20.308000" heatRate="-0.247819"/>
+				<EdgeConvection segment="17" area="0.002985" flux="-20.178000" heatRate="-0.060231"/>
+				<EdgeConvection segment="18" area="0.009217" flux="-20.118000" heatRate="-0.185438"/>
+				<EdgeConvection segment="19" area="0.012203" flux="-20.046000" heatRate="-0.244621"/>
+				<EdgeConvection segment="20" area="0.012203" flux="-19.998000" heatRate="-0.244036"/>
+				<EdgeConvection segment="21" area="0.012202" flux="-19.974000" heatRate="-0.243723"/>
+				<EdgeConvection segment="22" area="0.012203" flux="-19.961000" heatRate="-0.243584"/>
+				<EdgeConvection segment="23" area="0.012203" flux="-19.955000" heatRate="-0.243511"/>
+				<EdgeConvection segment="24" area="0.012203" flux="-19.952000" heatRate="-0.243474"/>
+				<EdgeConvection segment="25" area="0.004067" flux="-19.951000" heatRate="-0.081151"/>
+				<EdgeConvection segment="26" area="0.002970" flux="0.000000" heatRate="0.000000"/>
+				<EdgeConvection segment="27" area="0.011705" flux="64.850000" heatRate="0.759069"/>
+				<EdgeConvection segment="28" area="0.012202" flux="51.239000" heatRate="0.625218"/>
+				<EdgeConvection segment="29" area="0.012203" flux="51.170000" heatRate="0.624428"/>
+				<EdgeConvection segment="30" area="0.012202" flux="51.241000" heatRate="0.625243"/>
+				<EdgeConvection segment="31" area="0.012203" flux="51.308000" heatRate="0.626112"/>
+				<EdgeConvection segment="32" area="0.012203" flux="51.351000" heatRate="0.626636"/>
+				<EdgeConvection segment="33" area="0.012202" flux="51.377000" heatRate="0.626902"/>
+				<EdgeConvection segment="34" area="0.012203" flux="51.390000" heatRate="0.627112"/>
+				<EdgeConvection segment="35" area="0.012203" flux="51.397000" heatRate="0.627198"/>
+				<EdgeConvection segment="36" area="0.012203" flux="51.401000" heatRate="0.627246"/>
+				<EdgeConvection segment="37" area="0.004067" flux="51.402000" heatRate="0.209078"/>
+				<EdgeConvection segment="38" area="0.003000" flux="0.000000" heatRate="0.000000"/>
+				<EdgeConvection segment="39" area="0.013270" flux="0.000000" heatRate="0.000000"/>
+				<EdgeConvection segment="40" area="0.006186" flux="0.000000" heatRate="0.000000"/>
+				<EdgeConvection segment="41" area="0.002970" flux="0.000000" heatRate="0.000000"/>
+				<EdgeConvection segment="42" area="0.004067" flux="-19.951000" heatRate="-0.081151"/>
+				<EdgeConvection segment="43" area="0.012203" flux="-19.952000" heatRate="-0.243474"/>
+				<EdgeConvection segment="44" area="0.012203" flux="-19.955000" heatRate="-0.243511"/>
+				<EdgeConvection segment="45" area="0.012203" flux="-19.961000" heatRate="-0.243584"/>
+				<EdgeConvection segment="46" area="0.012202" flux="-19.974000" heatRate="-0.243723"/>
+				<EdgeConvection segment="47" area="0.012203" flux="-19.998000" heatRate="-0.244036"/>
+				<EdgeConvection segment="48" area="0.011736" flux="-20.043000" heatRate="-0.235225"/>
+				<EdgeConvection segment="49" area="0.009684" flux="-20.117000" heatRate="-0.194815"/>
+				<EdgeConvection segment="50" area="0.002985" flux="-20.176000" heatRate="-0.060225"/>
+				<EdgeConvection segment="51" area="0.012203" flux="-20.304000" heatRate="-0.247770"/>
+				<EdgeConvection segment="52" area="0.012203" flux="-20.634000" heatRate="-0.251797"/>
+				<EdgeConvection segment="53" area="0.006101" flux="51.531000" heatRate="0.314406"/>
+				<EdgeConvection segment="54" area="0.006101" flux="52.210000" heatRate="0.318544"/>
+				<EdgeConvection segment="55" area="0.006101" flux="53.672000" heatRate="0.327469"/>
+				<EdgeConvection segment="56" area="0.006101" flux="56.600000" heatRate="0.345328"/>
+				<EdgeConvection segment="57" area="0.006101" flux="-21.441000" heatRate="-0.130816"/>
+				<EdgeConvection segment="58" area="0.006101" flux="-21.027000" heatRate="-0.128292"/>
+				<EdgeConvection segment="59" area="0.005853" flux="61.582000" heatRate="0.360409"/>
+				<EdgeConvection segment="60" area="0.005853" flux="67.758000" heatRate="0.396554"/>
+				<EdgeConvection segment="61" area="0.006101" flux="-22.837000" heatRate="-0.139333"/>
+				<EdgeConvection segment="62" area="0.006101" flux="-22.023000" heatRate="-0.134369"/>
+				<EdgeConvection segment="63" area="0.006350" flux="72.659000" heatRate="0.461385"/>
+				<EdgeConvection segment="64" area="0.006350" flux="74.957000" heatRate="0.475977"/>
+				<EdgeConvection segment="65" area="0.005853" flux="-24.975000" heatRate="-0.146166"/>
+				<EdgeConvection segment="66" area="0.005853" flux="-23.868000" heatRate="-0.139687"/>
+				<EdgeConvection segment="67" area="0.006350" flux="-26.156000" heatRate="-0.166091"/>
+				<EdgeConvection segment="68" area="0.006350" flux="-25.795000" heatRate="-0.163798"/>
+				<EdgeConvection segment="69" area="0.006350" flux="-25.823000" heatRate="-0.163976"/>
+				<EdgeConvection segment="70" area="0.006350" flux="-26.174000" heatRate="-0.166205"/>
+				<EdgeConvection segment="71" area="0.006101" flux="56.649000" heatRate="0.345627"/>
+				<EdgeConvection segment="72" area="0.006101" flux="53.714000" heatRate="0.327725"/>
+				<EdgeConvection segment="73" area="0.005853" flux="-23.861000" heatRate="-0.139647"/>
+				<EdgeConvection segment="74" area="0.005853" flux="-24.985000" heatRate="-0.146225"/>
+				<EdgeConvection segment="75" area="0.006101" flux="52.233000" heatRate="0.318684"/>
+				<EdgeConvection segment="76" area="0.006101" flux="51.548000" heatRate="0.314510"/>
+				<EdgeConvection segment="77" area="0.006101" flux="-22.018000" heatRate="-0.134338"/>
+				<EdgeConvection segment="78" area="0.006101" flux="-22.825000" heatRate="-0.139262"/>
+				<EdgeConvection segment="79" area="0.006101" flux="-21.024000" heatRate="-0.128274"/>
+				<EdgeConvection segment="80" area="0.006101" flux="-21.439000" heatRate="-0.130806"/>
+				<EdgeRadiation segment="1" area="0.004067" flux="6.329300" heatRate="0.025744"/>
+				<EdgeRadiation segment="2" area="0.012203" flux="6.329200" heatRate="0.077235"/>
+				<EdgeRadiation segment="3" area="0.012203" flux="6.328800" heatRate="0.077230"/>
+				<EdgeRadiation segment="4" area="0.012203" flux="6.327900" heatRate="0.077219"/>
+				<EdgeRadiation segment="5" area="0.012202" flux="6.326200" heatRate="0.077192"/>
+				<EdgeRadiation segment="6" area="0.012203" flux="6.323000" heatRate="0.077160"/>
+				<EdgeRadiation segment="7" area="0.012203" flux="6.317500" heatRate="0.077092"/>
+				<EdgeRadiation segment="8" area="0.012202" flux="6.309000" heatRate="0.076982"/>
+				<EdgeRadiation segment="9" area="0.012203" flux="6.300100" heatRate="0.076880"/>
+				<EdgeRadiation segment="10" area="0.012202" flux="6.307900" heatRate="0.076969"/>
+				<EdgeRadiation segment="11" area="0.012700" flux="9.070900" heatRate="0.115200"/>
+				<EdgeRadiation segment="12" area="0.011705" flux="8.009800" heatRate="0.093755"/>
+				<EdgeRadiation segment="13" area="0.012202" flux="6.309100" heatRate="0.076984"/>
+				<EdgeRadiation segment="14" area="0.012203" flux="6.300500" heatRate="0.076885"/>
+				<EdgeRadiation segment="15" area="0.012202" flux="6.309300" heatRate="0.076986"/>
+				<EdgeRadiation segment="16" area="0.012203" flux="6.317600" heatRate="0.077094"/>
+				<EdgeRadiation segment="17" area="0.012203" flux="6.323100" heatRate="0.077161"/>
+				<EdgeRadiation segment="18" area="0.012202" flux="6.326200" heatRate="0.077192"/>
+				<EdgeRadiation segment="19" area="0.012203" flux="6.327900" heatRate="0.077219"/>
+				<EdgeRadiation segment="20" area="0.012203" flux="6.328800" heatRate="0.077230"/>
+				<EdgeRadiation segment="21" area="0.012203" flux="6.329200" heatRate="0.077235"/>
+				<EdgeRadiation segment="22" area="0.004067" flux="6.329300" heatRate="0.025744"/>
+				<EdgeRadiation segment="23" area="0.006101" flux="6.345400" heatRate="0.038715"/>
+				<EdgeRadiation segment="24" area="0.006101" flux="6.430000" heatRate="0.039231"/>
+				<EdgeRadiation segment="25" area="0.006101" flux="6.612300" heatRate="0.040344"/>
+				<EdgeRadiation segment="26" area="0.006101" flux="6.977700" heatRate="0.042572"/>
+				<EdgeRadiation segment="27" area="0.005853" flux="7.600300" heatRate="0.044481"/>
+				<EdgeRadiation segment="28" area="0.005853" flux="8.374300" heatRate="0.049011"/>
+				<EdgeRadiation segment="29" area="0.006350" flux="8.989900" heatRate="0.057086"/>
+				<EdgeRadiation segment="30" area="0.006350" flux="9.279000" heatRate="0.058922"/>
+				<EdgeRadiation segment="31" area="0.006101" flux="6.983800" heatRate="0.042610"/>
+				<EdgeRadiation segment="32" area="0.006101" flux="6.617500" heatRate="0.040375"/>
+				<EdgeRadiation segment="33" area="0.006101" flux="6.433000" heatRate="0.039249"/>
+				<EdgeRadiation segment="34" area="0.006101" flux="6.347600" heatRate="0.038729"/>
+				<EdgeRadiationEnclosure segment="1" area="0.012202" flux="-39.042000" heatRate="-0.476390"/>
+				<EdgeRadiationEnclosure segment="2" area="0.012203" flux="-38.445000" heatRate="-0.469144"/>
+				<EdgeRadiationEnclosure segment="3" area="0.002985" flux="-38.210000" heatRate="-0.114057"/>
+				<EdgeRadiationEnclosure segment="4" area="0.009217" flux="-38.100000" heatRate="-0.351187"/>
+				<EdgeRadiationEnclosure segment="5" area="0.012203" flux="-37.969000" heatRate="-0.463336"/>
+				<EdgeRadiationEnclosure segment="6" area="0.012203" flux="-37.884000" heatRate="-0.462298"/>
+				<EdgeRadiationEnclosure segment="7" area="0.012202" flux="-37.839000" heatRate="-0.461711"/>
+				<EdgeRadiationEnclosure segment="8" area="0.012203" flux="-37.816000" heatRate="-0.461469"/>
+				<EdgeRadiationEnclosure segment="9" area="0.012203" flux="-37.804000" heatRate="-0.461322"/>
+				<EdgeRadiationEnclosure segment="10" area="0.012203" flux="-37.799000" heatRate="-0.461261"/>
+				<EdgeRadiationEnclosure segment="11" area="0.004067" flux="-37.798000" heatRate="-0.153743"/>
+				<EdgeRadiationEnclosure segment="12" area="0.004067" flux="-37.798000" heatRate="-0.153743"/>
+				<EdgeRadiationEnclosure segment="13" area="0.012203" flux="-37.799000" heatRate="-0.461261"/>
+				<EdgeRadiationEnclosure segment="14" area="0.012203" flux="-37.804000" heatRate="-0.461322"/>
+				<EdgeRadiationEnclosure segment="15" area="0.012203" flux="-37.816000" heatRate="-0.461469"/>
+				<EdgeRadiationEnclosure segment="16" area="0.012202" flux="-37.839000" heatRate="-0.461711"/>
+				<EdgeRadiationEnclosure segment="17" area="0.012203" flux="-37.883000" heatRate="-0.462286"/>
+				<EdgeRadiationEnclosure segment="18" area="0.011736" flux="-37.965000" heatRate="-0.445557"/>
+				<EdgeRadiationEnclosure segment="19" area="0.009684" flux="-38.098000" heatRate="-0.368945"/>
+				<EdgeRadiationEnclosure segment="20" area="0.002985" flux="-38.207000" heatRate="-0.114048"/>
+				<EdgeRadiationEnclosure segment="21" area="0.012203" flux="-38.439000" heatRate="-0.469071"/>
+				<EdgeRadiationEnclosure segment="22" area="0.012203" flux="-39.037000" heatRate="-0.476369"/>
+				<EdgeRadiationEnclosure segment="23" area="0.006101" flux="-40.496000" heatRate="-0.247074"/>
+				<EdgeRadiationEnclosure segment="24" area="0.006101" flux="-39.748000" heatRate="-0.242514"/>
+				<EdgeRadiationEnclosure segment="25" area="0.006101" flux="-43.008000" heatRate="-0.262400"/>
+				<EdgeRadiationEnclosure segment="26" area="0.006101" flux="-41.545000" heatRate="-0.253479"/>
+				<EdgeRadiationEnclosure segment="27" area="0.005853" flux="-46.828000" heatRate="-0.274061"/>
+				<EdgeRadiationEnclosure segment="28" area="0.005853" flux="-44.855000" heatRate="-0.262514"/>
+				<EdgeRadiationEnclosure segment="29" area="0.006350" flux="-48.923000" heatRate="-0.310661"/>
+				<EdgeRadiationEnclosure segment="30" area="0.006350" flux="-48.285000" heatRate="-0.306610"/>
+				<EdgeRadiationEnclosure segment="31" area="0.006350" flux="-48.334000" heatRate="-0.306921"/>
+				<EdgeRadiationEnclosure segment="32" area="0.006350" flux="-48.956000" heatRate="-0.310871"/>
+				<EdgeRadiationEnclosure segment="33" area="0.005853" flux="-44.842000" heatRate="-0.262438"/>
+				<EdgeRadiationEnclosure segment="34" area="0.005853" flux="-46.846000" heatRate="-0.274166"/>
+				<EdgeRadiationEnclosure segment="35" area="0.006101" flux="-41.536000" heatRate="-0.253424"/>
+				<EdgeRadiationEnclosure segment="36" area="0.006101" flux="-42.987000" heatRate="-0.262277"/>
+				<EdgeRadiationEnclosure segment="37" area="0.006101" flux="-39.743000" heatRate="-0.242484"/>
+				<EdgeRadiationEnclosure segment="38" area="0.006101" flux="-40.492000" heatRate="-0.247054"/>
+				<EdgeRadiationEnclosure segment="39" area="0.325400" flux="39.922000" heatRate="12.990619"/>
+			</ElementEdges>
+			<PolygonEdges>
+				<EdgeConvection segment="22" area="0.003000" flux="0.000000" heatRate="0.000000"/>
+				<EdgeConvection segment="23" area="0.150000" flux="52.717000" heatRate="7.907550"/>
+				<EdgeConvection segment="24" area="0.025400" flux="73.556000" heatRate="1.868322"/>
+				<EdgeConvection segment="27" area="0.019456" flux="0.000000" heatRate="0.000000"/>
+				<EdgeConvection segment="30" area="0.063500" flux="-21.709000" heatRate="-1.378521"/>
+				<EdgeConvection segment="31" area="0.086500" flux="-19.994000" heatRate="-1.729481"/>
+				<EdgeConvection segment="32" area="0.002970" flux="0.000000" heatRate="0.000000"/>
+				<EdgeConvection segment="34" area="0.150000" flux="52.738000" heatRate="7.910700"/>
+				<EdgeConvection segment="35" area="0.003000" flux="0.000000" heatRate="0.000000"/>
+				<EdgeConvection segment="37" area="0.019456" flux="0.000000" heatRate="0.000000"/>
+				<EdgeConvection segment="40" area="0.002970" flux="0.000000" heatRate="0.000000"/>
+				<EdgeConvection segment="41" area="0.086500" flux="-19.994000" heatRate="-1.729481"/>
+				<EdgeConvection segment="42" area="0.063500" flux="-21.706000" heatRate="-1.378331"/>
+				<EdgeConvection segment="29" area="0.025400" flux="-25.987000" heatRate="-0.660070"/>
+				<EdgeRadiation segment="23" area="0.150000" flux="6.493700" heatRate="0.974055"/>
+				<EdgeRadiation segment="24" area="0.025400" flux="9.102700" heatRate="0.231209"/>
+				<EdgeRadiation segment="34" area="0.150000" flux="6.496300" heatRate="0.974445"/>
+				<EdgeRadiationEnclosure segment="30" area="0.063500" flux="-40.971000" heatRate="-2.601658"/>
+				<EdgeRadiationEnclosure segment="31" area="0.086500" flux="-37.876000" heatRate="-3.276274"/>
+				<EdgeRadiationEnclosure segment="41" area="0.086500" flux="-37.876000" heatRate="-3.276274"/>
+				<EdgeRadiationEnclosure segment="42" area="0.063500" flux="-40.965000" heatRate="-2.601278"/>
+				<EdgeRadiationEnclosure segment="29" area="0.025400" flux="-48.624000" heatRate="-1.235050"/>
+				<EdgeRadiationEnclosure segment="43" area="0.325400" flux="39.922000" heatRate="12.990619"/>
+			</PolygonEdges>
+			<TemperatureCountourData>
+				<node id="2"/>
+				<node id="1"/>
+				<node id="3"/>
+				<node id="7"/>
+				<node id="12"/>
+				<node id="17"/>
+				<node id="22"/>
+				<node id="27"/>
+				<node id="32"/>
+				<node id="37"/>
+				<node id="42"/>
+				<node id="47"/>
+				<node id="68"/>
+				<node id="77"/>
+				<node id="8"/>
+				<node id="5"/>
+				<node id="58"/>
+				<node id="53"/>
+				<node id="48"/>
+				<node id="44"/>
+				<node id="39"/>
+				<node id="34"/>
+				<node id="29"/>
+				<node id="24"/>
+				<node id="19"/>
+				<node id="14"/>
+				<node id="9"/>
+				<node id="4"/>
+				<node id="86"/>
+				<node id="101"/>
+				<node id="106"/>
+				<node id="111"/>
+				<node id="116"/>
+				<node id="121"/>
+				<node id="126"/>
+				<node id="131"/>
+				<node id="136"/>
+				<node id="141"/>
+				<node id="146"/>
+				<node id="151"/>
+				<node id="155"/>
+				<node id="158"/>
+				<node id="160"/>
+				<node id="161"/>
+				<node id="159"/>
+				<node id="156"/>
+				<node id="152"/>
+				<node id="147"/>
+				<node id="142"/>
+				<node id="137"/>
+				<node id="132"/>
+				<node id="127"/>
+				<node id="122"/>
+				<node id="117"/>
+				<node id="112"/>
+				<node id="164"/>
+				<node id="52"/>
+				<node id="172"/>
+				<node id="57"/>
+				<node id="63"/>
+				<node id="187"/>
+				<node id="192"/>
+				<node id="62"/>
+				<node id="69"/>
+				<node id="206"/>
+				<node id="210"/>
+				<node id="78"/>
+				<node id="227"/>
+				<node id="87"/>
+				<node id="240"/>
+				<node id="96"/>
+				<node id="256"/>
+				<node id="260"/>
+				<node id="95"/>
+				<node id="102"/>
+				<node id="269"/>
+				<node id="273"/>
+				<node id="107"/>
+				<node id="281"/>
+				<node id="288"/>
+			</TemperatureCountourData>
+		</MeshResults>
+	</Case>
+</Results>
+</THERM-XML>

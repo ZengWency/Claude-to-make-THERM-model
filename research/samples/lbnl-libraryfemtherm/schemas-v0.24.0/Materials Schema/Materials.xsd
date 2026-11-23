@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="Roughness" final="restriction">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Very Rough"/>
+			<xs:enumeration value="Rough"/>
+			<xs:enumeration value="Medium Rough"/>
+			<xs:enumeration value="Medium Smooth"/>
+			<xs:enumeration value="Smooth"/>
+			<xs:enumeration value="Very Smooth"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="TableValue">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="x" type="xs:double"/>
+				<xs:element name="y" type="xs:double"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="Table">
+		<xs:sequence>
+			<xs:element ref="TableValue" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="HygroThermal">
+		<xs:all>
+			<xs:element name="DefaultThickness" type="xs:double" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="MaterialInformation" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="BulkDensity" type="xs:double" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="Porosity" type="xs:double" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="SpecificHeatCapacityDry" type="xs:double" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="ThermalConductivityDry" type="xs:double" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="Roughness" type="Roughness" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="WaterVaporDiffusionResistanceFactor" type="xs:double" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="ReferenceWaterContent" type="xs:double" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="FreeWaterSaturation" type="xs:double" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="WaterAbsorptionCoefficient" type="xs:double" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="DryingFactor" type="xs:double" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="MoistureDependentThermalConductivitySupplement" type="xs:double" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="TypicalBuiltInMoisture" type="xs:double" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="TemperatureDependentThermalConducivitySupplement" type="xs:double" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="ThermalConductivityDesignValue" type="xs:double" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="MoistureStorageFunction" type="Table" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="LiquidTransportationCoefficientSuction" type="Table" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="LiquidTransportationCoefficientRedistribution" type="Table" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="ThermalConductivityMoistureDependent" type="Table" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="WaterVaporDiffusionResistanceFactorMoistureDependent" type="Table" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="ThermalConductivityTemperatureDependent" type="Table" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="EnthalpyTemperatureDependent" type="Table" minOccurs="0" maxOccurs="1"/>
+		</xs:all>
+	</xs:complexType>
+	<xs:element name="HygroThermal" type="HygroThermal"/>
+	<xs:complexType name="OpticalProperties">
+		<xs:all>
+			<xs:element name="Transmittance" type="xs:double"/>
+			<xs:element name="Reflectance" type="xs:double"/>
+		</xs:all>
+	</xs:complexType>
+	<xs:element name="OpticalProperties" type="OpticalProperties"/>
+	<xs:complexType name="OpticalSide">
+		<xs:all>
+			<xs:element name="Front" type="OpticalProperties"/>
+			<xs:element name="Back" type="OpticalProperties"/>
+		</xs:all>
+	</xs:complexType>
+	<xs:element name="OpticalSide" type="OpticalSide"/>
+	<xs:complexType name="OpticalType">
+		<xs:all>
+			<xs:element name="Direct" type="OpticalSide"/>
+			<xs:element name="Diffuse" type="OpticalSide"/>
+		</xs:all>
+	</xs:complexType>
+	<xs:element name="OpticalType" type="OpticalType"/>
+	<xs:complexType name="Infrared">
+		<xs:all>
+			<xs:element name="Transmittance" type="xs:double" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="Emissivity-Front" type="xs:double" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="Emissivity-Back" type="xs:double" minOccurs="0" maxOccurs="1"/>
+		</xs:all>
+	</xs:complexType>
+	<xs:complexType name="Integrated">
+		<xs:all>
+			<xs:element name="Infrared" type="Infrared"/>
+			<xs:element name="Solar" type="OpticalType" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="Visible" type="OpticalType" minOccurs="0" maxOccurs="1"/>
+		</xs:all>
+	</xs:complexType>
+	<xs:element name="Integrated" type="Integrated"/>
+	<xs:complexType name="Optical">
+		<xs:all>
+			<xs:element name="Integrated" type="Integrated" minOccurs="0" maxOccurs="1"/>
+		</xs:all>
+	</xs:complexType>
+	<xs:element name="Optical" type="Optical"/>
+	<xs:complexType name="Solid">
+		<xs:all>
+			<xs:element name="HygroThermal" type="HygroThermal" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="Optical" type="Optical" minOccurs="0" maxOccurs="1"/>
+		</xs:all>
+	</xs:complexType>
+	<xs:complexType name="WINDOW">
+		<xs:all>
+			<xs:element name="Path" type="xs:string"/>
+			<xs:element name="Name" type="xs:string"/>
+			<xs:element name="ID" type="xs:integer"/>
+		</xs:all>
+	</xs:complexType>
+	<xs:complexType name="Database">
+		<xs:all>
+			<xs:element name="WINDOW" type="WINDOW" minOccurs="0" maxOccurs="1"/>
+		</xs:all>
+	</xs:complexType>
+	<xs:element name="Material">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="UUID" type="xs:string"/>
+				<xs:element name="Name" type="xs:string"/>
+				<xs:element name="ProjectName" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="Protected" type="xs:boolean"/>
+				<xs:element name="Color" type="xs:string"/>
+				<xs:element name="Database" type="Database" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="Solid" type="Solid"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="Materials" mixed="true">
+		<xs:sequence>
+			<xs:element name="Version" type="xs:string"/>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="Material"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Materials" type="Materials"/>
+</xs:schema>

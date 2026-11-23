@@ -1,0 +1,5 @@
+ PROBLEM : C:\Users\Public\LBNL\THERM7.8\Si
+
+ ALGORITHM           TIME(SECONDS)  DOF   TOTAL_TIME(SECONDS)
+ mesh               0.00000D+00     964       0.00000D+00
+ reorder            0.00000D+00     964       0.00000D+00

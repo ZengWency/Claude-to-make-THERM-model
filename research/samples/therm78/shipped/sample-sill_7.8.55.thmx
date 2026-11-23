@@ -1,0 +1,818 @@
+<?xml version="1.0"?>
+<THERM-XML xmlns="http://windows.lbl.gov">
+<ThermVersion>Version 7.8.55.0</ThermVersion>
+<FileVersion>1</FileVersion>
+<SaveDate>2022-08-12T17:54:25</SaveDate>
+
+<Title></Title>
+<CreatedBy></CreatedBy>
+<Company></Company>
+<Client></Client>
+<CrossSectionType>Sill</CrossSectionType>
+<Notes></Notes>
+<Units>SI</Units>
+<MeshControl MeshLevel="6" ErrorCheckFlag="1" ErrorLimit="10.000000" MaxIterations="3" CMAflag="0" />
+<RadianceModeBC>
+	<RadianceModeInBCName>ShadeInE</RadianceModeInBCName>
+	<RadianceModeInBCTag>ShadeInETag</RadianceModeInBCTag>
+	<RadianceModeOutBCName>ShadeOutE</RadianceModeOutBCName>
+	<RadianceModeOutBCTag>ShadeOutETag</RadianceModeOutBCTag>
+</RadianceModeBC>
+<Materials>
+	<Material Name="sample-sill:Silica Gel (dessicant)" Index="1" Type="0" Conductivity="0.030000" Tir="0.000000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0xFF8080">
+		<Property Side="Front" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+	</Material>
+	<Material Name="sample-sill:Butyl Rubber " Index="2" Type="0" Conductivity="0.240000" Tir="0.000000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0x808080">
+		<Property Side="Front" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+	</Material>
+	<Material Name="sample-sill:Steel - ANSI 304 Stainless" Index="3" Type="0" Conductivity="14.300000" Tir="0.000000" EmissivityFront="0.200000" EmissivityBack="0.900000" RGBColor="0x8080FF">
+		<Property Side="Front" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+	</Material>
+	<Material Name="sample-sill:Vinyl (flexible)" Index="4" Type="0" Conductivity="0.120000" Tir="0.000000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0x808040">
+		<Property Side="Front" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+	</Material>
+	<Material Name="sample-sill:Wood (Pine, Spruce, Fir)" Index="5" Type="0" Conductivity="0.140000" Tir="0.000000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0xFF8000">
+		<Property Side="Front" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+	</Material>
+	<Material Name="sample-sill:Frame Cavity NFRC 100-2001_Cavity_16" Index="6" Type="1" Conductivity="0.045694" Tir="0.000000" Absorptivity="0.500000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0x00FF00" CavityModel="4" />
+	<Material Name="Frame Cavity NFRC 100_Cavity_49" Index="7" Type="1" Conductivity="0.038380" Tir="1.000000" Absorptivity="0.500000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0x00FF00" CavityModel="4" />
+	<Material Name="Frame Cavity NFRC 100_Cavity_50" Index="8" Type="1" Conductivity="0.034980" Tir="1.000000" Absorptivity="0.500000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0x00FF00" CavityModel="4" />
+	<Material Name="Butyl rubber" Index="9" Type="0" Conductivity="0.240000" Tir="0.000000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0x808080">
+		<Property Side="Front" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+	</Material>
+	<Material Name="Frame Cavity NFRC 100_Cavity_83" Index="10" Type="1" Conductivity="0.121123" Tir="1.000000" Absorptivity="0.500000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0x00FF00" CavityModel="4" />
+	<Material Name="Sample GlzSys_Glass_0" Index="11" Type="0" Conductivity="1.000000" Tir="0.000000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0x00FFFF">
+		<Property Side="Front" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+	</Material>
+	<Material Name="Sample GlzSys_Gap_0" Index="12" Type="0" Conductivity="0.049352" Tir="0.000000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0xC0C0C0">
+		<Property Side="Front" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+	</Material>
+	<Material Name="Sample GlzSys_Glass_1" Index="13" Type="0" Conductivity="1.000000" Tir="0.000000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0x00FFFF">
+		<Property Side="Front" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+	</Material>
+</Materials>
+<BoundaryConditions>
+	<BoundaryCondition Name="Frame Cavity Surface" Type="7" H="0.000000" HeatFLux="0.000000" Temperature="0.000000" RGBColor="0x0000FF" 
+		Tr="0.000000" Hr="0.000000" Ei="1.000000" Viewfactor="1.000000" RadiationModel="0"
+		ConvectionFlag="0" FluxFlag="0" RadiationFlag="0" ConstantTemperatureFlag="0" EmisModifier="1.000000" />
+	<BoundaryCondition Name="Glazing Cavity Surface" Type="6" H="0.000000" HeatFLux="0.000000" Temperature="0.000000" RGBColor="0xFF0000" 
+		Tr="0.000000" Hr="0.000000" Ei="1.000000" Viewfactor="1.000000" RadiationModel="0"
+		ConvectionFlag="0" FluxFlag="0" RadiationFlag="0" ConstantTemperatureFlag="0" EmisModifier="1.000000" />
+	<BoundaryCondition Name="Adiabatic" Type="0" H="0.000000" HeatFLux="0.000000" Temperature="0.000000" RGBColor="0x000000" 
+		Tr="0.000000" Hr="0.000000" Ei="1.000000" Viewfactor="1.000000" RadiationModel="0"
+		ConvectionFlag="0" FluxFlag="1" RadiationFlag="0" ConstantTemperatureFlag="0" EmisModifier="1.000000" />
+	<BoundaryCondition Name="Interior Wood/Vinyl Frame (convection only)" Type="1" H="2.440000" HeatFLux="0.000000" Temperature="21.000000" RGBColor="0xFF8080" 
+		Tr="21.000000" Hr="-431602080.000000" Ei="1.000000" Viewfactor="1.000000" RadiationModel="3"
+		ConvectionFlag="1" FluxFlag="0" RadiationFlag="1" ConstantTemperatureFlag="0" EmisModifier="1.000000" />
+	<BoundaryCondition Name="sample-sill:Sample GlzSys (ID:8) U-factor Inside Film" Type="1" H="2.614402" HeatFLux="0.000000" Temperature="21.000000" RGBColor="0xFF0000" 
+		Tr="21.000000" Hr="4.595834" Ei="1.000000" Viewfactor="1.000000" RadiationModel="3"
+		ConvectionFlag="1" FluxFlag="0" RadiationFlag="1" ConstantTemperatureFlag="0" EmisModifier="1.000000" />
+	<BoundaryCondition Name="NFRC 100-2010 Exterior" Type="1" H="26.000000" HeatFLux="0.000000" Temperature="-18.000000" RGBColor="0x0080C0" 
+		Tr="-18.000000" Hr="-431602080.000000" Ei="1.000000" Viewfactor="1.000000" RadiationModel="1"
+		ConvectionFlag="1" FluxFlag="0" RadiationFlag="1" ConstantTemperatureFlag="0" EmisModifier="1.000000" />
+</BoundaryConditions>
+<GlazingSystems>
+<GlazingSystem index="1" nlayers="2" width="25.933400" units="mm"/>
+</GlazingSystems>
+<Polygons>
+	<Polygon ID="68" Material="sample-sill:Silica Gel (dessicant)" NSides="12" Type="1" units="mm">
+		<Point index="0" x="241.017166" y="-301.521545" />
+		<Point index="1" x="242.347763" y="-302.852112" />
+		<Point index="2" x="254.901199" y="-302.852112" />
+		<Point index="3" x="256.231750" y="-301.521545" />
+		<Point index="4" x="256.231750" y="-300.864563" />
+		<Point index="5" x="255.893448" y="-299.369781" />
+		<Point index="6" x="256.231750" y="-297.875000" />
+		<Point index="7" x="256.231750" y="-297.411438" />
+		<Point index="8" x="241.017166" y="-297.411438" />
+		<Point index="9" x="241.017166" y="-297.875000" />
+		<Point index="10" x="241.355499" y="-299.369781" />
+		<Point index="11" x="241.017166" y="-300.864563" />
+	</Polygon>
+	<Polygon ID="67" Material="sample-sill:Butyl Rubber " NSides="7" Type="1" units="mm">
+		<Point index="0" x="240.369461" y="-297.081238" />
+		<Point index="1" x="240.369461" y="-301.658325" />
+		<Point index="2" x="240.686966" y="-301.658325" />
+		<Point index="3" x="240.686966" y="-300.864563" />
+		<Point index="4" x="241.025299" y="-299.369781" />
+		<Point index="5" x="240.686966" y="-297.875000" />
+		<Point index="6" x="240.686966" y="-297.081238" />
+	</Polygon>
+	<Polygon ID="66" Material="sample-sill:Butyl Rubber " NSides="7" Type="1" units="mm">
+		<Point index="0" x="256.562012" y="-297.081238" />
+		<Point index="1" x="256.562012" y="-297.875000" />
+		<Point index="2" x="256.223633" y="-299.369781" />
+		<Point index="3" x="256.562012" y="-300.864563" />
+		<Point index="4" x="256.562012" y="-301.658325" />
+		<Point index="5" x="256.879456" y="-301.658325" />
+		<Point index="6" x="256.879456" y="-297.081238" />
+	</Polygon>
+	<Polygon ID="65" Material="sample-sill:Steel - ANSI 304 Stainless" NSides="4" Type="1" units="mm">
+		<Point index="0" x="240.686966" y="-297.081238" />
+		<Point index="1" x="241.017166" y="-297.411438" />
+		<Point index="2" x="256.231750" y="-297.411438" />
+		<Point index="3" x="256.562012" y="-297.081238" />
+	</Polygon>
+	<Polygon ID="64" Material="sample-sill:Vinyl (flexible)" NSides="18" Type="1" units="mm">
+		<Point index="0" x="240.369461" y="-301.658325" />
+		<Point index="1" x="240.369461" y="-308.193726" />
+		<Point index="2" x="240.826675" y="-308.193726" />
+		<Point index="3" x="240.826675" y="-307.863556" />
+		<Point index="4" x="241.334671" y="-307.355530" />
+		<Point index="5" x="242.604660" y="-307.355530" />
+		<Point index="6" x="244.331863" y="-305.501343" />
+		<Point index="7" x="252.917068" y="-305.501343" />
+		<Point index="8" x="254.644272" y="-307.355530" />
+		<Point index="9" x="255.956467" y="-307.397766" />
+		<Point index="10" x="256.422302" y="-307.863556" />
+		<Point index="11" x="256.422302" y="-308.193726" />
+		<Point index="12" x="256.879456" y="-308.193726" />
+		<Point index="13" x="256.879456" y="-301.658325" />
+		<Point index="14" x="256.562012" y="-301.658325" />
+		<Point index="15" x="255.037949" y="-303.182312" />
+		<Point index="16" x="242.210983" y="-303.182312" />
+		<Point index="17" x="240.686966" y="-301.658325" />
+	</Polygon>
+	<Polygon ID="62" Material="sample-sill:Steel - ANSI 304 Stainless" NSides="24" Type="1" units="mm">
+		<Point index="0" x="254.901199" y="-302.852112" />
+		<Point index="1" x="242.347763" y="-302.852112" />
+		<Point index="2" x="241.017166" y="-301.521545" />
+		<Point index="3" x="241.017166" y="-300.864563" />
+		<Point index="4" x="241.355499" y="-299.369781" />
+		<Point index="5" x="241.017166" y="-297.875000" />
+		<Point index="6" x="241.017166" y="-297.411438" />
+		<Point index="7" x="240.686966" y="-297.081238" />
+		<Point index="8" x="240.686966" y="-297.875000" />
+		<Point index="9" x="241.025299" y="-299.369781" />
+		<Point index="10" x="240.686966" y="-300.864563" />
+		<Point index="11" x="240.686966" y="-301.658325" />
+		<Point index="12" x="242.210983" y="-303.182312" />
+		<Point index="13" x="255.037949" y="-303.182312" />
+		<Point index="14" x="256.562012" y="-301.658325" />
+		<Point index="15" x="256.562012" y="-300.864563" />
+		<Point index="16" x="256.223633" y="-299.369781" />
+		<Point index="17" x="256.562012" y="-297.875000" />
+		<Point index="18" x="256.562012" y="-297.081238" />
+		<Point index="19" x="256.231750" y="-297.411438" />
+		<Point index="20" x="256.231750" y="-297.875000" />
+		<Point index="21" x="255.893448" y="-299.369781" />
+		<Point index="22" x="256.231750" y="-300.864563" />
+		<Point index="23" x="256.231750" y="-301.521545" />
+	</Polygon>
+	<Polygon ID="1" Material="sample-sill:Wood (Pine, Spruce, Fir)" NSides="6" Type="1" units="mm">
+		<Point index="0" x="234.972458" y="-297.081238" />
+		<Point index="1" x="220.993835" y="-300.566467" />
+		<Point index="2" x="218.303711" y="-311.356018" />
+		<Point index="3" x="218.303726" y="-322.481232" />
+		<Point index="4" x="234.972443" y="-321.899139" />
+		<Point index="5" x="234.972458" y="-308.193726" />
+	</Polygon>
+	<Polygon ID="42" Material="sample-sill:Wood (Pine, Spruce, Fir)" NSides="6" Type="1" units="mm">
+		<Point index="0" x="262.833221" y="-309.781250" />
+		<Point index="1" x="290.614471" y="-309.781250" />
+		<Point index="2" x="290.614441" y="-299.621277" />
+		<Point index="3" x="288.074432" y="-297.081268" />
+		<Point index="4" x="262.833221" y="-297.081268" />
+		<Point index="5" x="262.833221" y="-308.193726" />
+	</Polygon>
+	<Polygon ID="3" Material="sample-sill:Wood (Pine, Spruce, Fir)" NSides="20" Type="1" units="mm">
+		<Point index="0" x="275.930084" y="-339.956421" />
+		<Point index="1" x="332.683167" y="-339.956421" />
+		<Point index="2" x="332.683167" y="-322.481232" />
+		<Point index="3" x="307.283173" y="-322.481232" />
+		<Point index="4" x="306.928314" y="-312.319702" />
+		<Point index="5" x="304.299683" y="-309.781250" />
+		<Point index="6" x="290.614471" y="-309.781250" />
+		<Point index="7" x="262.833221" y="-309.781250" />
+		<Point index="8" x="262.833221" y="-322.481232" />
+		<Point index="9" x="234.972443" y="-322.481232" />
+		<Point index="10" x="218.303726" y="-322.481232" />
+		<Point index="11" x="216.795715" y="-322.481232" />
+		<Point index="12" x="216.795715" y="-339.956421" />
+		<Point index="13" x="224.733215" y="-339.956421" />
+		<Point index="14" x="224.733215" y="-334.400208" />
+		<Point index="15" x="231.083206" y="-334.400208" />
+		<Point index="16" x="231.083206" y="-339.956421" />
+		<Point index="17" x="272.755096" y="-339.956421" />
+		<Point index="18" x="272.755096" y="-334.393860" />
+		<Point index="19" x="275.930084" y="-334.393860" />
+	</Polygon>
+	<Polygon ID="16" Material="sample-sill:Frame Cavity NFRC 100-2001_Cavity_16" NSides="3" Type="1" units="mm">
+		<Point index="0" x="218.303726" y="-322.481232" />
+		<Point index="1" x="234.972443" y="-322.481232" />
+		<Point index="2" x="234.972443" y="-321.899139" />
+	</Polygon>
+	<Polygon ID="49" Material="Frame Cavity NFRC 100_Cavity_49" NSides="4" Type="1" units="mm">
+		<Point index="0" x="224.733215" y="-334.400208" />
+		<Point index="1" x="224.733215" y="-339.956421" />
+		<Point index="2" x="231.083206" y="-339.956421" />
+		<Point index="3" x="231.083206" y="-334.400208" />
+	</Polygon>
+	<Polygon ID="50" Material="Frame Cavity NFRC 100_Cavity_50" NSides="4" Type="1" units="mm">
+		<Point index="0" x="272.755096" y="-334.393860" />
+		<Point index="1" x="272.755096" y="-339.956421" />
+		<Point index="2" x="275.930084" y="-339.956421" />
+		<Point index="3" x="275.930084" y="-334.393860" />
+	</Polygon>
+	<Polygon ID="75" Material="Butyl rubber" NSides="4" Type="1" units="mm">
+		<Point index="0" x="234.972458" y="-297.081238" />
+		<Point index="1" x="234.972458" y="-308.193726" />
+		<Point index="2" x="235.670456" y="-308.193726" />
+		<Point index="3" x="235.670456" y="-297.081238" />
+	</Polygon>
+	<Polygon ID="77" Material="Butyl rubber" NSides="4" Type="1" units="mm">
+		<Point index="0" x="262.833221" y="-297.081268" />
+		<Point index="1" x="261.603851" y="-297.081238" />
+		<Point index="2" x="261.603851" y="-308.193726" />
+		<Point index="3" x="262.833221" y="-308.193726" />
+	</Polygon>
+	<Polygon ID="83" Material="Frame Cavity NFRC 100_Cavity_83" NSides="20" Type="1" units="mm">
+		<Point index="0" x="234.972443" y="-321.899139" />
+		<Point index="1" x="234.972443" y="-322.481232" />
+		<Point index="2" x="262.833221" y="-322.481232" />
+		<Point index="3" x="262.833221" y="-309.781250" />
+		<Point index="4" x="262.833221" y="-308.193726" />
+		<Point index="5" x="261.603851" y="-308.193726" />
+		<Point index="6" x="256.879456" y="-308.193726" />
+		<Point index="7" x="256.422302" y="-308.193726" />
+		<Point index="8" x="256.422302" y="-307.863556" />
+		<Point index="9" x="255.956467" y="-307.397766" />
+		<Point index="10" x="254.644272" y="-307.355530" />
+		<Point index="11" x="252.917068" y="-305.501343" />
+		<Point index="12" x="244.331863" y="-305.501343" />
+		<Point index="13" x="242.604660" y="-307.355530" />
+		<Point index="14" x="241.334671" y="-307.355530" />
+		<Point index="15" x="240.826675" y="-307.863556" />
+		<Point index="16" x="240.826675" y="-308.193726" />
+		<Point index="17" x="240.369461" y="-308.193726" />
+		<Point index="18" x="235.670456" y="-308.193726" />
+		<Point index="19" x="234.972458" y="-308.193726" />
+	</Polygon>
+	<Polygon ID="37" Material="Sample GlzSys_Glass_0" NSides="7" Type="11" units="mm">
+		<Point index="0" x="235.670456" y="-308.193726" />
+		<Point index="1" x="240.369461" y="-308.193726" />
+		<Point index="2" x="240.369461" y="-301.658325" />
+		<Point index="3" x="240.369461" y="-297.081238" />
+		<Point index="4" x="240.369461" y="-147.081268" />
+		<Point index="5" x="235.670456" y="-147.081268" />
+		<Point index="6" x="235.670456" y="-297.081238" />
+	</Polygon>
+	<Polygon ID="38" Material="Sample GlzSys_Gap_0" NSides="6" Type="5" units="mm">
+		<Point index="0" x="240.369461" y="-297.081238" />
+		<Point index="1" x="240.686966" y="-297.081238" />
+		<Point index="2" x="256.562012" y="-297.081238" />
+		<Point index="3" x="256.879456" y="-297.081238" />
+		<Point index="4" x="256.879456" y="-147.081268" />
+		<Point index="5" x="240.369461" y="-147.081268" />
+	</Polygon>
+	<Polygon ID="39" Material="Sample GlzSys_Glass_1" NSides="8" Type="9" units="mm">
+		<Point index="0" x="256.879456" y="-308.193726" />
+		<Point index="1" x="261.603851" y="-308.193726" />
+		<Point index="2" x="261.603851" y="-297.081238" />
+		<Point index="3" x="261.603851" y="-233.581223" />
+		<Point index="4" x="261.603851" y="-147.081268" />
+		<Point index="5" x="256.879456" y="-147.081268" />
+		<Point index="6" x="256.879456" y="-297.081238" />
+		<Point index="7" x="256.879456" y="-301.658325" />
+	</Polygon>
+</Polygons>
+<Boundaries>
+	<BCPolygon ID="61" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="83" EnclosureID="4" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="242.604660" y="-307.355530" />
+		<Point index="1" x="244.331863" y="-305.501343" />
+	</BCPolygon>
+	<BCPolygon ID="56" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="83" EnclosureID="4" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="241.334671" y="-307.355530" />
+		<Point index="1" x="242.604660" y="-307.355530" />
+	</BCPolygon>
+	<BCPolygon ID="53" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="83" EnclosureID="4" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="240.826675" y="-307.863556" />
+		<Point index="1" x="241.334671" y="-307.355530" />
+	</BCPolygon>
+	<BCPolygon ID="35" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="83" EnclosureID="4" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="240.826675" y="-308.193726" />
+		<Point index="1" x="240.826675" y="-307.863556" />
+	</BCPolygon>
+	<BCPolygon ID="31" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="83" EnclosureID="4" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="240.369461" y="-308.193756" />
+		<Point index="1" x="240.826675" y="-308.193726" />
+	</BCPolygon>
+	<BCPolygon ID="20" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="83" EnclosureID="4" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="256.422302" y="-308.193726" />
+		<Point index="1" x="256.879517" y="-308.193756" />
+	</BCPolygon>
+	<BCPolygon ID="19" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="83" EnclosureID="4" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="256.422302" y="-307.863556" />
+		<Point index="1" x="256.422302" y="-308.193726" />
+	</BCPolygon>
+	<BCPolygon ID="18" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="83" EnclosureID="4" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="255.956467" y="-307.397766" />
+		<Point index="1" x="256.422302" y="-307.863556" />
+	</BCPolygon>
+	<BCPolygon ID="17" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="83" EnclosureID="4" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="254.644272" y="-307.355530" />
+		<Point index="1" x="255.956467" y="-307.397766" />
+	</BCPolygon>
+	<BCPolygon ID="15" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="83" EnclosureID="4" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="252.917068" y="-305.501343" />
+		<Point index="1" x="254.644272" y="-307.355530" />
+	</BCPolygon>
+	<BCPolygon ID="14" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="83" EnclosureID="4" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="244.331863" y="-305.501343" />
+		<Point index="1" x="252.917068" y="-305.501343" />
+	</BCPolygon>
+	<BCPolygon ID="9" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="16" EnclosureID="4" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="234.972443" y="-322.481232" />
+		<Point index="1" x="218.303726" y="-322.481232" />
+	</BCPolygon>
+	<BCPolygon ID="11" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="16" EnclosureID="4" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="218.303726" y="-322.481232" />
+		<Point index="1" x="234.972443" y="-321.899139" />
+	</BCPolygon>
+	<BCPolygon ID="12" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="49" EnclosureID="2" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="224.733215" y="-339.956421" />
+		<Point index="1" x="224.733215" y="-334.400208" />
+	</BCPolygon>
+	<BCPolygon ID="13" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="49" EnclosureID="2" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="231.083206" y="-339.956421" />
+		<Point index="1" x="224.733215" y="-339.956421" />
+	</BCPolygon>
+	<BCPolygon ID="21" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="49" EnclosureID="2" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="231.083206" y="-334.400208" />
+		<Point index="1" x="231.083206" y="-339.956421" />
+	</BCPolygon>
+	<BCPolygon ID="22" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="49" EnclosureID="2" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="224.733215" y="-334.400208" />
+		<Point index="1" x="231.083206" y="-334.400208" />
+	</BCPolygon>
+	<BCPolygon ID="23" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="50" EnclosureID="3" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="272.755096" y="-339.956421" />
+		<Point index="1" x="272.755096" y="-334.393860" />
+	</BCPolygon>
+	<BCPolygon ID="24" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="50" EnclosureID="3" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="275.930084" y="-339.956421" />
+		<Point index="1" x="272.755096" y="-339.956421" />
+	</BCPolygon>
+	<BCPolygon ID="57" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="50" EnclosureID="3" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="275.930084" y="-334.393860" />
+		<Point index="1" x="275.930084" y="-339.956421" />
+	</BCPolygon>
+	<BCPolygon ID="63" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="50" EnclosureID="3" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="272.755096" y="-334.393860" />
+		<Point index="1" x="275.930084" y="-334.393860" />
+	</BCPolygon>
+	<BCPolygon ID="73" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="83" EnclosureID="4" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="262.833221" y="-322.481232" />
+		<Point index="1" x="234.972443" y="-322.481232" />
+	</BCPolygon>
+	<BCPolygon ID="7" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="83" EnclosureID="4" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="262.833221" y="-308.193726" />
+		<Point index="1" x="262.833221" y="-309.781250" />
+	</BCPolygon>
+	<BCPolygon ID="102" BC="Glazing Cavity Surface" units="mm" MaterialName="" PolygonID="38" EnclosureID="1" UFactorTag="" Emissivity="0.157969" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="256.879456" y="-147.081116" />
+		<Point index="1" x="256.879456" y="-297.081238" />
+	</BCPolygon>
+	<BCPolygon ID="103" BC="Glazing Cavity Surface" units="mm" MaterialName="" PolygonID="38" EnclosureID="1" UFactorTag="" Emissivity="1.000000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="240.369461" y="-147.081116" />
+		<Point index="1" x="256.879456" y="-147.081116" />
+	</BCPolygon>
+	<BCPolygon ID="4" BC="Glazing Cavity Surface" units="mm" MaterialName="" PolygonID="38" EnclosureID="1" UFactorTag="" Emissivity="0.840000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="240.369461" y="-297.081238" />
+		<Point index="1" x="240.369461" y="-147.081116" />
+	</BCPolygon>
+	<BCPolygon ID="118" BC="Glazing Cavity Surface" units="mm" MaterialName="" PolygonID="38" EnclosureID="1" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="240.686966" y="-297.081238" />
+		<Point index="1" x="240.369461" y="-297.081238" />
+	</BCPolygon>
+	<BCPolygon ID="119" BC="Glazing Cavity Surface" units="mm" MaterialName="" PolygonID="38" EnclosureID="1" UFactorTag="" Emissivity="0.200000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="256.562012" y="-297.081238" />
+		<Point index="1" x="240.686966" y="-297.081238" />
+	</BCPolygon>
+	<BCPolygon ID="120" BC="Glazing Cavity Surface" units="mm" MaterialName="" PolygonID="38" EnclosureID="1" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="256.879456" y="-297.081238" />
+		<Point index="1" x="256.562012" y="-297.081238" />
+	</BCPolygon>
+	<BCPolygon ID="52" BC="Adiabatic" units="mm" MaterialName="" PolygonID="3" EnclosureID="0" UFactorTag="" Emissivity="-1.000000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="216.795715" y="-339.956421" />
+		<Point index="1" x="224.733215" y="-339.956421" />
+	</BCPolygon>
+	<BCPolygon ID="55" BC="Adiabatic" units="mm" MaterialName="" PolygonID="49" EnclosureID="0" UFactorTag="" Emissivity="-1.000000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="224.733215" y="-339.956421" />
+		<Point index="1" x="231.083206" y="-339.956421" />
+	</BCPolygon>
+	<BCPolygon ID="98" BC="Adiabatic" units="mm" MaterialName="" PolygonID="3" EnclosureID="0" UFactorTag="" Emissivity="-1.000000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="231.083206" y="-339.956421" />
+		<Point index="1" x="272.755096" y="-339.956421" />
+	</BCPolygon>
+	<BCPolygon ID="99" BC="Adiabatic" units="mm" MaterialName="" PolygonID="50" EnclosureID="0" UFactorTag="" Emissivity="-1.000000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="272.755096" y="-339.956421" />
+		<Point index="1" x="275.930084" y="-339.956421" />
+	</BCPolygon>
+	<BCPolygon ID="100" BC="Adiabatic" units="mm" MaterialName="" PolygonID="3" EnclosureID="0" UFactorTag="" Emissivity="-1.000000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="275.930084" y="-339.956421" />
+		<Point index="1" x="332.683167" y="-339.956421" />
+	</BCPolygon>
+	<BCPolygon ID="106" BC="Interior Wood/Vinyl Frame (convection only)" units="mm" MaterialName="" PolygonID="3" EnclosureID="0" UFactorTag="Frame" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="332.683167" y="-339.956421" />
+		<Point index="1" x="332.683167" y="-322.481232" />
+	</BCPolygon>
+	<BCPolygon ID="107" BC="Interior Wood/Vinyl Frame (convection only)" units="mm" MaterialName="" PolygonID="3" EnclosureID="0" UFactorTag="Frame" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="332.683167" y="-322.481232" />
+		<Point index="1" x="307.283173" y="-322.481232" />
+	</BCPolygon>
+	<BCPolygon ID="108" BC="Interior Wood/Vinyl Frame (convection only)" units="mm" MaterialName="" PolygonID="3" EnclosureID="0" UFactorTag="Frame" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="307.283173" y="-322.481232" />
+		<Point index="1" x="306.928314" y="-312.319702" />
+	</BCPolygon>
+	<BCPolygon ID="109" BC="Interior Wood/Vinyl Frame (convection only)" units="mm" MaterialName="" PolygonID="3" EnclosureID="0" UFactorTag="Frame" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="306.928314" y="-312.319702" />
+		<Point index="1" x="304.299683" y="-309.781250" />
+	</BCPolygon>
+	<BCPolygon ID="110" BC="Interior Wood/Vinyl Frame (convection only)" units="mm" MaterialName="" PolygonID="3" EnclosureID="0" UFactorTag="Frame" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="304.299683" y="-309.781250" />
+		<Point index="1" x="290.614471" y="-309.781250" />
+	</BCPolygon>
+	<BCPolygon ID="111" BC="Interior Wood/Vinyl Frame (convection only)" units="mm" MaterialName="" PolygonID="42" EnclosureID="0" UFactorTag="Frame" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="290.614471" y="-309.781250" />
+		<Point index="1" x="290.614441" y="-299.621277" />
+	</BCPolygon>
+	<BCPolygon ID="5" BC="Interior Wood/Vinyl Frame (convection only)" units="mm" MaterialName="" PolygonID="42" EnclosureID="0" UFactorTag="Frame" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="290.614441" y="-299.621277" />
+		<Point index="1" x="288.074432" y="-297.081268" />
+	</BCPolygon>
+	<BCPolygon ID="8" BC="Interior Wood/Vinyl Frame (convection only)" units="mm" MaterialName="" PolygonID="42" EnclosureID="0" UFactorTag="Frame" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="288.074432" y="-297.081268" />
+		<Point index="1" x="262.833221" y="-297.081268" />
+	</BCPolygon>
+	<BCPolygon ID="10" BC="Interior Wood/Vinyl Frame (convection only)" units="mm" MaterialName="Butyl rubber" PolygonID="77" EnclosureID="0" UFactorTag="Frame" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="262.833221" y="-297.081268" />
+		<Point index="1" x="261.603851" y="-297.081238" />
+	</BCPolygon>
+	<BCPolygon ID="25" BC="sample-sill:Sample GlzSys (ID:8) U-factor Inside Film" units="mm" MaterialName="Sample GlzSys" PolygonID="39" EnclosureID="0" UFactorTag="Edge" Emissivity="0.840000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="261.603851" y="-297.081238" />
+		<Point index="1" x="261.603851" y="-233.581223" />
+	</BCPolygon>
+	<BCPolygon ID="26" BC="sample-sill:Sample GlzSys (ID:8) U-factor Inside Film" units="mm" MaterialName="Sample GlzSys" PolygonID="39" EnclosureID="0" UFactorTag="" Emissivity="0.840000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="261.603851" y="-233.581223" />
+		<Point index="1" x="261.603851" y="-147.081268" />
+	</BCPolygon>
+	<BCPolygon ID="27" BC="Adiabatic" units="mm" MaterialName="Sample GlzSys" PolygonID="39" EnclosureID="0" UFactorTag="" Emissivity="-1.000000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="261.603851" y="-147.081268" />
+		<Point index="1" x="256.879456" y="-147.081268" />
+	</BCPolygon>
+	<BCPolygon ID="33" BC="Adiabatic" units="mm" MaterialName="" PolygonID="38" EnclosureID="0" UFactorTag="" Emissivity="-1.000000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="256.879456" y="-147.081268" />
+		<Point index="1" x="240.369461" y="-147.081268" />
+	</BCPolygon>
+	<BCPolygon ID="34" BC="Adiabatic" units="mm" MaterialName="Sample GlzSys" PolygonID="37" EnclosureID="0" UFactorTag="" Emissivity="-1.000000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="240.369461" y="-147.081268" />
+		<Point index="1" x="235.670456" y="-147.081268" />
+	</BCPolygon>
+	<BCPolygon ID="36" BC="NFRC 100-2010 Exterior" units="mm" MaterialName="Sample GlzSys" PolygonID="37" EnclosureID="0" UFactorTag="" Emissivity="0.840000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="235.670456" y="-147.081268" />
+		<Point index="1" x="235.670456" y="-297.081238" />
+	</BCPolygon>
+	<BCPolygon ID="45" BC="NFRC 100-2010 Exterior" units="mm" MaterialName="Butyl rubber" PolygonID="75" EnclosureID="0" UFactorTag="SHGC Exterior" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="235.670456" y="-297.081238" />
+		<Point index="1" x="234.972458" y="-297.081238" />
+	</BCPolygon>
+	<BCPolygon ID="46" BC="NFRC 100-2010 Exterior" units="mm" MaterialName="" PolygonID="1" EnclosureID="0" UFactorTag="SHGC Exterior" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="234.972458" y="-297.081238" />
+		<Point index="1" x="220.993835" y="-300.566467" />
+	</BCPolygon>
+	<BCPolygon ID="47" BC="NFRC 100-2010 Exterior" units="mm" MaterialName="" PolygonID="1" EnclosureID="0" UFactorTag="SHGC Exterior" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="220.993835" y="-300.566467" />
+		<Point index="1" x="218.303711" y="-311.356018" />
+	</BCPolygon>
+	<BCPolygon ID="48" BC="NFRC 100-2010 Exterior" units="mm" MaterialName="" PolygonID="1" EnclosureID="0" UFactorTag="SHGC Exterior" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="218.303711" y="-311.356018" />
+		<Point index="1" x="218.303726" y="-322.481232" />
+	</BCPolygon>
+	<BCPolygon ID="51" BC="NFRC 100-2010 Exterior" units="mm" MaterialName="" PolygonID="3" EnclosureID="0" UFactorTag="SHGC Exterior" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="218.303726" y="-322.481232" />
+		<Point index="1" x="216.795715" y="-322.481232" />
+	</BCPolygon>
+	<BCPolygon ID="112" BC="NFRC 100-2010 Exterior" units="mm" MaterialName="" PolygonID="3" EnclosureID="0" UFactorTag="SHGC Exterior" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="216.795715" y="-322.481232" />
+		<Point index="1" x="216.795715" y="-339.956421" />
+	</BCPolygon>
+	<BCPolygon ID="114" BC="Frame Cavity Surface" units="mm" MaterialName="sample-sill:Wood (Pine, Spruce, Fir)" PolygonID="83" EnclosureID="4" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="262.833221" y="-309.781250" />
+		<Point index="1" x="262.833221" y="-322.481232" />
+	</BCPolygon>
+	<BCPolygon ID="115" BC="Frame Cavity Surface" units="mm" MaterialName="Butyl rubber" PolygonID="83" EnclosureID="4" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="261.603851" y="-308.193726" />
+		<Point index="1" x="262.833221" y="-308.193726" />
+	</BCPolygon>
+	<BCPolygon ID="116" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="83" EnclosureID="4" UFactorTag="" Emissivity="0.840000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="256.879456" y="-308.193726" />
+		<Point index="1" x="261.603851" y="-308.193726" />
+	</BCPolygon>
+	<BCPolygon ID="117" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="83" EnclosureID="4" UFactorTag="" Emissivity="0.840000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="235.670456" y="-308.193726" />
+		<Point index="1" x="240.369461" y="-308.193726" />
+	</BCPolygon>
+	<BCPolygon ID="121" BC="Frame Cavity Surface" units="mm" MaterialName="Butyl rubber" PolygonID="83" EnclosureID="4" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="234.972458" y="-308.193726" />
+		<Point index="1" x="235.670456" y="-308.193726" />
+	</BCPolygon>
+	<BCPolygon ID="122" BC="Frame Cavity Surface" units="mm" MaterialName="sample-sill:Wood (Pine, Spruce, Fir)" PolygonID="83" EnclosureID="4" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="234.972443" y="-321.899139" />
+		<Point index="1" x="234.972458" y="-308.193726" />
+	</BCPolygon>
+</Boundaries>
+<Results>
+	<Case>
+		<ModelType>U-factor</ModelType>
+		<U-factors>
+			<Tag>SHGC Exterior</Tag>
+			<DeltaT units="C" value="39.000000" />
+			<Projection>
+				<Length-type>Total length</Length-type>
+				<Length units="mm" value="56.332821" />
+				<U-factor units="W/m2-K" value="1.427040" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected X</Length-type>
+				<Length units="mm" value="18.874741" />
+				<U-factor units="W/m2-K" value="4.259089" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected Y</Length-type>
+				<Length units="mm" value="42.875183" />
+				<U-factor units="W/m2-K" value="1.874959" />
+			</Projection>
+			<Projection>
+				<Length-type>Custom length</Length-type>
+				<Length units="mm" value="0.000000" />
+				<U-factor value="NA" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected in glass plane</Length-type>
+				<Length units="mm" value="42.875183" />
+				<U-factor units="W/m2-K" value="1.874959" />
+			</Projection>
+			<Projection>
+				<Length-type>Custom rotation</Length-type>
+				<Length units="mm" value="18.874741" />
+				<ProjectionAngle>1.570796</ProjectionAngle>
+				<U-factor units="W/m2-K" value="4.259089" />
+			</Projection>
+		</U-factors>
+		<U-factors>
+			<Tag>Frame</Tag>
+			<DeltaT units="C" value="39.000000" />
+			<Projection>
+				<Length-type>Total length</Length-type>
+				<Length units="mm" value="110.605026" />
+				<U-factor units="W/m2-K" value="0.781159" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected X</Length-type>
+				<Length units="mm" value="71.079315" />
+				<U-factor units="W/m2-K" value="1.215545" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected Y</Length-type>
+				<Length units="mm" value="42.875183" />
+				<U-factor units="W/m2-K" value="2.015155" />
+			</Projection>
+			<Projection>
+				<Length-type>Custom length</Length-type>
+				<Length units="mm" value="0.000000" />
+				<U-factor value="NA" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected in glass plane</Length-type>
+				<Length units="mm" value="42.875183" />
+				<U-factor units="W/m2-K" value="2.015155" />
+			</Projection>
+			<Projection>
+				<Length-type>Custom rotation</Length-type>
+				<Length units="mm" value="71.079315" />
+				<ProjectionAngle>1.570796</ProjectionAngle>
+				<U-factor units="W/m2-K" value="1.215545" />
+			</Projection>
+		</U-factors>
+		<U-factors>
+			<Tag>Edge</Tag>
+			<DeltaT units="C" value="39.000000" />
+			<Projection>
+				<Length-type>Total length</Length-type>
+				<Length units="mm" value="63.500015" />
+				<U-factor units="W/m2-K" value="2.337128" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected X</Length-type>
+				<Length units="mm" value="0.000000" />
+				<U-factor value="NA" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected Y</Length-type>
+				<Length units="mm" value="63.500015" />
+				<U-factor units="W/m2-K" value="2.337128" />
+			</Projection>
+			<Projection>
+				<Length-type>Custom length</Length-type>
+				<Length units="mm" value="0.000000" />
+				<U-factor value="NA" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected in glass plane</Length-type>
+				<Length units="mm" value="63.500031" />
+				<U-factor units="W/m2-K" value="2.337128" />
+			</Projection>
+			<Projection>
+				<Length-type>Custom rotation</Length-type>
+				<Length units="mm" value="0.000000" />
+				<ProjectionAngle>1.570796</ProjectionAngle>
+				<U-factor value="NA" />
+			</Projection>
+		</U-factors>
+		<FrameCavities>
+			<FrameCavity Name="sample-sill:Frame Cavity NFRC 100-2001_Cavity_16" Conductivity="0.045694" EquivalentLength="11.786563" EquivalentHeight="0.411601" HeatFlowDirection="Left" />
+			<FrameCavity Name="Frame Cavity NFRC 100_Cavity_49" Conductivity="0.038380" EquivalentLength="6.349990" EquivalentHeight="5.556213" HeatFlowDirection="Left" />
+			<FrameCavity Name="Frame Cavity NFRC 100_Cavity_50" Conductivity="0.034980" EquivalentLength="3.174988" EquivalentHeight="5.562561" HeatFlowDirection="Left" />
+			<FrameCavity Name="Frame Cavity NFRC 100_Cavity_83" Conductivity="0.121123" EquivalentLength="26.561216" EquivalentHeight="16.187864" HeatFlowDirection="Left" />
+		</FrameCavities>
+	</Case>
+	<Case>
+		<ModelType>Condensation Resistance</ModelType>
+		<U-factors>
+			<Tag>SHGC Exterior</Tag>
+			<DeltaT units="C" value="39.000000" />
+			<Projection>
+				<Length-type>Total length</Length-type>
+				<Length units="mm" value="56.332821" />
+				<U-factor units="W/m2-K" value="1.282839" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected X</Length-type>
+				<Length units="mm" value="18.874741" />
+				<U-factor units="W/m2-K" value="3.828713" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected Y</Length-type>
+				<Length units="mm" value="42.875183" />
+				<U-factor units="W/m2-K" value="1.685496" />
+			</Projection>
+			<Projection>
+				<Length-type>Custom length</Length-type>
+				<Length units="mm" value="0.000000" />
+				<U-factor value="NA" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected in glass plane</Length-type>
+				<Length units="mm" value="42.875183" />
+				<U-factor units="W/m2-K" value="1.685496" />
+			</Projection>
+			<Projection>
+				<Length-type>Custom rotation</Length-type>
+				<Length units="mm" value="18.874741" />
+				<ProjectionAngle>1.570796</ProjectionAngle>
+				<U-factor units="W/m2-K" value="3.828713" />
+			</Projection>
+		</U-factors>
+		<U-factors>
+			<Tag>Frame</Tag>
+			<DeltaT units="C" value="39.000000" />
+			<Projection>
+				<Length-type>Total length</Length-type>
+				<Length units="mm" value="110.605026" />
+				<U-factor units="W/m2-K" value="0.764189" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected X</Length-type>
+				<Length units="mm" value="71.079315" />
+				<U-factor units="W/m2-K" value="1.189138" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected Y</Length-type>
+				<Length units="mm" value="42.875183" />
+				<U-factor units="W/m2-K" value="1.971377" />
+			</Projection>
+			<Projection>
+				<Length-type>Custom length</Length-type>
+				<Length units="mm" value="0.000000" />
+				<U-factor value="NA" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected in glass plane</Length-type>
+				<Length units="mm" value="42.875183" />
+				<U-factor units="W/m2-K" value="1.971377" />
+			</Projection>
+			<Projection>
+				<Length-type>Custom rotation</Length-type>
+				<Length units="mm" value="71.079315" />
+				<ProjectionAngle>1.570796</ProjectionAngle>
+				<U-factor units="W/m2-K" value="1.189138" />
+			</Projection>
+		</U-factors>
+		<U-factors>
+			<Tag>Edge</Tag>
+			<DeltaT units="C" value="39.000000" />
+			<Projection>
+				<Length-type>Total length</Length-type>
+				<Length units="mm" value="63.500015" />
+				<U-factor units="W/m2-K" value="2.664768" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected X</Length-type>
+				<Length units="mm" value="0.000000" />
+				<U-factor value="NA" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected Y</Length-type>
+				<Length units="mm" value="63.500015" />
+				<U-factor units="W/m2-K" value="2.664768" />
+			</Projection>
+			<Projection>
+				<Length-type>Custom length</Length-type>
+				<Length units="mm" value="0.000000" />
+				<U-factor value="NA" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected in glass plane</Length-type>
+				<Length units="mm" value="63.500031" />
+				<U-factor units="W/m2-K" value="2.664768" />
+			</Projection>
+			<Projection>
+				<Length-type>Custom rotation</Length-type>
+				<Length units="mm" value="0.000000" />
+				<ProjectionAngle>1.570796</ProjectionAngle>
+				<U-factor value="NA" />
+			</Projection>
+		</U-factors>
+		<FrameCavities>
+			<FrameCavity Name="sample-sill:Frame Cavity NFRC 100-2001_Cavity_16" Conductivity="0.045694" EquivalentLength="11.786563" EquivalentHeight="0.411601" HeatFlowDirection="Left" />
+			<FrameCavity Name="Frame Cavity NFRC 100_Cavity_49" Conductivity="0.038380" EquivalentLength="6.349990" EquivalentHeight="5.556213" HeatFlowDirection="Left" />
+			<FrameCavity Name="Frame Cavity NFRC 100_Cavity_50" Conductivity="0.034980" EquivalentLength="3.174988" EquivalentHeight="5.562561" HeatFlowDirection="Left" />
+			<FrameCavity Name="Frame Cavity NFRC 100_Cavity_83" Conductivity="0.121123" EquivalentLength="26.561216" EquivalentHeight="16.187864" HeatFlowDirection="Left" />
+		</FrameCavities>
+	</Case>
+</Results>
+</THERM-XML>

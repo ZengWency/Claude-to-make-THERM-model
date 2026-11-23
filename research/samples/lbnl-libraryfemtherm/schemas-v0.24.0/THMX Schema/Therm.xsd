@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:include schemaLocation="Preferences.xsd"/>
+	<xs:include schemaLocation="Common.xsd"/>
+	<xs:include schemaLocation="FileProperties.xsd"/>
+	<xs:include schemaLocation="GlazingSystem.xsd"/>
+	<xs:include schemaLocation="SteadyStateResults.xsd"/>
+	<xs:include schemaLocation="CMA.xsd"/>
+	<xs:complexType name="Polygons">
+		<xs:sequence>
+			<xs:element name="Polygon" type="PolygonGeometry" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Boundaries">
+		<xs:sequence>
+			<xs:element name="Boundary" type="BoundaryConditionGeometry" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="GlazingSystems">
+		<xs:sequence>
+			<xs:element name="GlazingSystem" type="GlazingSystem" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="RadianceTags">
+		<xs:sequence>
+			<xs:element name="ShadeInName" type="xs:string" minOccurs="1" maxOccurs="1" />
+			<xs:element name="ShadeInTag" type="xs:string" minOccurs="1" maxOccurs="1" />
+			<xs:element name="ShadeOutName" type="xs:string" minOccurs="1" maxOccurs="1" />
+			<xs:element name="ShadeOutTag" type="xs:string" minOccurs="1" maxOccurs="1" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="ThermModel">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Version" type="xs:string" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="CalculationReady" type="xs:boolean" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="Preferences" type="Preferences" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="Properties" type="Properties" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="GlazingOrigin" type="Point" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="RadianceTags" type="RadianceTags" minOccurs="0" maxOccurs="1" />
+				<xs:element name="Polygons" type="Polygons" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="Boundaries" type="Boundaries" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="GlazingSystems" type="GlazingSystems" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="CMAData" type="CMAData" minOccurs="0" maxOccurs="1"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

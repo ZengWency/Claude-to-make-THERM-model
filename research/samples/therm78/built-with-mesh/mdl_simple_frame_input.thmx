@@ -1,0 +1,249 @@
+<?xml version="1.0"?>
+<THERM-XML xmlns="http://windows.lbl.gov">
+	<ThermVersion>Version 7.8.80.0</ThermVersion>
+	<FileVersion>1</FileVersion>
+	<SaveDate>2026-11-20T01:22:10</SaveDate>
+	<Title>Simple aluminium sill with thermal break and 28 mm calibration panel</Title>
+	<CreatedBy />
+	<Company />
+	<Client />
+	<CrossSectionType>Sill</CrossSectionType>
+	<Notes>therm-model example. Exterior on the left (x=0), interior on the right (x=70). Panel stands in for glazing (ISO 10077-2 style, lambda 0.035).</Notes>
+	<Units>SI</Units>
+	<MeshControl MeshLevel="6" ErrorCheckFlag="1" ErrorLimit="10.000000" MaxIterations="5" CMAflag="0" />
+	<Materials>
+		<Material Name="Aluminium alloy (ISO 10077-2)" Index="1" Type="0" Conductivity="160.000000" Tir="0.000000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0xC0C0C0" />
+		<Material Name="Frame Cavity ISO 15099 (air)" Index="2" Type="1" Conductivity="0.025000" Tir="0.000000" Absorptivity="0.500000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0x00FF00" CavityModel="4" />
+		<Material Name="Polyamide 6.6 with 25% glass fibre (ISO 10077-2)" Index="3" Type="0" Conductivity="0.300000" Tir="0.000000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0x404040" />
+		<Material Name="Calibration panel (ISO 10077-2)" Index="4" Type="0" Conductivity="0.035000" Tir="0.000000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0xFFFF80" />
+	</Materials>
+	<BoundaryConditions>
+		<BoundaryCondition Name="Adiabatic" Type="0" H="0.000000" HeatFLux="0.000000" Temperature="0.000000" Tr="0.000000" Hr="0.000000" Ei="1.000000" Viewfactor="1.000000" RadiationModel="0" ConvectionFlag="0" FluxFlag="1" RadiationFlag="0" ConstantTemperatureFlag="0" EmisModifier="1.000000" RGBColor="0x000000" />
+		<BoundaryCondition Name="ISO 10077-2 Exterior (Rse 0.04)" Type="1" H="25.000000" HeatFLux="0.000000" Temperature="0.000000" Tr="0.000000" Hr="0.000000" Ei="1.000000" Viewfactor="1.000000" RadiationModel="0" ConvectionFlag="1" FluxFlag="0" RadiationFlag="0" ConstantTemperatureFlag="0" EmisModifier="1.000000" RGBColor="0x0080C0" />
+		<BoundaryCondition Name="ISO 10077-2 Interior (Rsi 0.13)" Type="1" H="7.690000" HeatFLux="0.000000" Temperature="20.000000" Tr="20.000000" Hr="0.000000" Ei="1.000000" Viewfactor="1.000000" RadiationModel="0" ConvectionFlag="1" FluxFlag="0" RadiationFlag="0" ConstantTemperatureFlag="0" EmisModifier="1.000000" RGBColor="0xFF8080" />
+		<BoundaryCondition Name="Frame Cavity Surface" Type="7" H="0.000000" HeatFLux="0.000000" Temperature="0.000000" Tr="0.000000" Hr="0.000000" Ei="1.000000" Viewfactor="1.000000" RadiationModel="0" ConvectionFlag="0" FluxFlag="0" RadiationFlag="0" ConstantTemperatureFlag="0" EmisModifier="1.000000" RGBColor="0x0000FF" />
+	</BoundaryConditions>
+	<Polygons>
+		<Polygon ID="1" Material="Aluminium alloy (ISO 10077-2)" NSides="6" Type="1" units="mm">
+			<Point index="0" x="0.000000" y="0.000000" />
+			<Point index="1" x="2.000000" y="0.000000" />
+			<Point index="2" x="2.000000" y="2.000000" />
+			<Point index="3" x="2.000000" y="48.000000" />
+			<Point index="4" x="2.000000" y="50.000000" />
+			<Point index="5" x="0.000000" y="50.000000" />
+		</Polygon>
+		<Polygon ID="2" Material="Aluminium alloy (ISO 10077-2)" NSides="8" Type="1" units="mm">
+			<Point index="0" x="26.000000" y="0.000000" />
+			<Point index="1" x="28.000000" y="0.000000" />
+			<Point index="2" x="28.000000" y="6.000000" />
+			<Point index="3" x="28.000000" y="44.000000" />
+			<Point index="4" x="28.000000" y="50.000000" />
+			<Point index="5" x="26.000000" y="50.000000" />
+			<Point index="6" x="26.000000" y="48.000000" />
+			<Point index="7" x="26.000000" y="2.000000" />
+		</Polygon>
+		<Polygon ID="3" Material="Aluminium alloy (ISO 10077-2)" NSides="4" Type="1" units="mm">
+			<Point index="0" x="2.000000" y="0.000000" />
+			<Point index="1" x="26.000000" y="0.000000" />
+			<Point index="2" x="26.000000" y="2.000000" />
+			<Point index="3" x="2.000000" y="2.000000" />
+		</Polygon>
+		<Polygon ID="4" Material="Aluminium alloy (ISO 10077-2)" NSides="5" Type="1" units="mm">
+			<Point index="0" x="2.000000" y="48.000000" />
+			<Point index="1" x="26.000000" y="48.000000" />
+			<Point index="2" x="26.000000" y="50.000000" />
+			<Point index="3" x="21.000000" y="50.000000" />
+			<Point index="4" x="2.000000" y="50.000000" />
+		</Polygon>
+		<Polygon ID="5" Material="Frame Cavity ISO 15099 (air)" NSides="4" Type="1" units="mm">
+			<Point index="0" x="2.000000" y="2.000000" />
+			<Point index="1" x="26.000000" y="2.000000" />
+			<Point index="2" x="26.000000" y="48.000000" />
+			<Point index="3" x="2.000000" y="48.000000" />
+		</Polygon>
+		<Polygon ID="6" Material="Polyamide 6.6 with 25% glass fibre (ISO 10077-2)" NSides="4" Type="1" units="mm">
+			<Point index="0" x="28.000000" y="0.000000" />
+			<Point index="1" x="42.000000" y="0.000000" />
+			<Point index="2" x="42.000000" y="6.000000" />
+			<Point index="3" x="28.000000" y="6.000000" />
+		</Polygon>
+		<Polygon ID="7" Material="Polyamide 6.6 with 25% glass fibre (ISO 10077-2)" NSides="4" Type="1" units="mm">
+			<Point index="0" x="28.000000" y="44.000000" />
+			<Point index="1" x="42.000000" y="44.000000" />
+			<Point index="2" x="42.000000" y="50.000000" />
+			<Point index="3" x="28.000000" y="50.000000" />
+		</Polygon>
+		<Polygon ID="8" Material="Frame Cavity ISO 15099 (air)" NSides="4" Type="1" units="mm">
+			<Point index="0" x="28.000000" y="6.000000" />
+			<Point index="1" x="42.000000" y="6.000000" />
+			<Point index="2" x="42.000000" y="44.000000" />
+			<Point index="3" x="28.000000" y="44.000000" />
+		</Polygon>
+		<Polygon ID="9" Material="Aluminium alloy (ISO 10077-2)" NSides="8" Type="1" units="mm">
+			<Point index="0" x="42.000000" y="0.000000" />
+			<Point index="1" x="44.000000" y="0.000000" />
+			<Point index="2" x="44.000000" y="2.000000" />
+			<Point index="3" x="44.000000" y="48.000000" />
+			<Point index="4" x="44.000000" y="50.000000" />
+			<Point index="5" x="42.000000" y="50.000000" />
+			<Point index="6" x="42.000000" y="44.000000" />
+			<Point index="7" x="42.000000" y="6.000000" />
+		</Polygon>
+		<Polygon ID="10" Material="Aluminium alloy (ISO 10077-2)" NSides="6" Type="1" units="mm">
+			<Point index="0" x="68.000000" y="0.000000" />
+			<Point index="1" x="70.000000" y="0.000000" />
+			<Point index="2" x="70.000000" y="50.000000" />
+			<Point index="3" x="68.000000" y="50.000000" />
+			<Point index="4" x="68.000000" y="48.000000" />
+			<Point index="5" x="68.000000" y="2.000000" />
+		</Polygon>
+		<Polygon ID="11" Material="Aluminium alloy (ISO 10077-2)" NSides="4" Type="1" units="mm">
+			<Point index="0" x="44.000000" y="0.000000" />
+			<Point index="1" x="68.000000" y="0.000000" />
+			<Point index="2" x="68.000000" y="2.000000" />
+			<Point index="3" x="44.000000" y="2.000000" />
+		</Polygon>
+		<Polygon ID="12" Material="Aluminium alloy (ISO 10077-2)" NSides="5" Type="1" units="mm">
+			<Point index="0" x="44.000000" y="48.000000" />
+			<Point index="1" x="68.000000" y="48.000000" />
+			<Point index="2" x="68.000000" y="50.000000" />
+			<Point index="3" x="49.000000" y="50.000000" />
+			<Point index="4" x="44.000000" y="50.000000" />
+		</Polygon>
+		<Polygon ID="13" Material="Frame Cavity ISO 15099 (air)" NSides="4" Type="1" units="mm">
+			<Point index="0" x="44.000000" y="2.000000" />
+			<Point index="1" x="68.000000" y="2.000000" />
+			<Point index="2" x="68.000000" y="48.000000" />
+			<Point index="3" x="44.000000" y="48.000000" />
+		</Polygon>
+		<Polygon ID="14" Material="Calibration panel (ISO 10077-2)" NSides="9" Type="1" units="mm">
+			<Point index="0" x="21.000000" y="50.000000" />
+			<Point index="1" x="26.000000" y="50.000000" />
+			<Point index="2" x="28.000000" y="50.000000" />
+			<Point index="3" x="42.000000" y="50.000000" />
+			<Point index="4" x="44.000000" y="50.000000" />
+			<Point index="5" x="49.000000" y="50.000000" />
+			<Point index="6" x="49.000000" y="113.500000" />
+			<Point index="7" x="49.000000" y="240.000000" />
+			<Point index="8" x="21.000000" y="240.000000" />
+		</Polygon>
+	</Polygons>
+	<Boundaries>
+		<BCPolygon ID="15" BC="ISO 10077-2 Exterior (Rse 0.04)" units="mm" MaterialName="" PolygonID="14" EnclosureID="0" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+			<Point index="0" x="21.000000" y="240.000000" />
+			<Point index="1" x="21.000000" y="50.000000" />
+		</BCPolygon>
+		<BCPolygon ID="16" BC="ISO 10077-2 Exterior (Rse 0.04)" units="mm" MaterialName="" PolygonID="4" EnclosureID="0" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+			<Point index="0" x="21.000000" y="50.000000" />
+			<Point index="1" x="2.000000" y="50.000000" />
+		</BCPolygon>
+		<BCPolygon ID="17" BC="ISO 10077-2 Exterior (Rse 0.04)" units="mm" MaterialName="" PolygonID="1" EnclosureID="0" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+			<Point index="0" x="2.000000" y="50.000000" />
+			<Point index="1" x="0.000000" y="50.000000" />
+		</BCPolygon>
+		<BCPolygon ID="18" BC="ISO 10077-2 Exterior (Rse 0.04)" units="mm" MaterialName="" PolygonID="1" EnclosureID="0" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+			<Point index="0" x="0.000000" y="50.000000" />
+			<Point index="1" x="0.000000" y="0.000000" />
+		</BCPolygon>
+		<BCPolygon ID="19" BC="ISO 10077-2 Interior (Rsi 0.13)" units="mm" MaterialName="" PolygonID="10" EnclosureID="0" UFactorTag="Frame" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+			<Point index="0" x="70.000000" y="0.000000" />
+			<Point index="1" x="70.000000" y="50.000000" />
+		</BCPolygon>
+		<BCPolygon ID="20" BC="ISO 10077-2 Interior (Rsi 0.13)" units="mm" MaterialName="" PolygonID="10" EnclosureID="0" UFactorTag="Frame" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+			<Point index="0" x="70.000000" y="50.000000" />
+			<Point index="1" x="68.000000" y="50.000000" />
+		</BCPolygon>
+		<BCPolygon ID="21" BC="ISO 10077-2 Interior (Rsi 0.13)" units="mm" MaterialName="" PolygonID="12" EnclosureID="0" UFactorTag="Frame" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+			<Point index="0" x="68.000000" y="50.000000" />
+			<Point index="1" x="49.000000" y="50.000000" />
+		</BCPolygon>
+		<BCPolygon ID="22" BC="ISO 10077-2 Interior (Rsi 0.13)" units="mm" MaterialName="" PolygonID="14" EnclosureID="0" UFactorTag="Edge" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+			<Point index="0" x="49.000000" y="50.000000" />
+			<Point index="1" x="49.000000" y="113.500000" />
+		</BCPolygon>
+		<BCPolygon ID="23" BC="ISO 10077-2 Interior (Rsi 0.13)" units="mm" MaterialName="" PolygonID="14" EnclosureID="0" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+			<Point index="0" x="49.000000" y="113.500000" />
+			<Point index="1" x="49.000000" y="240.000000" />
+		</BCPolygon>
+		<BCPolygon ID="24" BC="Adiabatic" units="mm" MaterialName="" PolygonID="1" EnclosureID="0" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+			<Point index="0" x="0.000000" y="0.000000" />
+			<Point index="1" x="2.000000" y="0.000000" />
+		</BCPolygon>
+		<BCPolygon ID="25" BC="Adiabatic" units="mm" MaterialName="" PolygonID="2" EnclosureID="0" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+			<Point index="0" x="26.000000" y="0.000000" />
+			<Point index="1" x="28.000000" y="0.000000" />
+		</BCPolygon>
+		<BCPolygon ID="26" BC="Adiabatic" units="mm" MaterialName="" PolygonID="3" EnclosureID="0" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+			<Point index="0" x="2.000000" y="0.000000" />
+			<Point index="1" x="26.000000" y="0.000000" />
+		</BCPolygon>
+		<BCPolygon ID="27" BC="Adiabatic" units="mm" MaterialName="" PolygonID="6" EnclosureID="0" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+			<Point index="0" x="28.000000" y="0.000000" />
+			<Point index="1" x="42.000000" y="0.000000" />
+		</BCPolygon>
+		<BCPolygon ID="28" BC="Adiabatic" units="mm" MaterialName="" PolygonID="9" EnclosureID="0" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+			<Point index="0" x="42.000000" y="0.000000" />
+			<Point index="1" x="44.000000" y="0.000000" />
+		</BCPolygon>
+		<BCPolygon ID="29" BC="Adiabatic" units="mm" MaterialName="" PolygonID="10" EnclosureID="0" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+			<Point index="0" x="68.000000" y="0.000000" />
+			<Point index="1" x="70.000000" y="0.000000" />
+		</BCPolygon>
+		<BCPolygon ID="30" BC="Adiabatic" units="mm" MaterialName="" PolygonID="11" EnclosureID="0" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+			<Point index="0" x="44.000000" y="0.000000" />
+			<Point index="1" x="68.000000" y="0.000000" />
+		</BCPolygon>
+		<BCPolygon ID="31" BC="Adiabatic" units="mm" MaterialName="" PolygonID="14" EnclosureID="0" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+			<Point index="0" x="49.000000" y="240.000000" />
+			<Point index="1" x="21.000000" y="240.000000" />
+		</BCPolygon>
+		<BCPolygon ID="32" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="5" EnclosureID="1" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+			<Point index="0" x="2.000000" y="2.000000" />
+			<Point index="1" x="26.000000" y="2.000000" />
+		</BCPolygon>
+		<BCPolygon ID="33" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="5" EnclosureID="1" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+			<Point index="0" x="26.000000" y="2.000000" />
+			<Point index="1" x="26.000000" y="48.000000" />
+		</BCPolygon>
+		<BCPolygon ID="34" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="5" EnclosureID="1" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+			<Point index="0" x="26.000000" y="48.000000" />
+			<Point index="1" x="2.000000" y="48.000000" />
+		</BCPolygon>
+		<BCPolygon ID="35" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="5" EnclosureID="1" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+			<Point index="0" x="2.000000" y="48.000000" />
+			<Point index="1" x="2.000000" y="2.000000" />
+		</BCPolygon>
+		<BCPolygon ID="36" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="8" EnclosureID="2" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+			<Point index="0" x="28.000000" y="6.000000" />
+			<Point index="1" x="42.000000" y="6.000000" />
+		</BCPolygon>
+		<BCPolygon ID="37" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="8" EnclosureID="2" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+			<Point index="0" x="42.000000" y="6.000000" />
+			<Point index="1" x="42.000000" y="44.000000" />
+		</BCPolygon>
+		<BCPolygon ID="38" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="8" EnclosureID="2" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+			<Point index="0" x="42.000000" y="44.000000" />
+			<Point index="1" x="28.000000" y="44.000000" />
+		</BCPolygon>
+		<BCPolygon ID="39" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="8" EnclosureID="2" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+			<Point index="0" x="28.000000" y="44.000000" />
+			<Point index="1" x="28.000000" y="6.000000" />
+		</BCPolygon>
+		<BCPolygon ID="40" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="13" EnclosureID="3" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+			<Point index="0" x="44.000000" y="2.000000" />
+			<Point index="1" x="68.000000" y="2.000000" />
+		</BCPolygon>
+		<BCPolygon ID="41" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="13" EnclosureID="3" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+			<Point index="0" x="68.000000" y="2.000000" />
+			<Point index="1" x="68.000000" y="48.000000" />
+		</BCPolygon>
+		<BCPolygon ID="42" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="13" EnclosureID="3" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+			<Point index="0" x="68.000000" y="48.000000" />
+			<Point index="1" x="44.000000" y="48.000000" />
+		</BCPolygon>
+		<BCPolygon ID="43" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="13" EnclosureID="3" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+			<Point index="0" x="44.000000" y="48.000000" />
+			<Point index="1" x="44.000000" y="2.000000" />
+		</BCPolygon>
+	</Boundaries>
+</THERM-XML>

@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<THERM-XML xmlns="http://windows.lbl.gov">
+<ThermVersion>Version 7.8.80.0</ThermVersion>
+<FileVersion>1</FileVersion>
+<SaveDate>2026-11-20T00:54:05</SaveDate>
+
+<Title></Title>
+<CreatedBy></CreatedBy>
+<Company></Company>
+<Client></Client>
+<CrossSectionType>Sill</CrossSectionType>
+<Notes></Notes>
+<Units>SI</Units>
+<MeshControl MeshLevel="6" ErrorCheckFlag="1" ErrorLimit="10.000000" MaxIterations="3" CMAflag="0" />
+<RadianceModeBC>
+	<RadianceModeInBCName>ShadeInE</RadianceModeInBCName>
+	<RadianceModeInBCTag>ShadeInETag</RadianceModeInBCTag>
+	<RadianceModeOutBCName>ShadeOutE</RadianceModeOutBCName>
+	<RadianceModeOutBCTag>ShadeOutETag</RadianceModeOutBCTag>
+</RadianceModeBC>
+<Materials>
+	<Material Name="Wood k0.14" Index="1" Type="0" Conductivity="0.140000" Tir="0.000000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0xFF8000">
+		<Property Side="Front" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+	</Material>
+</Materials>
+<BoundaryConditions>
+	<BoundaryCondition Name="Adiabatic" Type="0" H="0.000000" HeatFLux="0.000000" Temperature="0.000000" RGBColor="0x000000" 
+		Tr="0.000000" Hr="0.000000" Ei="1.000000" Viewfactor="1.000000" RadiationModel="0"
+		ConvectionFlag="0" FluxFlag="1" RadiationFlag="0" ConstantTemperatureFlag="0" EmisModifier="1.000000" />
+	<BoundaryCondition Name="Int simple 7.7" Type="1" H="7.700000" HeatFLux="0.000000" Temperature="21.000000" RGBColor="0xFF8080" 
+		Tr="21.000000" Hr="0.000000" Ei="1.000000" Viewfactor="1.000000" RadiationModel="0"
+		ConvectionFlag="1" FluxFlag="0" RadiationFlag="0" ConstantTemperatureFlag="0" EmisModifier="1.000000" />
+	<BoundaryCondition Name="Ext simple 26" Type="1" H="26.000000" HeatFLux="0.000000" Temperature="-18.000000" RGBColor="0x0080C0" 
+		Tr="-18.000000" Hr="0.000000" Ei="1.000000" Viewfactor="1.000000" RadiationModel="0"
+		ConvectionFlag="1" FluxFlag="0" RadiationFlag="0" ConstantTemperatureFlag="0" EmisModifier="1.000000" />
+</BoundaryConditions>
+<Polygons>
+	<Polygon ID="1" Material="Wood k0.14" NSides="4" Type="1" units="mm">
+		<Point index="0" x="0.000000" y="0.000000" />
+		<Point index="1" x="100.000000" y="0.000000" />
+		<Point index="2" x="100.000000" y="500.000000" />
+		<Point index="3" x="0.000000" y="500.000000" />
+	</Polygon>
+</Polygons>
+<Boundaries>
+	<BCPolygon ID="6" BC="Adiabatic" units="mm" MaterialName="" PolygonID="1" EnclosureID="0" UFactorTag="" Emissivity="-1.000000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="0.000000" y="0.000000" />
+		<Point index="1" x="100.000000" y="0.000000" />
+	</BCPolygon>
+	<BCPolygon ID="7" BC="Int simple 7.7" units="mm" MaterialName="" PolygonID="1" EnclosureID="0" UFactorTag="Frame" Emissivity="-1.000000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="100.000000" y="0.000000" />
+		<Point index="1" x="100.000000" y="500.000000" />
+	</BCPolygon>
+	<BCPolygon ID="8" BC="Adiabatic" units="mm" MaterialName="" PolygonID="1" EnclosureID="0" UFactorTag="" Emissivity="-1.000000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="100.000000" y="500.000000" />
+		<Point index="1" x="0.000000" y="500.000000" />
+	</BCPolygon>
+	<BCPolygon ID="9" BC="Ext simple 26" units="mm" MaterialName="" PolygonID="1" EnclosureID="0" UFactorTag="" Emissivity="-1.000000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="0.000000" y="500.000000" />
+		<Point index="1" x="0.000000" y="0.000000" />
+	</BCPolygon>
+</Boundaries>
+<Results>
+	<Case>
+		<ModelType>U-factor</ModelType>
+		<U-factors>
+			<Tag>Frame</Tag>
+			<DeltaT units="C" value="39.000000" />
+			<Projection>
+				<Length-type>Total length</Length-type>
+				<Length units="mm" value="500.000000" />
+				<U-factor units="W/m2-K" value="1.132974" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected X</Length-type>
+				<Length units="mm" value="0.000000" />
+				<U-factor value="NA" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected Y</Length-type>
+				<Length units="mm" value="500.000000" />
+				<U-factor units="W/m2-K" value="1.132974" />
+			</Projection>
+			<Projection>
+				<Length-type>Custom length</Length-type>
+				<Length units="mm" value="0.000000" />
+				<U-factor value="NA" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected in glass plane</Length-type>
+				<Length units="mm" value="0.000023" />
+				<U-factor units="W/m2-K" value="24750202.000000" />
+			</Projection>
+			<Projection>
+				<Length-type>Custom rotation</Length-type>
+				<Length units="mm" value="0.000023" />
+				<ProjectionAngle>0.000000</ProjectionAngle>
+				<U-factor units="W/m2-K" value="24750202.000000" />
+			</Projection>
+		</U-factors>
+	</Case>
+</Results>
+</THERM-XML>

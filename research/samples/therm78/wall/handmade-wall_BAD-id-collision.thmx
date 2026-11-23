@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<THERM-XML xmlns="http://windows.lbl.gov">
+<ThermVersion>Version 7.8.80.0</ThermVersion>
+<FileVersion>1</FileVersion>
+<SaveDate>2026-11-20T00:00:00</SaveDate>
+<Title>handmade wall</Title>
+<CreatedBy></CreatedBy>
+<Company></Company>
+<Client></Client>
+<CrossSectionType>Sill</CrossSectionType>
+<Notes>Hand-written: 100 mm wood, k 0.14, simple films 26 and 7.7 W/m2K. Analytic U = 1.13299 W/m2K.</Notes>
+<Units>SI</Units>
+<MeshControl MeshLevel="6" ErrorCheckFlag="1" ErrorLimit="10.000000" MaxIterations="3" CMAflag="0" />
+<Materials>
+	<Material Name="Wood k0.14" Index="1" Type="0" Conductivity="0.140000" Tir="0.000000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0xFF8000">
+	</Material>
+</Materials>
+<BoundaryConditions>
+	<BoundaryCondition Name="Adiabatic" Type="0" H="0.000000" HeatFLux="0.000000" Temperature="0.000000" RGBColor="0x000000"
+		Tr="0.000000" Hr="0.000000" Ei="1.000000" Viewfactor="1.000000" RadiationModel="0"
+		ConvectionFlag="0" FluxFlag="1" RadiationFlag="0" ConstantTemperatureFlag="0" EmisModifier="1.000000" />
+	<BoundaryCondition Name="Ext simple 26" Type="1" H="26.000000" HeatFLux="0.000000" Temperature="-18.000000" RGBColor="0x0080C0"
+		Tr="-18.000000" Hr="0.000000" Ei="1.000000" Viewfactor="1.000000" RadiationModel="0"
+		ConvectionFlag="1" FluxFlag="0" RadiationFlag="0" ConstantTemperatureFlag="0" EmisModifier="1.000000" />
+	<BoundaryCondition Name="Int simple 7.7" Type="1" H="7.700000" HeatFLux="0.000000" Temperature="21.000000" RGBColor="0xFF8080"
+		Tr="21.000000" Hr="0.000000" Ei="1.000000" Viewfactor="1.000000" RadiationModel="0"
+		ConvectionFlag="1" FluxFlag="0" RadiationFlag="0" ConstantTemperatureFlag="0" EmisModifier="1.000000" />
+</BoundaryConditions>
+<Polygons>
+	<Polygon ID="1" Material="Wood k0.14" NSides="4" Type="1" units="mm">
+		<Point index="0" x="0.000000" y="0.000000" />
+		<Point index="1" x="100.000000" y="0.000000" />
+		<Point index="2" x="100.000000" y="500.000000" />
+		<Point index="3" x="0.000000" y="500.000000" />
+	</Polygon>
+</Polygons>
+<Boundaries>
+	<BCPolygon ID="1" BC="Adiabatic" units="mm" MaterialName="" PolygonID="1" EnclosureID="0" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="0.000000" y="0.000000" />
+		<Point index="1" x="100.000000" y="0.000000" />
+	</BCPolygon>
+	<BCPolygon ID="2" BC="Int simple 7.7" units="mm" MaterialName="" PolygonID="1" EnclosureID="0" UFactorTag="Frame" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="100.000000" y="0.000000" />
+		<Point index="1" x="100.000000" y="500.000000" />
+	</BCPolygon>
+	<BCPolygon ID="3" BC="Adiabatic" units="mm" MaterialName="" PolygonID="1" EnclosureID="0" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="100.000000" y="500.000000" />
+		<Point index="1" x="0.000000" y="500.000000" />
+	</BCPolygon>
+	<BCPolygon ID="4" BC="Ext simple 26" units="mm" MaterialName="" PolygonID="1" EnclosureID="0" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="0.000000" y="500.000000" />
+		<Point index="1" x="0.000000" y="0.000000" />
+	</BCPolygon>
+</Boundaries>
+</THERM-XML>

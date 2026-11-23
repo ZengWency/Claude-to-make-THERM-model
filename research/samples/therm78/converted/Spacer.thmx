@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<THERM-XML xmlns="http://windows.lbl.gov">
+<ThermVersion>Version 7.8.80.0</ThermVersion>
+<FileVersion>1</FileVersion>
+<SaveDate>2026-11-20T00:48:29</SaveDate>
+
+<Title></Title>
+<CreatedBy></CreatedBy>
+<Company></Company>
+<Client></Client>
+<CrossSectionType>Sill</CrossSectionType>
+<Notes></Notes>
+<Units>SI</Units>
+<MeshControl MeshLevel="6" ErrorCheckFlag="0" ErrorLimit="5.000000" MaxIterations="10" CMAflag="0" />
+<RadianceModeBC>
+	<RadianceModeInBCName>ShadeInE</RadianceModeInBCName>
+	<RadianceModeInBCTag>ShadeInETag</RadianceModeInBCTag>
+	<RadianceModeOutBCName>ShadeOutE</RadianceModeOutBCName>
+	<RadianceModeOutBCTag>ShadeOutETag</RadianceModeOutBCTag>
+</RadianceModeBC>
+<Materials>
+	<Material Name="Silica Gel (Desiccant) - Loose Fill" Index="1" Type="0" Conductivity="0.030000" Tir="0.000000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0xC600C6">
+		<Property Side="Front" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+	</Material>
+	<Material Name="Butyl rubber, (Isobutene), Solid / Hot Melt" Index="2" Type="0" Conductivity="0.240000" Tir="0.000000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0x6B6B6B">
+		<Property Side="Front" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+	</Material>
+	<Material Name="Steel - Stainless (Oxidized)" Index="3" Type="0" Conductivity="17.000000" Tir="0.000000" EmissivityFront="0.800000" EmissivityBack="0.900000" RGBColor="0xA4D8FF">
+		<Property Side="Front" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+	</Material>
+	<Material Name="Polyvinylchloride (PVC) Flexible,with 40% Softener" Index="4" Type="0" Conductivity="0.140000" Tir="0.000000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0x00B75B">
+		<Property Side="Front" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+	</Material>
+</Materials>
+<BoundaryConditions>
+</BoundaryConditions>
+<Polygons>
+	<Polygon ID="1" Material="Silica Gel (Desiccant) - Loose Fill" NSides="12" Type="1" units="mm">
+		<Point index="0" x="240.716156" y="-301.521545" />
+		<Point index="1" x="242.046738" y="-302.852112" />
+		<Point index="2" x="254.600189" y="-302.852112" />
+		<Point index="3" x="255.930756" y="-301.521545" />
+		<Point index="4" x="255.930756" y="-300.864563" />
+		<Point index="5" x="255.592438" y="-299.369781" />
+		<Point index="6" x="255.930756" y="-297.875000" />
+		<Point index="7" x="255.930756" y="-297.411438" />
+		<Point index="8" x="240.716156" y="-297.411438" />
+		<Point index="9" x="240.716156" y="-297.875000" />
+		<Point index="10" x="241.054489" y="-299.369781" />
+		<Point index="11" x="240.716156" y="-300.864563" />
+	</Polygon>
+	<Polygon ID="2" Material="Butyl rubber, (Isobutene), Solid / Hot Melt" NSides="7" Type="1" units="mm">
+		<Point index="0" x="240.068451" y="-297.081238" />
+		<Point index="1" x="240.068451" y="-301.658325" />
+		<Point index="2" x="240.385956" y="-301.658325" />
+		<Point index="3" x="240.385956" y="-300.864563" />
+		<Point index="4" x="240.724289" y="-299.369781" />
+		<Point index="5" x="240.385956" y="-297.875000" />
+		<Point index="6" x="240.385956" y="-297.081238" />
+	</Polygon>
+	<Polygon ID="3" Material="Butyl rubber, (Isobutene), Solid / Hot Melt" NSides="7" Type="1" units="mm">
+		<Point index="0" x="256.260956" y="-297.081238" />
+		<Point index="1" x="256.260956" y="-297.875000" />
+		<Point index="2" x="255.922638" y="-299.369781" />
+		<Point index="3" x="256.260956" y="-300.864563" />
+		<Point index="4" x="256.260956" y="-301.658325" />
+		<Point index="5" x="256.578461" y="-301.658325" />
+		<Point index="6" x="256.578461" y="-297.081238" />
+	</Polygon>
+	<Polygon ID="4" Material="Steel - Stainless (Oxidized)" NSides="4" Type="1" units="mm">
+		<Point index="0" x="240.385956" y="-297.081238" />
+		<Point index="1" x="240.716156" y="-297.411438" />
+		<Point index="2" x="255.930756" y="-297.411438" />
+		<Point index="3" x="256.260956" y="-297.081238" />
+	</Polygon>
+	<Polygon ID="5" Material="Polyvinylchloride (PVC) Flexible,with 40% Softener" NSides="18" Type="1" units="mm">
+		<Point index="0" x="240.068451" y="-301.658325" />
+		<Point index="1" x="240.068451" y="-308.193726" />
+		<Point index="2" x="240.525665" y="-308.193726" />
+		<Point index="3" x="240.525665" y="-307.863556" />
+		<Point index="4" x="241.033661" y="-307.355530" />
+		<Point index="5" x="242.303665" y="-307.355530" />
+		<Point index="6" x="244.030853" y="-305.501343" />
+		<Point index="7" x="252.616058" y="-305.501343" />
+		<Point index="8" x="254.343262" y="-307.355530" />
+		<Point index="9" x="255.655472" y="-307.397766" />
+		<Point index="10" x="256.121246" y="-307.863556" />
+		<Point index="11" x="256.121246" y="-308.193726" />
+		<Point index="12" x="256.578461" y="-308.193726" />
+		<Point index="13" x="256.578461" y="-301.658325" />
+		<Point index="14" x="256.260956" y="-301.658325" />
+		<Point index="15" x="254.736954" y="-303.182312" />
+		<Point index="16" x="241.909958" y="-303.182312" />
+		<Point index="17" x="240.385956" y="-301.658325" />
+	</Polygon>
+	<Polygon ID="6" Material="Steel - Stainless (Oxidized)" NSides="24" Type="1" units="mm">
+		<Point index="0" x="254.600189" y="-302.852112" />
+		<Point index="1" x="242.046738" y="-302.852112" />
+		<Point index="2" x="240.716156" y="-301.521545" />
+		<Point index="3" x="240.716156" y="-300.864563" />
+		<Point index="4" x="241.054489" y="-299.369781" />
+		<Point index="5" x="240.716156" y="-297.875000" />
+		<Point index="6" x="240.716156" y="-297.411438" />
+		<Point index="7" x="240.385956" y="-297.081238" />
+		<Point index="8" x="240.385956" y="-297.875000" />
+		<Point index="9" x="240.724289" y="-299.369781" />
+		<Point index="10" x="240.385956" y="-300.864563" />
+		<Point index="11" x="240.385956" y="-301.658325" />
+		<Point index="12" x="241.909958" y="-303.182312" />
+		<Point index="13" x="254.736954" y="-303.182312" />
+		<Point index="14" x="256.260956" y="-301.658325" />
+		<Point index="15" x="256.260956" y="-300.864563" />
+		<Point index="16" x="255.922638" y="-299.369781" />
+		<Point index="17" x="256.260956" y="-297.875000" />
+		<Point index="18" x="256.260956" y="-297.081238" />
+		<Point index="19" x="255.930756" y="-297.411438" />
+		<Point index="20" x="255.930756" y="-297.875000" />
+		<Point index="21" x="255.592438" y="-299.369781" />
+		<Point index="22" x="255.930756" y="-300.864563" />
+		<Point index="23" x="255.930756" y="-301.521545" />
+	</Polygon>
+</Polygons>
+<Boundaries>
+</Boundaries>
+</THERM-XML>

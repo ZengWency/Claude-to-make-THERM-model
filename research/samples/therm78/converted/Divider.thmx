@@ -1,0 +1,430 @@
+<?xml version="1.0"?>
+<THERM-XML xmlns="http://windows.lbl.gov">
+<ThermVersion>Version 7.8.80.0</ThermVersion>
+<FileVersion>1</FileVersion>
+<SaveDate>2026-11-20T00:48:29</SaveDate>
+
+<Title></Title>
+<CreatedBy></CreatedBy>
+<Company></Company>
+<Client></Client>
+<CrossSectionType>Vertical Divider</CrossSectionType>
+<Notes></Notes>
+<Units>SI</Units>
+<MeshControl MeshLevel="6" ErrorCheckFlag="1" ErrorLimit="10.000000" MaxIterations="3" CMAflag="0" />
+<RadianceModeBC>
+	<RadianceModeInBCName>ShadeInE</RadianceModeInBCName>
+	<RadianceModeInBCTag>ShadeInETag</RadianceModeInBCTag>
+	<RadianceModeOutBCName>ShadeOutE</RadianceModeOutBCName>
+	<RadianceModeOutBCTag>ShadeOutETag</RadianceModeOutBCTag>
+</RadianceModeBC>
+<Materials>
+	<Material Name="Divider:Aluminum  Alloys" Index="1" Type="0" Conductivity="160.000000" Tir="0.000000" EmissivityFront="0.200000" EmissivityBack="0.900000" RGBColor="0x0000FF">
+		<Property Side="Front" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+	</Material>
+	<Material Name="Frame Cavity NFRC 100_Cavity_15" Index="2" Type="1" Conductivity="0.026263" Tir="1.000000" Absorptivity="0.500000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0x00FF00" CavityModel="4" />
+	<Material Name="Frame Cavity NFRC 100_Cavity_16" Index="3" Type="1" Conductivity="0.028297" Tir="1.000000" Absorptivity="0.500000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0x00FF00" CavityModel="4" />
+	<Material Name="Double LowE - Divider_Glass_0" Index="4" Type="0" Conductivity="1.000000" Tir="0.000000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0x00FFFF">
+		<Property Side="Front" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+	</Material>
+	<Material Name="Double LowE - Divider_Gap_0" Index="5" Type="0" Conductivity="0.039351" Tir="0.000000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0xC0C0C0">
+		<Property Side="Front" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+	</Material>
+	<Material Name="Double LowE - Divider_Glass_1" Index="6" Type="0" Conductivity="1.000000" Tir="0.000000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0x00FFFF">
+		<Property Side="Front" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+	</Material>
+	<Material Name="Double LowE - Divider_Glass_2" Index="7" Type="0" Conductivity="1.000000" Tir="0.000000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0x00FFFF">
+		<Property Side="Front" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+	</Material>
+	<Material Name="Double LowE - Divider_Gap_1" Index="8" Type="0" Conductivity="0.039351" Tir="0.000000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0xC0C0C0">
+		<Property Side="Front" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+	</Material>
+	<Material Name="Double LowE - Divider_Glass_3" Index="9" Type="0" Conductivity="1.000000" Tir="0.000000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0x00FFFF">
+		<Property Side="Front" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Front" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Visible" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Direct" T="0.000000" R="0.000000"/>
+		<Property Side="Back" Range="Solar" Specularity="Diffuse" T="0.000000" R="0.000000"/>
+	</Material>
+	<Material Name="Frame Cavity NFRC 100_Cavity_1" Index="10" Type="1" Conductivity="0.024908" Tir="1.000000" Absorptivity="0.500000" EmissivityFront="0.900000" EmissivityBack="0.900000" RGBColor="0x00FF00" CavityModel="4" />
+</Materials>
+<BoundaryConditions>
+	<BoundaryCondition Name="Frame Cavity Surface" Type="7" H="0.000000" HeatFLux="0.000000" Temperature="0.000000" RGBColor="0xFF0000" 
+		Tr="0.000000" Hr="0.000000" Ei="1.000000" Viewfactor="1.000000" RadiationModel="0"
+		ConvectionFlag="0" FluxFlag="0" RadiationFlag="0" ConstantTemperatureFlag="0" EmisModifier="1.000000" />
+	<BoundaryCondition Name="Adiabatic" Type="0" H="0.000000" HeatFLux="0.000000" Temperature="0.000000" RGBColor="0x000000" 
+		Tr="0.000000" Hr="0.000000" Ei="1.000000" Viewfactor="1.000000" RadiationModel="0"
+		ConvectionFlag="0" FluxFlag="1" RadiationFlag="0" ConstantTemperatureFlag="0" EmisModifier="1.000000" />
+	<BoundaryCondition Name="NFRC 100-2010 Exterior" Type="1" H="26.000000" HeatFLux="0.000000" Temperature="-18.000000" RGBColor="0x0080C0" 
+		Tr="-18.000000" Hr="-431602080.000000" Ei="1.000000" Viewfactor="1.000000" RadiationModel="1"
+		ConvectionFlag="1" FluxFlag="0" RadiationFlag="1" ConstantTemperatureFlag="0" EmisModifier="1.000000" />
+</BoundaryConditions>
+<GlazingSystems>
+<GlazingSystem index="1" nlayers="2" width="25.425999" units="mm"/>
+<GlazingSystem index="2" nlayers="2" width="25.425999" units="mm"/>
+</GlazingSystems>
+<Polygons>
+	<Polygon ID="11" Material="Divider:Aluminum  Alloys" NSides="6" Type="1" units="mm">
+		<Point index="0" x="256.602203" y="-250.000000" />
+		<Point index="1" x="258.177002" y="-250.000000" />
+		<Point index="2" x="258.177002" y="-248.425201" />
+		<Point index="3" x="258.177002" y="-226.174744" />
+		<Point index="4" x="258.177002" y="-224.600006" />
+		<Point index="5" x="256.602203" y="-224.600006" />
+	</Polygon>
+	<Polygon ID="12" Material="Divider:Aluminum  Alloys" NSides="6" Type="1" units="mm">
+		<Point index="0" x="268.794250" y="-250.000000" />
+		<Point index="1" x="268.794250" y="-224.600006" />
+		<Point index="2" x="267.219452" y="-224.600006" />
+		<Point index="3" x="267.219421" y="-226.174744" />
+		<Point index="4" x="267.219421" y="-248.425201" />
+		<Point index="5" x="267.219452" y="-250.000000" />
+	</Polygon>
+	<Polygon ID="13" Material="Divider:Aluminum  Alloys" NSides="4" Type="1" units="mm">
+		<Point index="0" x="258.177002" y="-224.600006" />
+		<Point index="1" x="258.177002" y="-226.174744" />
+		<Point index="2" x="267.219421" y="-226.174744" />
+		<Point index="3" x="267.219452" y="-224.600006" />
+	</Polygon>
+	<Polygon ID="14" Material="Divider:Aluminum  Alloys" NSides="4" Type="1" units="mm">
+		<Point index="0" x="258.177002" y="-250.000000" />
+		<Point index="1" x="267.219452" y="-250.000000" />
+		<Point index="2" x="267.219421" y="-248.425201" />
+		<Point index="3" x="258.177002" y="-248.425201" />
+	</Polygon>
+	<Polygon ID="15" Material="Frame Cavity NFRC 100_Cavity_15" NSides="4" Type="1" units="mm">
+		<Point index="0" x="253.000000" y="-250.000000" />
+		<Point index="1" x="256.602203" y="-250.000000" />
+		<Point index="2" x="256.602203" y="-224.600006" />
+		<Point index="3" x="253.000000" y="-224.600006" />
+	</Polygon>
+	<Polygon ID="16" Material="Frame Cavity NFRC 100_Cavity_16" NSides="4" Type="1" units="mm">
+		<Point index="0" x="258.177002" y="-248.425201" />
+		<Point index="1" x="267.219421" y="-248.425201" />
+		<Point index="2" x="267.219421" y="-226.174744" />
+		<Point index="3" x="258.177002" y="-226.174744" />
+	</Polygon>
+	<Polygon ID="20" Material="Double LowE - Divider_Glass_0" NSides="6" Type="11" units="mm">
+		<Point index="0" x="250.000000" y="-250.000000" />
+		<Point index="1" x="252.970001" y="-250.000000" />
+		<Point index="2" x="253.000000" y="-224.600006" />
+		<Point index="3" x="253.000000" y="-74.600006" />
+		<Point index="4" x="250.000000" y="-74.600006" />
+		<Point index="5" x="250.000000" y="-224.600006" />
+	</Polygon>
+	<Polygon ID="21" Material="Double LowE - Divider_Gap_0" NSides="8" Type="5" units="mm">
+		<Point index="0" x="253.000000" y="-224.600006" />
+		<Point index="1" x="256.602203" y="-224.600006" />
+		<Point index="2" x="258.177002" y="-224.600006" />
+		<Point index="3" x="267.219452" y="-224.600006" />
+		<Point index="4" x="268.794250" y="-224.600006" />
+		<Point index="5" x="272.455994" y="-224.600006" />
+		<Point index="6" x="272.455994" y="-74.600006" />
+		<Point index="7" x="253.000000" y="-74.600006" />
+	</Polygon>
+	<Polygon ID="22" Material="Double LowE - Divider_Glass_1" NSides="7" Type="9" units="mm">
+		<Point index="0" x="272.455994" y="-250.000000" />
+		<Point index="1" x="275.396393" y="-250.000000" />
+		<Point index="2" x="275.425995" y="-224.600006" />
+		<Point index="3" x="275.425995" y="-161.100006" />
+		<Point index="4" x="275.425995" y="-74.600006" />
+		<Point index="5" x="272.455994" y="-74.600006" />
+		<Point index="6" x="272.455994" y="-224.600006" />
+	</Polygon>
+	<Polygon ID="29" Material="Double LowE - Divider_Glass_2" NSides="4" Type="11" units="mm">
+		<Point index="0" x="250.000000" y="-250.000000" />
+		<Point index="1" x="250.000000" y="-400.000000" />
+		<Point index="2" x="253.000000" y="-400.000000" />
+		<Point index="3" x="253.000000" y="-250.000000" />
+	</Polygon>
+	<Polygon ID="30" Material="Double LowE - Divider_Gap_1" NSides="8" Type="5" units="mm">
+		<Point index="0" x="253.000000" y="-250.000000" />
+		<Point index="1" x="253.000000" y="-400.000000" />
+		<Point index="2" x="272.455994" y="-400.000000" />
+		<Point index="3" x="272.455994" y="-250.000000" />
+		<Point index="4" x="268.794250" y="-250.000000" />
+		<Point index="5" x="267.219452" y="-250.000000" />
+		<Point index="6" x="258.177002" y="-250.000000" />
+		<Point index="7" x="256.602203" y="-250.000000" />
+	</Polygon>
+	<Polygon ID="31" Material="Double LowE - Divider_Glass_3" NSides="5" Type="9" units="mm">
+		<Point index="0" x="272.455994" y="-250.000000" />
+		<Point index="1" x="272.455994" y="-400.000000" />
+		<Point index="2" x="275.425995" y="-400.000000" />
+		<Point index="3" x="275.425995" y="-313.500000" />
+		<Point index="4" x="275.425995" y="-250.000000" />
+	</Polygon>
+	<Polygon ID="1" Material="Frame Cavity NFRC 100_Cavity_1" NSides="4" Type="1" units="mm">
+		<Point index="0" x="268.794250" y="-250.000000" />
+		<Point index="1" x="272.426392" y="-250.000000" />
+		<Point index="2" x="272.455994" y="-224.600006" />
+		<Point index="3" x="268.794250" y="-224.600006" />
+	</Polygon>
+</Polygons>
+<Boundaries>
+	<BCPolygon ID="60" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="15" EnclosureID="1" UFactorTag="" Emissivity="0.200000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="256.602203" y="-224.600006" />
+		<Point index="1" x="256.602203" y="-250.000000" />
+	</BCPolygon>
+	<BCPolygon ID="63" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="16" EnclosureID="2" UFactorTag="" Emissivity="0.200000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="267.219421" y="-248.425201" />
+		<Point index="1" x="258.177002" y="-248.425201" />
+	</BCPolygon>
+	<BCPolygon ID="64" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="16" EnclosureID="2" UFactorTag="" Emissivity="0.200000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="267.219421" y="-226.174744" />
+		<Point index="1" x="267.219421" y="-248.425201" />
+	</BCPolygon>
+	<BCPolygon ID="65" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="16" EnclosureID="2" UFactorTag="" Emissivity="0.200000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="258.177002" y="-226.174744" />
+		<Point index="1" x="267.219421" y="-226.174744" />
+	</BCPolygon>
+	<BCPolygon ID="66" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="16" EnclosureID="2" UFactorTag="" Emissivity="0.200000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="258.177002" y="-248.425201" />
+		<Point index="1" x="258.177002" y="-226.174744" />
+	</BCPolygon>
+	<BCPolygon ID="67" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="1" EnclosureID="3" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="272.426392" y="-250.000000" />
+		<Point index="1" x="268.794250" y="-250.000000" />
+	</BCPolygon>
+	<BCPolygon ID="69" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="1" EnclosureID="3" UFactorTag="" Emissivity="0.200000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="268.794250" y="-250.000000" />
+		<Point index="1" x="268.794250" y="-224.600006" />
+	</BCPolygon>
+	<BCPolygon ID="2" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="15" EnclosureID="1" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="256.602203" y="-250.000000" />
+		<Point index="1" x="253.000000" y="-250.000000" />
+	</BCPolygon>
+	<BCPolygon ID="3" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="15" EnclosureID="1" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="253.000000" y="-224.599945" />
+		<Point index="1" x="256.602203" y="-224.600006" />
+	</BCPolygon>
+	<BCPolygon ID="87" BC="Frame Cavity Surface" units="mm" MaterialName="Double LowE - Divider" PolygonID="15" EnclosureID="1" UFactorTag="" Emissivity="0.840000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="253.000000" y="-250.000000" />
+		<Point index="1" x="253.000000" y="-224.600006" />
+	</BCPolygon>
+	<BCPolygon ID="33" BC="Frame Cavity Surface" units="mm" MaterialName="Double LowE - Divider" PolygonID="1" EnclosureID="3" UFactorTag="" Emissivity="0.035000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="272.455994" y="-224.600006" />
+		<Point index="1" x="272.455994" y="-250.000000" />
+	</BCPolygon>
+	<BCPolygon ID="34" BC="Frame Cavity Surface" units="mm" MaterialName="" PolygonID="1" EnclosureID="3" UFactorTag="" Emissivity="0.900000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="268.794250" y="-224.600006" />
+		<Point index="1" x="272.455994" y="-224.600006" />
+	</BCPolygon>
+	<BCPolygon ID="42" BC="Adiabatic" units="mm" MaterialName="Double LowE - Divider" PolygonID="29" EnclosureID="0" UFactorTag="" Emissivity="-1.000000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="250.000000" y="-400.000000" />
+		<Point index="1" x="253.000000" y="-400.000000" />
+	</BCPolygon>
+	<BCPolygon ID="43" BC="Adiabatic" units="mm" MaterialName="Double LowE - Divider" PolygonID="30" EnclosureID="0" UFactorTag="" Emissivity="-1.000000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="253.000000" y="-400.000000" />
+		<Point index="1" x="272.455994" y="-400.000000" />
+	</BCPolygon>
+	<BCPolygon ID="23" BC="Adiabatic" units="mm" MaterialName="Double LowE - Divider" PolygonID="31" EnclosureID="0" UFactorTag="" Emissivity="-1.000000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="272.455994" y="-400.000000" />
+		<Point index="1" x="275.425995" y="-400.000000" />
+	</BCPolygon>
+	<BCPolygon ID="27" BC="Divider:Double LowE - Divider (ID:62) U-factor Inside Film" units="mm" MaterialName="Double LowE - Divider" PolygonID="31" EnclosureID="0" UFactorTag="" Emissivity="0.840000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="275.425995" y="-400.000000" />
+		<Point index="1" x="275.425995" y="-313.500000" />
+	</BCPolygon>
+	<BCPolygon ID="28" BC="Divider:Double LowE - Divider (ID:62) U-factor Inside Film" units="mm" MaterialName="Double LowE - Divider" PolygonID="31" EnclosureID="0" UFactorTag="Edge" Emissivity="0.840000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="275.425995" y="-313.500000" />
+		<Point index="1" x="275.425995" y="-250.000000" />
+	</BCPolygon>
+	<BCPolygon ID="35" BC="Divider:Double LowE - Divider (ID:62) U-factor Inside Film" units="mm" MaterialName="Double LowE - Divider" PolygonID="22" EnclosureID="0" UFactorTag="Frame" Emissivity="0.840000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="275.425995" y="-250.000000" />
+		<Point index="1" x="275.425995" y="-224.600006" />
+	</BCPolygon>
+	<BCPolygon ID="36" BC="Divider:Double LowE - Divider (ID:62) U-factor Inside Film" units="mm" MaterialName="Double LowE - Divider" PolygonID="22" EnclosureID="0" UFactorTag="Edge" Emissivity="0.840000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="275.425995" y="-224.600006" />
+		<Point index="1" x="275.425995" y="-161.100006" />
+	</BCPolygon>
+	<BCPolygon ID="37" BC="Divider:Double LowE - Divider (ID:62) U-factor Inside Film" units="mm" MaterialName="Double LowE - Divider" PolygonID="22" EnclosureID="0" UFactorTag="" Emissivity="0.840000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="275.425995" y="-161.100006" />
+		<Point index="1" x="275.425995" y="-74.600006" />
+	</BCPolygon>
+	<BCPolygon ID="38" BC="Adiabatic" units="mm" MaterialName="Double LowE - Divider" PolygonID="22" EnclosureID="0" UFactorTag="" Emissivity="-1.000000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="275.425995" y="-74.600006" />
+		<Point index="1" x="272.455994" y="-74.600006" />
+	</BCPolygon>
+	<BCPolygon ID="39" BC="Adiabatic" units="mm" MaterialName="Double LowE - Divider" PolygonID="21" EnclosureID="0" UFactorTag="" Emissivity="-1.000000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="272.455994" y="-74.600006" />
+		<Point index="1" x="253.000000" y="-74.600006" />
+	</BCPolygon>
+	<BCPolygon ID="40" BC="Adiabatic" units="mm" MaterialName="Double LowE - Divider" PolygonID="20" EnclosureID="0" UFactorTag="" Emissivity="-1.000000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="253.000000" y="-74.600006" />
+		<Point index="1" x="250.000000" y="-74.600006" />
+	</BCPolygon>
+	<BCPolygon ID="41" BC="NFRC 100-2010 Exterior" units="mm" MaterialName="Double LowE - Divider" PolygonID="20" EnclosureID="0" UFactorTag="" Emissivity="0.840000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="250.000000" y="-74.600006" />
+		<Point index="1" x="250.000000" y="-224.600006" />
+	</BCPolygon>
+	<BCPolygon ID="44" BC="NFRC 100-2010 Exterior" units="mm" MaterialName="Double LowE - Divider" PolygonID="20" EnclosureID="0" UFactorTag="SHGC Exterior" Emissivity="0.840000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="250.000000" y="-224.600006" />
+		<Point index="1" x="250.000000" y="-250.000000" />
+	</BCPolygon>
+	<BCPolygon ID="45" BC="NFRC 100-2010 Exterior" units="mm" MaterialName="" PolygonID="29" EnclosureID="0" UFactorTag="" Emissivity="0.840000" MaterialSide="Front" IlluminatedSurface="FALSE">
+		<Point index="0" x="250.000000" y="-250.000000" />
+		<Point index="1" x="250.000000" y="-400.000000" />
+	</BCPolygon>
+</Boundaries>
+<Results>
+	<Case>
+		<ModelType>U-factor</ModelType>
+		<U-factors>
+			<Tag>SHGC Exterior</Tag>
+			<DeltaT units="C" value="39.000000" />
+			<Projection>
+				<Length-type>Total length</Length-type>
+				<Length units="mm" value="25.399994" />
+				<U-factor units="W/m2-K" value="2.119433" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected X</Length-type>
+				<Length units="mm" value="0.000000" />
+				<U-factor value="NA" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected Y</Length-type>
+				<Length units="mm" value="25.399994" />
+				<U-factor units="W/m2-K" value="2.119433" />
+			</Projection>
+			<Projection>
+				<Length-type>Custom length</Length-type>
+				<Length units="mm" value="0.000000" />
+				<U-factor value="NA" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected in glass plane</Length-type>
+				<Length units="mm" value="25.399994" />
+				<U-factor units="W/m2-K" value="2.119433" />
+			</Projection>
+			<Projection>
+				<Length-type>Custom rotation</Length-type>
+				<Length units="mm" value="0.000000" />
+				<ProjectionAngle>1.570796</ProjectionAngle>
+				<U-factor value="NA" />
+			</Projection>
+		</U-factors>
+		<U-factors>
+			<Tag>Frame</Tag>
+			<DeltaT units="C" value="39.000000" />
+			<Projection>
+				<Length-type>Total length</Length-type>
+				<Length units="mm" value="25.400011" />
+				<U-factor units="W/m2-K" value="1.913143" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected X</Length-type>
+				<Length units="mm" value="0.029602" />
+				<U-factor units="W/m2-K" value="1641.570068" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected Y</Length-type>
+				<Length units="mm" value="25.399994" />
+				<U-factor units="W/m2-K" value="1.913144" />
+			</Projection>
+			<Projection>
+				<Length-type>Custom length</Length-type>
+				<Length units="mm" value="0.000000" />
+				<U-factor value="NA" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected in glass plane</Length-type>
+				<Length units="mm" value="25.399994" />
+				<U-factor units="W/m2-K" value="1.913144" />
+			</Projection>
+			<Projection>
+				<Length-type>Custom rotation</Length-type>
+				<Length units="mm" value="0.029572" />
+				<ProjectionAngle>1.570796</ProjectionAngle>
+				<U-factor units="W/m2-K" value="1643.264282" />
+			</Projection>
+		</U-factors>
+		<U-factors>
+			<Tag>Edge</Tag>
+			<DeltaT units="C" value="39.000000" />
+			<Projection>
+				<Length-type>Total length</Length-type>
+				<Length units="mm" value="127.000008" />
+				<U-factor units="W/m2-K" value="1.607046" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected X</Length-type>
+				<Length units="mm" value="0.029602" />
+				<U-factor units="W/m2-K" value="6894.618652" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected Y</Length-type>
+				<Length units="mm" value="127.000000" />
+				<U-factor units="W/m2-K" value="1.607046" />
+			</Projection>
+			<Projection>
+				<Length-type>Custom length</Length-type>
+				<Length units="mm" value="0.000000" />
+				<U-factor value="NA" />
+			</Projection>
+			<Projection>
+				<Length-type>Projected in glass plane</Length-type>
+				<Length units="mm" value="126.999985" />
+				<U-factor units="W/m2-K" value="1.607046" />
+			</Projection>
+			<Projection>
+				<Length-type>Custom rotation</Length-type>
+				<Length units="mm" value="0.029602" />
+				<ProjectionAngle>1.570796</ProjectionAngle>
+				<U-factor units="W/m2-K" value="6894.618652" />
+			</Projection>
+		</U-factors>
+		<FrameCavities>
+			<FrameCavity Name="Frame Cavity NFRC 100_Cavity_15" Conductivity="0.026263" EquivalentLength="3.602203" EquivalentHeight="25.399994" HeatFlowDirection="Left" />
+			<FrameCavity Name="Frame Cavity NFRC 100_Cavity_16" Conductivity="0.028297" EquivalentLength="9.042419" EquivalentHeight="22.250458" HeatFlowDirection="Left" />
+			<FrameCavity Name="Frame Cavity NFRC 100_Cavity_1" Conductivity="0.024908" EquivalentLength="3.654335" EquivalentHeight="25.348608" HeatFlowDirection="Left" />
+		</FrameCavities>
+	</Case>
+</Results>
+</THERM-XML>
