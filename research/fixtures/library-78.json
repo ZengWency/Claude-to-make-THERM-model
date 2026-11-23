@@ -1,0 +1,103 @@
+{
+  "materials": [
+    {
+      "kind": "material",
+      "name": "Wood (Pine, Spruce, Fir)",
+      "thmx": {
+        "Name": "Wood (Pine, Spruce, Fir)",
+        "Index": "5",
+        "Type": "0",
+        "Conductivity": "0.140000",
+        "Tir": "0.000000",
+        "EmissivityFront": "0.900000",
+        "EmissivityBack": "0.900000",
+        "RGBColor": "0xFF8000"
+      }
+    },
+    {
+      "kind": "material",
+      "name": "Frame Cavity NFRC 100-2001",
+      "thmx": {
+        "Name": "Frame Cavity NFRC 100-2001",
+        "Index": "6",
+        "Type": "1",
+        "Conductivity": "0.045694",
+        "Tir": "0.000000",
+        "Absorptivity": "0.500000",
+        "EmissivityFront": "0.900000",
+        "EmissivityBack": "0.900000",
+        "RGBColor": "0x00FF00",
+        "CavityModel": "4"
+      }
+    }
+  ],
+  "boundary_conditions": [
+    {
+      "kind": "bc",
+      "name": "NFRC 100-2010 Exterior",
+      "thmx": {
+        "Name": "NFRC 100-2010 Exterior",
+        "Type": "1",
+        "H": "26.000000",
+        "HeatFLux": "0.000000",
+        "Temperature": "-18.000000",
+        "Tr": "-18.000000",
+        "Hr": "-431602080.000000",
+        "Ei": "1.000000",
+        "Viewfactor": "1.000000",
+        "RadiationModel": "1",
+        "ConvectionFlag": "1",
+        "FluxFlag": "0",
+        "RadiationFlag": "1",
+        "ConstantTemperatureFlag": "0",
+        "EmisModifier": "1.000000",
+        "RGBColor": "0x0080C0"
+      }
+    },
+    {
+      "kind": "bc",
+      "name": "Adiabatic",
+      "thmx": {
+        "Name": "Adiabatic",
+        "Type": "0",
+        "H": "0.000000",
+        "HeatFLux": "0.000000",
+        "Temperature": "0.000000",
+        "Tr": "0.000000",
+        "Hr": "0.000000",
+        "Ei": "1.000000",
+        "Viewfactor": "1.000000",
+        "RadiationModel": "0",
+        "ConvectionFlag": "0",
+        "FluxFlag": "1",
+        "RadiationFlag": "0",
+        "ConstantTemperatureFlag": "0",
+        "EmisModifier": "1.000000",
+        "RGBColor": "0x000000"
+      }
+    },
+    {
+      "kind": "bc",
+      "name": "Sample GlzSys (ID:8) U-factor Inside Film",
+      "thmx": {
+        "Name": "Sample GlzSys (ID:8) U-factor Inside Film",
+        "Type": "1",
+        "H": "2.614402",
+        "HeatFLux": "0.000000",
+        "Temperature": "21.000000",
+        "Tr": "21.000000",
+        "Hr": "4.595834",
+        "Ei": "1.000000",
+        "Viewfactor": "1.000000",
+        "RadiationModel": "3",
+        "ConvectionFlag": "1",
+        "FluxFlag": "0",
+        "RadiationFlag": "1",
+        "ConstantTemperatureFlag": "0",
+        "EmisModifier": "1.000000",
+        "RGBColor": "0xFF0000"
+      }
+    }
+  ],
+  "gases": []
+}

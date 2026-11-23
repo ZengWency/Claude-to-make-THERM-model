@@ -1,0 +1,6 @@
+{
+  "region": "panel",
+  "interior": "+x",
+  "layers": [{"thickness_mm": 4}, {"thickness_mm": 4}],
+  "gaps": [{"thickness_mm": 20, "conductivity_w_mk": 0.0339}]
+}

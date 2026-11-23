@@ -1,0 +1,216 @@
+{
+  "skill": "therm-library",
+  "version": 1,
+  "format": "therm-library-project",
+  "warnings": [],
+  "counts": {
+    "materials": 0,
+    "pure_gases": 0,
+    "gases": 0,
+    "bcs": 5
+  },
+  "materials": [],
+  "boundary_conditions": [
+    {
+      "kind": "bc",
+      "uuid": "58acd941-573b-5e4b-9eb7-20adae6b9868",
+      "name": "ISO Exterior Rse 0.04 (0 C)",
+      "type": "simplified",
+      "protected": false,
+      "color": "0x0080C0",
+      "igu_surface": false,
+      "properties": {
+        "temperature_c": 0.0,
+        "film_coefficient_w_m2k": 25.0,
+        "relative_humidity": 0.5,
+        "surface_resistance_m2k_w": 0.04
+      },
+      "source": {
+        "created_by": "therm-library",
+        "command": "presets iso"
+      },
+      "xml_format": "therm-8.1",
+      "xml": "<BoundaryCondition>\n\t<UUID>58acd941-573b-5e4b-9eb7-20adae6b9868</UUID>\n\t<Name>ISO Exterior Rse 0.04 (0 C)</Name>\n\t<ProjectNameTag />\n\t<Protected>false</Protected>\n\t<Color>0x0080C0</Color>\n\t<IGUSurface>false</IGUSurface>\n\t<Simplified>\n\t\t<Temperature>0.0</Temperature>\n\t\t<FilmCoefficient>25.0</FilmCoefficient>\n\t\t<RelativeHumidity>0.5</RelativeHumidity>\n\t</Simplified>\n</BoundaryCondition>",
+      "preset": {
+        "set": "iso-10077-2",
+        "checks": [
+          {
+            "field": "surface_resistance_m2k_w",
+            "value": 0.04,
+            "source": "ISO 6946:2017 Table 5 (official preview, cdn.standards.iteh.ai sample of ISO 6946:2017): Rse = 0,04 m2K/W; Rsi range 0,1 to 0,2 m2K/W, values in 6.8",
+            "confirmed": true
+          },
+          {
+            "field": "surface_resistance_m2k_w (frames)",
+            "value": 0.04,
+            "source": "ISO 10077-2:2017 Annex E 'Surface resistances' (normative; content paywalled, only the table of contents was read)",
+            "confirmed": false
+          },
+          {
+            "field": "temperature_c",
+            "value": 0.0,
+            "source": "ISO 10077-2 U and psi do not depend on the temperatures in a linear steady-state model; 20/0 C is a common convention, not read from the standard",
+            "confirmed": false
+          },
+          {
+            "field": "relative_humidity",
+            "value": 0.5,
+            "source": "THERM default; does not affect U-factor",
+            "confirmed": true
+          }
+        ],
+        "needs_engineer_check": true
+      }
+    },
+    {
+      "kind": "bc",
+      "uuid": "e096cc77-0077-53db-bb9f-d5cfc3a68296",
+      "name": "ISO Interior Rsi 0.13 normal (20 C)",
+      "type": "simplified",
+      "protected": false,
+      "color": "0xFF8040",
+      "igu_surface": false,
+      "properties": {
+        "temperature_c": 20.0,
+        "film_coefficient_w_m2k": 7.692308,
+        "relative_humidity": 0.5,
+        "surface_resistance_m2k_w": 0.13
+      },
+      "source": {
+        "created_by": "therm-library",
+        "command": "presets iso"
+      },
+      "xml_format": "therm-8.1",
+      "xml": "<BoundaryCondition>\n\t<UUID>e096cc77-0077-53db-bb9f-d5cfc3a68296</UUID>\n\t<Name>ISO Interior Rsi 0.13 normal (20 C)</Name>\n\t<ProjectNameTag />\n\t<Protected>false</Protected>\n\t<Color>0xFF8040</Color>\n\t<IGUSurface>false</IGUSurface>\n\t<Simplified>\n\t\t<Temperature>20.0</Temperature>\n\t\t<FilmCoefficient>7.692308</FilmCoefficient>\n\t\t<RelativeHumidity>0.5</RelativeHumidity>\n\t</Simplified>\n</BoundaryCondition>",
+      "preset": {
+        "set": "iso-10077-2",
+        "checks": [
+          {
+            "field": "surface_resistance_m2k_w",
+            "value": 0.13,
+            "source": "ISO 6946:2017 Table 5 (official preview, cdn.standards.iteh.ai sample of ISO 6946:2017): Rse = 0,04 m2K/W; Rsi range 0,1 to 0,2 m2K/W, values in 6.8; 0.13 itself is in 6.8, not in the preview (only the 0,1 to 0,2 range is)",
+            "confirmed": false
+          },
+          {
+            "field": "surface_resistance_m2k_w (frames)",
+            "value": 0.13,
+            "source": "ISO 10077-2:2017 Annex E 'Surface resistances' (normative; content paywalled, only the table of contents was read)",
+            "confirmed": false
+          },
+          {
+            "field": "temperature_c",
+            "value": 20.0,
+            "source": "ISO 10077-2 U and psi do not depend on the temperatures in a linear steady-state model; 20/0 C is a common convention, not read from the standard",
+            "confirmed": false
+          },
+          {
+            "field": "relative_humidity",
+            "value": 0.5,
+            "source": "THERM default; does not affect U-factor",
+            "confirmed": true
+          }
+        ],
+        "needs_engineer_check": true
+      }
+    },
+    {
+      "kind": "bc",
+      "uuid": "90ccd0d0-6628-521e-afb4-5675f09fc5d8",
+      "name": "ISO Interior Rsi 0.20 reduced radiation (20 C)",
+      "type": "simplified",
+      "protected": false,
+      "color": "0xFFC080",
+      "igu_surface": false,
+      "properties": {
+        "temperature_c": 20.0,
+        "film_coefficient_w_m2k": 5.0,
+        "relative_humidity": 0.5,
+        "surface_resistance_m2k_w": 0.2
+      },
+      "source": {
+        "created_by": "therm-library",
+        "command": "presets iso"
+      },
+      "xml_format": "therm-8.1",
+      "xml": "<BoundaryCondition>\n\t<UUID>90ccd0d0-6628-521e-afb4-5675f09fc5d8</UUID>\n\t<Name>ISO Interior Rsi 0.20 reduced radiation (20 C)</Name>\n\t<ProjectNameTag />\n\t<Protected>false</Protected>\n\t<Color>0xFFC080</Color>\n\t<IGUSurface>false</IGUSurface>\n\t<Simplified>\n\t\t<Temperature>20.0</Temperature>\n\t\t<FilmCoefficient>5.0</FilmCoefficient>\n\t\t<RelativeHumidity>0.5</RelativeHumidity>\n\t</Simplified>\n</BoundaryCondition>",
+      "preset": {
+        "set": "iso-10077-2",
+        "checks": [
+          {
+            "field": "surface_resistance_m2k_w",
+            "value": 0.2,
+            "source": "ISO 10077-2:2017 Annex E 'Surface resistances' (normative; content paywalled, only the table of contents was read); reduced radiation/convection zones (edges, corners) per common practice",
+            "confirmed": false
+          },
+          {
+            "field": "temperature_c",
+            "value": 20.0,
+            "source": "ISO 10077-2 U and psi do not depend on the temperatures in a linear steady-state model; 20/0 C is a common convention, not read from the standard",
+            "confirmed": false
+          },
+          {
+            "field": "relative_humidity",
+            "value": 0.5,
+            "source": "THERM default; does not affect U-factor",
+            "confirmed": true
+          }
+        ],
+        "needs_engineer_check": true
+      }
+    },
+    {
+      "kind": "bc",
+      "uuid": "61d7bd1c-22c6-4ea0-8720-0696e8c194ad",
+      "name": "Adiabatic",
+      "type": "simplified",
+      "protected": true,
+      "color": "0x000000",
+      "igu_surface": false,
+      "properties": {
+        "temperature_c": 0.0,
+        "film_coefficient_w_m2k": 0.0,
+        "relative_humidity": 0.5,
+        "adiabatic": true
+      },
+      "source": {
+        "created_by": "therm-library",
+        "command": "presets iso"
+      },
+      "xml_format": "therm-8.1",
+      "xml": "<BoundaryCondition>\n\t<UUID>61d7bd1c-22c6-4ea0-8720-0696e8c194ad</UUID>\n\t<Name>Adiabatic</Name>\n\t<ProjectNameTag />\n\t<Protected>true</Protected>\n\t<Color>0x000000</Color>\n\t<IGUSurface>false</IGUSurface>\n\t<Simplified>\n\t\t<Temperature>0</Temperature>\n\t\t<FilmCoefficient>0</FilmCoefficient>\n\t\t<RelativeHumidity>0.5</RelativeHumidity>\n\t</Simplified>\n</BoundaryCondition>",
+      "preset": {
+        "set": "iso-10077-2",
+        "needs_engineer_check": false,
+        "checks": [
+          {
+            "field": "record",
+            "value": "Adiabatic",
+            "source": "THERM 8.1 shipped library (BoundaryConditionsSteadyState.xml), same UUID and values",
+            "confirmed": true
+          }
+        ]
+      }
+    },
+    {
+      "kind": "bc",
+      "uuid": "12ea5156-b1d8-4bf2-83dc-42ef38f6789f",
+      "name": "Glass interior",
+      "type": "simplified",
+      "protected": false,
+      "color": "0x808080",
+      "igu_surface": false,
+      "properties": {
+        "temperature_c": 21.0,
+        "film_coefficient_w_m2k": 7.209864,
+        "relative_humidity": 0.5
+      },
+      "source": {
+        "created_by": "therm-library",
+        "command": "add bc"
+      },
+      "xml_format": "therm-8.1",
+      "xml": "<BoundaryCondition>\n\t<UUID>12ea5156-b1d8-4bf2-83dc-42ef38f6789f</UUID>\n\t<Name>Glass interior</Name>\n\t<ProjectNameTag />\n\t<Protected>false</Protected>\n\t<Color>0x808080</Color>\n\t<IGUSurface>false</IGUSurface>\n\t<Simplified>\n\t\t<Temperature>21.0</Temperature>\n\t\t<FilmCoefficient>7.209864</FilmCoefficient>\n\t\t<RelativeHumidity>0.5</RelativeHumidity>\n\t</Simplified>\n</BoundaryCondition>"
+    }
+  ],
+  "gases": []
+}

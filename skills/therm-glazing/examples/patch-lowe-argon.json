@@ -1,0 +1,6 @@
+{
+  "name": "Sample GlzSys low-e argon (therm-glazing test values)",
+  "layers": [{"index": 1, "emissivity_1": 0.037}],
+  "gaps": [{"index": 0, "gas": "Argon", "conductivity_w_mk": 0.0339}],
+  "properties": {"winter": {"u_value": 1.6, "interior": {"hc": 2.7, "hr": 4.2}}}
+}

@@ -1,0 +1,45 @@
+<Results>
+	<Version>1</Version>
+	<Case>
+		<ModelType>U-factor</ModelType>
+		<SimulationError>9.909414e-13</SimulationError>
+		<U-factors>
+			<Tag>Wall Assembly</Tag>
+			<DeltaT>44</DeltaT>
+			<HeatFlux>-17.349501</HeatFlux>
+			<DefaultDisplayType>Unknown</DefaultDisplayType>
+			<Projection>
+				<Length-type>Total Length</Length-type>
+				<Length>200</Length>
+				<U-factor>1.971534</U-factor>
+			</Projection>
+			<Projection>
+				<Length-type>Projected X</Length-type>
+			</Projection>
+			<Projection>
+				<Length-type>Projected Y</Length-type>
+				<Length>200</Length>
+				<U-factor>1.971534</U-factor>
+			</Projection>
+			<Projection>
+				<Length-type>Custom Length</Length-type>
+			</Projection>
+			<Projection>
+				<Length-type>Projected in glass plane</Length-type>
+				<Length>3.051758e-05</Length>
+				<U-factor>1.292065e+07</U-factor>
+				<ProjectionAngle>0</ProjectionAngle>
+			</Projection>
+			<Projection>
+				<Length-type>Custom Rotation</Length-type>
+				<Length>3.051758e-05</Length>
+				<U-factor>1.292065e+07</U-factor>
+				<ProjectionAngle>0</ProjectionAngle>
+			</Projection>
+		</U-factors>
+	</Case>
+	<Case>
+		<ModelType>Condensation Resistance</ModelType>
+		<SimulationError>0</SimulationError>
+	</Case>
+</Results>

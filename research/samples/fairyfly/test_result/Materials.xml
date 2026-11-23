@@ -1,0 +1,40 @@
+<Materials>
+	<Version>1</Version>
+	<Material>
+		<UUID>0b46bbd7-0dbc-c148-3afe-87431bf0f66f</UUID>
+		<Name>Frame Cavity - Generic</Name>
+		<ProjectName>model</ProjectName>
+		<Protected>false</Protected>
+		<Color>0x00ff00</Color>
+		<Cavity>
+			<CavityStandard>ISO15099</CavityStandard>
+			<Gas>Air</Gas>
+			<EmissivitySide1>0.9</EmissivitySide1>
+			<EmissivitySide2>0.9</EmissivitySide2>
+		</Cavity>
+	</Material>
+	<Material>
+		<UUID>6442842d-7c8f-4231-a9b3-64302e3b2bc4</UUID>
+		<Name>Generic HW Concrete</Name>
+		<ProjectName>model</ProjectName>
+		<Protected>false</Protected>
+		<Color>0x808080</Color>
+		<Solid>
+			<HygroThermal>
+				<BulkDensity>2240</BulkDensity>
+				<Porosity>0.24</Porosity>
+				<SpecificHeatCapacityDry>900</SpecificHeatCapacityDry>
+				<ThermalConductivityDry>1.95</ThermalConductivityDry>
+				<WaterVaporDiffusionResistanceFactor>19</WaterVaporDiffusionResistanceFactor>
+			</HygroThermal>
+			<Optical>
+				<Integrated>
+					<Infrared>
+						<Emissivity-Front>0.9</Emissivity-Front>
+						<Emissivity-Back>0.9</Emissivity-Back>
+					</Infrared>
+				</Integrated>
+			</Optical>
+		</Solid>
+	</Material>
+</Materials>

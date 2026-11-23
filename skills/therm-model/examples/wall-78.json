@@ -1,0 +1,21 @@
+{
+  "title": "wall 100 mm k 0.14",
+  "notes": "therm-model 7.8 example. 100 mm wood k 0.14, films 26 (exterior, x=0) and 7.7 (interior, x=100). Analytic U = 1/(1/26 + 0.1/0.14 + 1/7.7) = 1.13299 W/m2K.",
+  "units": "mm",
+  "cross_section": "Sill",
+  "materials": [
+    {"name": "Wood k0.14", "conductivity": 0.14, "emissivity": 0.9, "color": "0xFF8000"}
+  ],
+  "boundary_conditions": [
+    {"name": "Ext simple 26", "type": "simplified", "temperature": -18, "film_coefficient": 26, "color": "0x0080C0"},
+    {"name": "Int simple 7.7", "type": "simplified", "temperature": 21, "film_coefficient": 7.7, "color": "0xFF8080"}
+  ],
+  "polygons": [
+    {"id": "wall", "material": "Wood k0.14", "points": [[0, 0], [100, 0], [100, 500], [0, 500]]}
+  ],
+  "boundaries": [
+    {"start": [0, 0], "end": [0, 500], "bc": "Ext simple 26"},
+    {"start": [100, 0], "end": [100, 500], "bc": "Int simple 7.7", "tag": "Frame"}
+  ],
+  "mesh": {"parameter": 6, "error_estimator": true, "error_norm": 10, "max_iterations": 3}
+}

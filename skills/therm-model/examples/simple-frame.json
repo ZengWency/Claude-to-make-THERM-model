@@ -1,0 +1,47 @@
+{
+  "title": "Simple aluminium sill with thermal break and 28 mm calibration panel",
+  "notes": "therm-model example. Exterior on the left (x=0), interior on the right (x=70). Panel stands in for glazing (ISO 10077-2 style, lambda 0.035).",
+  "units": "mm",
+  "cross_section": "Sill",
+  "materials": [
+    {"name": "Aluminium alloy (ISO 10077-2)", "uuid": "c6ad369f-c71e-47b4-97f8-07f282352ca8",
+     "conductivity": 160, "emissivity": 0.9, "color": "0xC0C0C0"},
+    {"name": "Polyamide 6.6 with 25% glass fibre (ISO 10077-2)", "uuid": "b6e0f8ae-a70f-49c1-a06a-5f0b62957051",
+     "conductivity": 0.3, "emissivity": 0.9, "color": "0x404040"},
+    {"name": "Calibration panel (ISO 10077-2)", "uuid": "b0284d77-d6e1-4083-a592-5790615426ef",
+     "conductivity": 0.035, "emissivity": 0.9, "color": "0xFFFF80"},
+    {"name": "Frame Cavity ISO 15099 (air)", "uuid": "b1f1859b-d4f0-4306-a5b3-c7cfe83aba94",
+     "type": "cavity", "cavity_standard": "ISO15099", "gas": "Air", "emissivity": 0.9, "color": "0x00FF00"}
+  ],
+  "boundary_conditions": [
+    {"name": "ISO 10077-2 Exterior (Rse 0.04)", "uuid": "a1c1e131-94c5-479f-832f-b043df4342dc",
+     "type": "simplified", "temperature": 0, "film_coefficient": 25, "color": "0x0080C0"},
+    {"name": "ISO 10077-2 Interior (Rsi 0.13)", "uuid": "a3bf4d9f-01ac-4d26-bea5-82d0bfe2e0f2",
+     "type": "simplified", "temperature": 20, "film_coefficient": 7.69, "color": "0xFF8080"}
+  ],
+  "polygons": [
+    {"id": "ext-left", "material": "Aluminium alloy (ISO 10077-2)", "points": [[0, 0], [2, 0], [2, 50], [0, 50]]},
+    {"id": "ext-right", "material": "Aluminium alloy (ISO 10077-2)", "points": [[26, 0], [28, 0], [28, 50], [26, 50]]},
+    {"id": "ext-bottom", "material": "Aluminium alloy (ISO 10077-2)", "points": [[2, 0], [26, 0], [26, 2], [2, 2]]},
+    {"id": "ext-top", "material": "Aluminium alloy (ISO 10077-2)", "points": [[2, 48], [26, 48], [26, 50], [2, 50]]},
+    {"id": "ext-cavity", "material": "Frame Cavity ISO 15099 (air)", "points": [[2, 2], [26, 2], [26, 48], [2, 48]]},
+    {"id": "break-bottom", "material": "Polyamide 6.6 with 25% glass fibre (ISO 10077-2)",
+     "points": [[28, 0], [42, 0], [42, 6], [28, 6]]},
+    {"id": "break-top", "material": "Polyamide 6.6 with 25% glass fibre (ISO 10077-2)",
+     "points": [[28, 44], [42, 44], [42, 50], [28, 50]]},
+    {"id": "break-cavity", "material": "Frame Cavity ISO 15099 (air)", "points": [[28, 6], [42, 6], [42, 44], [28, 44]]},
+    {"id": "int-left", "material": "Aluminium alloy (ISO 10077-2)", "points": [[42, 0], [44, 0], [44, 50], [42, 50]]},
+    {"id": "int-right", "material": "Aluminium alloy (ISO 10077-2)", "points": [[68, 0], [70, 0], [70, 50], [68, 50]]},
+    {"id": "int-bottom", "material": "Aluminium alloy (ISO 10077-2)", "points": [[44, 0], [68, 0], [68, 2], [44, 2]]},
+    {"id": "int-top", "material": "Aluminium alloy (ISO 10077-2)", "points": [[44, 48], [68, 48], [68, 50], [44, 50]]},
+    {"id": "int-cavity", "material": "Frame Cavity ISO 15099 (air)", "points": [[44, 2], [68, 2], [68, 48], [44, 48]]},
+    {"id": "panel", "material": "Calibration panel (ISO 10077-2)", "points": [[21, 50], [49, 50], [49, 240], [21, 240]]}
+  ],
+  "boundaries": [
+    {"points": [[21, 240], [21, 50], [0, 50], [0, 0]], "bc": "ISO 10077-2 Exterior (Rse 0.04)"},
+    {"points": [[70, 0], [70, 50], [49, 50]], "bc": "ISO 10077-2 Interior (Rsi 0.13)", "tag": "Frame"},
+    {"start": [49, 50], "end": [49, 113.5], "bc": "ISO 10077-2 Interior (Rsi 0.13)", "tag": "Edge"},
+    {"start": [49, 113.5], "end": [49, 240], "bc": "ISO 10077-2 Interior (Rsi 0.13)"}
+  ],
+  "mesh": {"parameter": 6, "error_estimator": true, "error_norm": 10, "max_iterations": 5}
+}

@@ -1,0 +1,410 @@
+{
+  "skill": "therm-library",
+  "therm_version": "7.8",
+  "note": "Records copied from .thmx files THERM 7.8.80 wrote; only Name is normalised.",
+  "materials": [
+    {
+      "kind": "material",
+      "name": "Silica Gel (dessicant)",
+      "thmx": {
+        "Name": "Silica Gel (dessicant)",
+        "Index": "1",
+        "Type": "0",
+        "Conductivity": "0.030000",
+        "Tir": "0.000000",
+        "EmissivityFront": "0.900000",
+        "EmissivityBack": "0.900000",
+        "RGBColor": "0xFF8080"
+      },
+      "copied_from": "research/samples/therm78/converted/sample_sill.thmx (sample_sill:Silica Gel (dessicant))"
+    },
+    {
+      "kind": "material",
+      "name": "Butyl Rubber",
+      "thmx": {
+        "Name": "Butyl Rubber",
+        "Index": "2",
+        "Type": "0",
+        "Conductivity": "0.240000",
+        "Tir": "0.000000",
+        "EmissivityFront": "0.900000",
+        "EmissivityBack": "0.900000",
+        "RGBColor": "0x808080"
+      },
+      "copied_from": "research/samples/therm78/converted/sample_sill.thmx (sample_sill:Butyl Rubber )"
+    },
+    {
+      "kind": "material",
+      "name": "Steel - ANSI 304 Stainless",
+      "thmx": {
+        "Name": "Steel - ANSI 304 Stainless",
+        "Index": "3",
+        "Type": "0",
+        "Conductivity": "14.300000",
+        "Tir": "0.000000",
+        "EmissivityFront": "0.200000",
+        "EmissivityBack": "0.900000",
+        "RGBColor": "0x8080FF"
+      },
+      "copied_from": "research/samples/therm78/converted/sample_sill.thmx (sample_sill:Steel - ANSI 304 Stainless)"
+    },
+    {
+      "kind": "material",
+      "name": "Vinyl (flexible)",
+      "thmx": {
+        "Name": "Vinyl (flexible)",
+        "Index": "4",
+        "Type": "0",
+        "Conductivity": "0.120000",
+        "Tir": "0.000000",
+        "EmissivityFront": "0.900000",
+        "EmissivityBack": "0.900000",
+        "RGBColor": "0x808040"
+      },
+      "copied_from": "research/samples/therm78/converted/sample_sill.thmx (sample_sill:Vinyl (flexible))"
+    },
+    {
+      "kind": "material",
+      "name": "Wood (Pine, Spruce, Fir)",
+      "thmx": {
+        "Name": "Wood (Pine, Spruce, Fir)",
+        "Index": "5",
+        "Type": "0",
+        "Conductivity": "0.140000",
+        "Tir": "0.000000",
+        "EmissivityFront": "0.900000",
+        "EmissivityBack": "0.900000",
+        "RGBColor": "0xFF8000"
+      },
+      "copied_from": "research/samples/therm78/converted/sample_sill.thmx (sample_sill:Wood (Pine, Spruce, Fir))"
+    },
+    {
+      "kind": "material",
+      "name": "Frame Cavity NFRC 100-2001",
+      "thmx": {
+        "Name": "Frame Cavity NFRC 100-2001",
+        "Index": "6",
+        "Type": "1",
+        "Conductivity": "0.045694",
+        "Tir": "0.000000",
+        "Absorptivity": "0.500000",
+        "EmissivityFront": "0.900000",
+        "EmissivityBack": "0.900000",
+        "RGBColor": "0x00FF00",
+        "CavityModel": "4"
+      },
+      "copied_from": "research/samples/therm78/converted/sample_sill.thmx (sample_sill:Frame Cavity NFRC 100-2001_Cavity_16)"
+    },
+    {
+      "kind": "material",
+      "name": "Frame Cavity NFRC 100",
+      "thmx": {
+        "Name": "Frame Cavity NFRC 100",
+        "Index": "7",
+        "Type": "1",
+        "Conductivity": "0.038380",
+        "Tir": "1.000000",
+        "Absorptivity": "0.500000",
+        "EmissivityFront": "0.900000",
+        "EmissivityBack": "0.900000",
+        "RGBColor": "0x00FF00",
+        "CavityModel": "4"
+      },
+      "copied_from": "research/samples/therm78/converted/sample_sill.thmx (Frame Cavity NFRC 100_Cavity_49)"
+    },
+    {
+      "kind": "material",
+      "name": "Butyl rubber",
+      "thmx": {
+        "Name": "Butyl rubber",
+        "Index": "9",
+        "Type": "0",
+        "Conductivity": "0.240000",
+        "Tir": "0.000000",
+        "EmissivityFront": "0.900000",
+        "EmissivityBack": "0.900000",
+        "RGBColor": "0x808080"
+      },
+      "copied_from": "research/samples/therm78/converted/sample_sill.thmx (Butyl rubber)"
+    }
+  ],
+  "boundary_conditions": [
+    {
+      "kind": "bc",
+      "name": "Frame Cavity Surface",
+      "thmx": {
+        "Name": "Frame Cavity Surface",
+        "Type": "7",
+        "H": "0.000000",
+        "HeatFLux": "0.000000",
+        "Temperature": "0.000000",
+        "Tr": "0.000000",
+        "Hr": "0.000000",
+        "Ei": "1.000000",
+        "Viewfactor": "1.000000",
+        "RadiationModel": "0",
+        "ConvectionFlag": "0",
+        "FluxFlag": "0",
+        "RadiationFlag": "0",
+        "ConstantTemperatureFlag": "0",
+        "EmisModifier": "1.000000",
+        "RGBColor": "0xFF0000"
+      },
+      "copied_from": "research/samples/therm78/converted/sample_sill.thmx (Frame Cavity Surface)"
+    },
+    {
+      "kind": "bc",
+      "name": "Glazing Cavity Surface",
+      "thmx": {
+        "Name": "Glazing Cavity Surface",
+        "Type": "6",
+        "H": "0.000000",
+        "HeatFLux": "0.000000",
+        "Temperature": "0.000000",
+        "Tr": "0.000000",
+        "Hr": "0.000000",
+        "Ei": "1.000000",
+        "Viewfactor": "1.000000",
+        "RadiationModel": "0",
+        "ConvectionFlag": "0",
+        "FluxFlag": "0",
+        "RadiationFlag": "0",
+        "ConstantTemperatureFlag": "0",
+        "EmisModifier": "1.000000",
+        "RGBColor": "0xFF0000"
+      },
+      "copied_from": "research/samples/therm78/converted/sample_sill.thmx (Glazing Cavity Surface)"
+    },
+    {
+      "kind": "bc",
+      "name": "Adiabatic",
+      "thmx": {
+        "Name": "Adiabatic",
+        "Type": "0",
+        "H": "0.000000",
+        "HeatFLux": "0.000000",
+        "Temperature": "0.000000",
+        "Tr": "0.000000",
+        "Hr": "0.000000",
+        "Ei": "1.000000",
+        "Viewfactor": "1.000000",
+        "RadiationModel": "0",
+        "ConvectionFlag": "0",
+        "FluxFlag": "1",
+        "RadiationFlag": "0",
+        "ConstantTemperatureFlag": "0",
+        "EmisModifier": "1.000000",
+        "RGBColor": "0x000000"
+      },
+      "copied_from": "research/samples/therm78/converted/sample_sill.thmx (Adiabatic)"
+    },
+    {
+      "kind": "bc",
+      "name": "Interior Wood/Vinyl Frame (convection only)",
+      "thmx": {
+        "Name": "Interior Wood/Vinyl Frame (convection only)",
+        "Type": "1",
+        "H": "2.440000",
+        "HeatFLux": "0.000000",
+        "Temperature": "21.000000",
+        "Tr": "21.000000",
+        "Hr": "-431602080.000000",
+        "Ei": "1.000000",
+        "Viewfactor": "1.000000",
+        "RadiationModel": "3",
+        "ConvectionFlag": "1",
+        "FluxFlag": "0",
+        "RadiationFlag": "1",
+        "ConstantTemperatureFlag": "0",
+        "EmisModifier": "1.000000",
+        "RGBColor": "0xFF8080"
+      },
+      "copied_from": "research/samples/therm78/converted/sample_sill.thmx (Interior Wood/Vinyl Frame (convection only))"
+    },
+    {
+      "kind": "bc",
+      "name": "NFRC 100-2010 Exterior",
+      "thmx": {
+        "Name": "NFRC 100-2010 Exterior",
+        "Type": "1",
+        "H": "26.000000",
+        "HeatFLux": "0.000000",
+        "Temperature": "-18.000000",
+        "Tr": "-18.000000",
+        "Hr": "-431602080.000000",
+        "Ei": "1.000000",
+        "Viewfactor": "1.000000",
+        "RadiationModel": "1",
+        "ConvectionFlag": "1",
+        "FluxFlag": "0",
+        "RadiationFlag": "1",
+        "ConstantTemperatureFlag": "0",
+        "EmisModifier": "1.000000",
+        "RGBColor": "0x0080C0"
+      },
+      "copied_from": "research/samples/therm78/converted/sample_sill.thmx (NFRC 100-2010 Exterior)"
+    },
+    {
+      "kind": "bc",
+      "name": "Interior Aluminum Frame (convection only)",
+      "thmx": {
+        "Name": "Interior Aluminum Frame (convection only)",
+        "Type": "1",
+        "H": "3.290000",
+        "HeatFLux": "0.000000",
+        "Temperature": "21.000000",
+        "Tr": "21.000000",
+        "Hr": "-431602080.000000",
+        "Ei": "1.000000",
+        "Viewfactor": "1.000000",
+        "RadiationModel": "3",
+        "ConvectionFlag": "1",
+        "FluxFlag": "0",
+        "RadiationFlag": "1",
+        "ConstantTemperatureFlag": "0",
+        "EmisModifier": "1.000000",
+        "RGBColor": "0xFF8080"
+      },
+      "copied_from": "infra/t78-lib/out/lib_harvest1_solved.thmx (Interior Aluminum Frame (convection only))"
+    },
+    {
+      "kind": "bc",
+      "name": "Interior Thermally Broken Frame (convection only)",
+      "thmx": {
+        "Name": "Interior Thermally Broken Frame (convection only)",
+        "Type": "1",
+        "H": "3.000000",
+        "HeatFLux": "0.000000",
+        "Temperature": "21.000000",
+        "Tr": "21.000000",
+        "Hr": "-431602080.000000",
+        "Ei": "1.000000",
+        "Viewfactor": "1.000000",
+        "RadiationModel": "3",
+        "ConvectionFlag": "1",
+        "FluxFlag": "0",
+        "RadiationFlag": "1",
+        "ConstantTemperatureFlag": "0",
+        "EmisModifier": "1.000000",
+        "RGBColor": "0xFF8080"
+      },
+      "copied_from": "infra/t78-lib/out/lib_harvest2_solved.thmx (Interior Thermally Broken Frame (convection only))"
+    },
+    {
+      "kind": "bc",
+      "name": "Interior Thermally Improved Frame (convection only)",
+      "thmx": {
+        "Name": "Interior Thermally Improved Frame (convection only)",
+        "Type": "1",
+        "H": "3.120000",
+        "HeatFLux": "0.000000",
+        "Temperature": "21.000000",
+        "Tr": "21.000000",
+        "Hr": "-431602080.000000",
+        "Ei": "1.000000",
+        "Viewfactor": "1.000000",
+        "RadiationModel": "3",
+        "ConvectionFlag": "1",
+        "FluxFlag": "0",
+        "RadiationFlag": "1",
+        "ConstantTemperatureFlag": "0",
+        "EmisModifier": "1.000000",
+        "RGBColor": "0xFF8080"
+      },
+      "copied_from": "infra/t78-lib/out/lib_harvest3_solved.thmx (Interior Thermally Improved Frame (convection only))"
+    },
+    {
+      "kind": "bc",
+      "name": "Interior (20 tilt) Aluminum Frame (convection only)",
+      "thmx": {
+        "Name": "Interior (20 tilt) Aluminum Frame (convection only)",
+        "Type": "1",
+        "H": "4.650000",
+        "HeatFLux": "0.000000",
+        "Temperature": "21.000000",
+        "Tr": "21.000000",
+        "Hr": "-431602080.000000",
+        "Ei": "1.000000",
+        "Viewfactor": "1.000000",
+        "RadiationModel": "3",
+        "ConvectionFlag": "1",
+        "FluxFlag": "0",
+        "RadiationFlag": "1",
+        "ConstantTemperatureFlag": "0",
+        "EmisModifier": "1.000000",
+        "RGBColor": "0xFF8040"
+      },
+      "copied_from": "infra/t78-lib/out/lib_harvest5_solved-excerpt.xml (Interior (20 tilt) Aluminum Frame (convection only))"
+    },
+    {
+      "kind": "bc",
+      "name": "Interior (20 tilt) Thermally Broken Frame (convection only)",
+      "thmx": {
+        "Name": "Interior (20 tilt) Thermally Broken Frame (convection only)",
+        "Type": "1",
+        "H": "4.090000",
+        "HeatFLux": "0.000000",
+        "Temperature": "21.000000",
+        "Tr": "21.000000",
+        "Hr": "-431602080.000000",
+        "Ei": "1.000000",
+        "Viewfactor": "1.000000",
+        "RadiationModel": "3",
+        "ConvectionFlag": "1",
+        "FluxFlag": "0",
+        "RadiationFlag": "1",
+        "ConstantTemperatureFlag": "0",
+        "EmisModifier": "1.000000",
+        "RGBColor": "0xFF8040"
+      },
+      "copied_from": "infra/t78-lib/out/lib_harvest6_solved-excerpt.xml (Interior (20 tilt) Thermally Broken Frame (convection only))"
+    },
+    {
+      "kind": "bc",
+      "name": "Interior (20 tilt) Thermally Improved Frame (convection only)",
+      "thmx": {
+        "Name": "Interior (20 tilt) Thermally Improved Frame (convection only)",
+        "Type": "1",
+        "H": "4.320000",
+        "HeatFLux": "0.000000",
+        "Temperature": "21.000000",
+        "Tr": "21.000000",
+        "Hr": "-431602080.000000",
+        "Ei": "1.000000",
+        "Viewfactor": "1.000000",
+        "RadiationModel": "3",
+        "ConvectionFlag": "1",
+        "FluxFlag": "0",
+        "RadiationFlag": "1",
+        "ConstantTemperatureFlag": "0",
+        "EmisModifier": "1.000000",
+        "RGBColor": "0xFF8040"
+      },
+      "copied_from": "infra/t78-lib/out/lib_harvest7_solved-excerpt.xml (Interior (20 tilt) Thermally Improved Frame (convection only))"
+    },
+    {
+      "kind": "bc",
+      "name": "Interior (20 tilt) Interior Wood/Vinyl Frame (convection only)",
+      "thmx": {
+        "Name": "Interior (20 tilt) Interior Wood/Vinyl Frame (convection only)",
+        "Type": "1",
+        "H": "3.090000",
+        "HeatFLux": "0.000000",
+        "Temperature": "21.000000",
+        "Tr": "21.000000",
+        "Hr": "-431602080.000000",
+        "Ei": "1.000000",
+        "Viewfactor": "1.000000",
+        "RadiationModel": "3",
+        "ConvectionFlag": "1",
+        "FluxFlag": "0",
+        "RadiationFlag": "1",
+        "ConstantTemperatureFlag": "0",
+        "EmisModifier": "1.000000",
+        "RGBColor": "0xFF8040"
+      },
+      "copied_from": "infra/t78-lib/out/lib_harvest8_solved-excerpt.xml (Interior (20 tilt) Interior Wood/Vinyl Frame (convection only))"
+    }
+  ],
+  "gases": []
+}
